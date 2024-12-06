@@ -1,0 +1,7366 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "36c7629a-dab6-4a76-a176-c6ee12eaa763")
+	(paper "A4")
+	(title_block
+		(title "mcHF QRP Transceiver RF board")
+		(rev "0.6.3")
+		(company "M0NKA")
+	)
+	(lib_symbols
+		(symbol "rf_main-altium-import:GND_POWER_GROUND"
+			(power)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name 'GND'"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_POWER_GROUND_0_0"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -3.302) (xy 1.778 -3.302)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -4.064) (xy 1.016 -4.064)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -4.826) (xy 0.254 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Mixer_0_CAP"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*CAP_B*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Mixer_0_CAP_1_0"
+				(polyline
+					(pts
+						(xy 0.254 -1.778) (xy 4.826 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 -0.762) (xy 4.826 -0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.778) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.54 -0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 2.54 270)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Mixer_0_RES_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Mixer_0_RES_0_1_0"
+				(rectangle
+					(start 5.08 -1.524)
+					(end 0 -3.556)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Mixer_0_SN74CBT3253C"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual 4:1 Demux/Analog Switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*SO-16-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Mixer_0_SN74CBT3253C_1_0"
+				(circle
+					(center -7.112 -10.16)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -7.112 -5.08)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -7.112 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -7.112 5.08)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.048 -10.16)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.048 -5.08)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.048 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.048 5.08)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 -10.16) (xy -7.62 -10.16)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 0) (xy -7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -5.08) (xy -10.16 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 5.08) (xy -10.16 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.604 -10.16) (xy -2.54 -7.874)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.604 -5.08) (xy -2.54 -2.794)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.604 0) (xy -2.54 2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.604 5.08) (xy -2.54 7.366)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -15.24) (xy 5.08 -15.24)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -10.16) (xy 5.08 -10.16)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -5.08) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 -15.24) (xy 10.16 -12.954)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 -10.16) (xy 10.16 -7.874)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 -5.08) (xy 10.16 -2.794)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 0.254) (xy 10.16 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -15.24) (xy 12.7 -15.24)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -10.16) (xy 12.7 -10.16)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 12.7 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 12.7 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 -15.24) (xy 0 -15.24) (xy 0 -10.16)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 15.24) (xy -5.08 15.24) (xy -5.08 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 10.16) (xy 7.62 10.16) (xy 7.62 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0 0) (xy 0 -5.08) (xy -2.54 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 5.08) (xy 0 5.08) (xy 0 -10.16) (xy -2.54 -10.16)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 2.54 0) (xy 2.54 -20.32) (xy 12.7 -20.32)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.588 -15.24)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.588 -10.16)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.588 -5.08)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.588 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 9.652 -15.24)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 9.652 -10.16)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 9.652 -5.08)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 9.652 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 20.32 17.78)
+					(end -17.78 -22.86)
+					(stroke
+						(width 0.0254)
+						(type solid)
+						(color 128 0 0 1)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -25.4 15.24 0)
+					(length 7.62)
+					(name "OE1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 27.94 -15.24 180)
+					(length 7.62)
+					(name "2B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 27.94 -10.16 180)
+					(length 7.62)
+					(name "2B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 27.94 -5.08 180)
+					(length 7.62)
+					(name "2B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 27.94 0 180)
+					(length 7.62)
+					(name "2B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 27.94 5.08 180)
+					(length 7.62)
+					(name "S0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 27.94 10.16 180)
+					(length 7.62)
+					(name "OE2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 27.94 15.24 180)
+					(length 7.62)
+					(name "Vcc"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -25.4 10.16 0)
+					(length 7.62)
+					(name "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -25.4 5.08 0)
+					(length 7.62)
+					(name "1B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -25.4 0 0)
+					(length 7.62)
+					(name "1B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -25.4 -5.08 0)
+					(length 7.62)
+					(name "1B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -25.4 -10.16 0)
+					(length 7.62)
+					(name "1B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -25.4 -15.24 0)
+					(length 7.62)
+					(name "1A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -25.4 -20.32 0)
+					(length 7.62)
+					(name "Vss"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 27.94 -20.32 180)
+					(length 7.62)
+					(name "2A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Mixer_0_TDK-NLV25T"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "INDUCTOR, SIGNAL LINE, 4.7UH, 1005"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Mixer_0_TDK-NLV25T_1_0"
+				(arc
+					(start 1.27 -1.27)
+					(mid 0.372 -1.642)
+					(end 0 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 -2.54)
+					(mid 2.168 -1.642)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.81 -1.27)
+					(mid 2.912 -1.642)
+					(end 2.54 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 5.08 -2.54)
+					(mid 4.708 -1.642)
+					(end 3.81 -1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 6.35 -1.27)
+					(mid 5.452 -1.642)
+					(end 5.08 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 7.62 -2.54)
+					(mid 7.248 -1.642)
+					(end 6.35 -1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 8.89 -1.27)
+					(mid 7.992 -1.642)
+					(end 7.62 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 10.16 -2.54)
+					(mid 9.788 -1.642)
+					(end 8.89 -1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Mixer_1_RES_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Mixer_1_RES_0_1_0"
+				(rectangle
+					(start 3.556 5.08)
+					(end 1.524 0)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Mixer_2_CAP"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Mixer_2_CAP_1_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.54 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.778) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 0.762) (xy -4.826 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.778) (xy -4.826 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 5.08 270)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Mixer_2_CX2074NL"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Wideband RF Transformer 1:4"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*SOP5_NEW1*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Mixer_2_CX2074NL_1_0"
+				(arc
+					(start -7.62 5.08)
+					(mid -6.722 5.452)
+					(end -6.35 6.35)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -7.62 7.62)
+					(mid -6.722 7.992)
+					(end -6.35 8.89)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -7.62 10.16)
+					(mid -6.722 10.532)
+					(end -6.35 11.43)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -7.62 12.7)
+					(mid -6.722 13.072)
+					(end -6.35 13.97)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -7.62 20.32)
+					(mid -6.722 20.692)
+					(end -6.35 21.59)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -7.62 22.86)
+					(mid -6.722 23.232)
+					(end -6.35 24.13)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -7.62 25.4)
+					(mid -6.722 25.772)
+					(end -6.35 26.67)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -7.62 27.94)
+					(mid -6.722 28.312)
+					(end -6.35 29.21)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -6.604 4.318)
+					(radius 0.508)
+					(stroke
+						(width -0.0001)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -6.604 19.558)
+					(radius 0.508)
+					(stroke
+						(width -0.0001)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start -6.35 6.35)
+					(mid -6.722 7.248)
+					(end -7.62 7.62)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 8.89)
+					(mid -6.722 9.788)
+					(end -7.62 10.16)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 11.43)
+					(mid -6.722 12.328)
+					(end -7.62 12.7)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 13.97)
+					(mid -6.722 14.868)
+					(end -7.62 15.24)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 21.59)
+					(mid -6.722 22.488)
+					(end -7.62 22.86)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 24.13)
+					(mid -6.722 25.028)
+					(end -7.62 25.4)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 26.67)
+					(mid -6.722 27.568)
+					(end -7.62 27.94)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 29.21)
+					(mid -6.722 30.108)
+					(end -7.62 30.48)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.81 13.97)
+					(mid -3.438 13.072)
+					(end -2.54 12.7)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.81 16.51)
+					(mid -3.438 15.612)
+					(end -2.54 15.24)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.81 19.05)
+					(mid -3.438 18.152)
+					(end -2.54 17.78)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.81 21.59)
+					(mid -3.438 20.692)
+					(end -2.54 20.32)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.556 24.384)
+					(radius 0.508)
+					(stroke
+						(width -0.0001)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start -2.54 15.24)
+					(mid -3.438 14.868)
+					(end -3.81 13.97)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 17.78)
+					(mid -3.438 17.408)
+					(end -3.81 16.51)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 20.32)
+					(mid -3.438 19.948)
+					(end -3.81 19.05)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 22.86)
+					(mid -3.438 22.488)
+					(end -3.81 21.59)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 2.54) (xy -7.62 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 15.24) (xy -7.62 20.32)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 30.48) (xy -7.62 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.588 2.54) (xy -5.588 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.572 2.54) (xy -4.572 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 10.16) (xy -2.54 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 22.86) (xy -2.54 25.4)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "Sec0"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 17.78 0)
+					(length 2.54)
+					(name "SecCmn"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 33.02 0)
+					(length 2.54)
+					(name "Sec180"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 25.4 180)
+					(length 2.54)
+					(name "Pri-"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 10.16 180)
+					(length 2.54)
+					(name "Pri+"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Mixer_2_RES_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Mixer_2_RES_0_1_0"
+				(rectangle
+					(start 0 3.556)
+					(end -5.08 1.524)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 2.54 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Mixer_3_CAP-POL_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Electrolitic capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*1206_Elec_Cap_N*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Mixer_3_CAP-POL_0_1_0"
+				(polyline
+					(pts
+						(xy -2.032 -3.048) (xy 2.032 -3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -4.572) (xy 0 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -4.572) (xy -2.032 -4.572)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -2.032) (xy 3.048 -2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.524) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 270)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:VCC_5V_BAR"
+			(power)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VCC_5V"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name 'VCC_5V'"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VCC_5V_BAR_0_0"
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 0) hide
+					(name "VCC_5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 210.82 44.9072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29fc8488-5efa-4b91-bf11-1e1803c74173")
+	)
+	(junction
+		(at 114.3 44.9072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f3a16be-b25a-4c6e-91d9-6c4b522e6741")
+	)
+	(junction
+		(at 73.66 67.7672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38b8ef85-484b-4259-be49-1ae5953cbc8f")
+	)
+	(junction
+		(at 154.94 128.7272)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43faa938-ec4f-430c-a138-0fba982289b3")
+	)
+	(junction
+		(at 147.32 128.7272)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b7614ce-8fec-4cbd-83dd-caf6ab73ed2a")
+	)
+	(junction
+		(at 73.66 103.3272)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d7304c5-4c38-49a6-86af-338e4073b76b")
+	)
+	(junction
+		(at 73.66 47.4472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "735da395-314c-45a6-8393-605c3d338d43")
+	)
+	(junction
+		(at 101.6 55.0672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d2fc02a-f4d4-45e8-9196-a1ab6175fd46")
+	)
+	(junction
+		(at 106.68 70.3072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a46d2c06-2f47-414b-afcb-d2796b7cc53c")
+	)
+	(junction
+		(at 73.66 85.5472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b5f4e449-8931-4c11-95dd-6c49de272ae9")
+	)
+	(junction
+		(at 91.44 103.3272)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c03c6ca6-8d47-46cb-9b21-8194866f0fbc")
+	)
+	(junction
+		(at 96.52 85.5472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d026a69b-8852-487c-8fbd-7b260c8d8032")
+	)
+	(junction
+		(at 187.96 128.7272)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e25338f8-7c35-409c-922e-9264b1748c7a")
+	)
+	(wire
+		(pts
+			(xy 101.6 93.1672) (xy 101.6 55.0672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07346d97-cab7-4e9d-988e-10b40a96d92c")
+	)
+	(wire
+		(pts
+			(xy 170.18 55.0672) (xy 187.96 55.0672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "097d56a3-6e15-45d5-adc4-cf397bdbea46")
+	)
+	(wire
+		(pts
+			(xy 172.72 49.9872) (xy 172.72 37.2872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a526486-cb89-4907-b3fb-8b4b28423b60")
+	)
+	(wire
+		(pts
+			(xy 170.18 49.9872) (xy 172.72 49.9872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d89e68e-c013-4d84-b81d-f6583faa6668")
+	)
+	(wire
+		(pts
+			(xy 86.36 70.3072) (xy 106.68 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0db42039-8680-4b3e-ac6d-5803bdd9da06")
+	)
+	(polyline
+		(pts
+			(xy 38.1 166.8272) (xy 99.06 166.8272)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "0f9acdb3-ddcb-4961-a25d-51c900967636")
+	)
+	(wire
+		(pts
+			(xy 175.26 95.7072) (xy 175.26 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ff36f26-c0ce-42a6-9443-4f173c8237c1")
+	)
+	(wire
+		(pts
+			(xy 170.18 75.3872) (xy 172.72 75.3872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12119d28-b6eb-4cfb-bf15-ca6012303964")
+	)
+	(wire
+		(pts
+			(xy 99.06 75.3872) (xy 99.06 110.9472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "131f89be-b050-490c-948f-246d62886841")
+	)
+	(wire
+		(pts
+			(xy 71.12 128.7272) (xy 88.9 128.7272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "177d2ddd-9c88-459f-97f0-c52a0d80c972")
+	)
+	(polyline
+		(pts
+			(xy 38.1 159.2072) (xy 38.1 156.6672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "179622d7-8574-4262-aaa6-735ddae2719e")
+	)
+	(polyline
+		(pts
+			(xy 287.02 202.3872) (xy 287.02 192.2272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "18b0882f-25a6-4170-af94-a8aa3e18b3a8")
+	)
+	(polyline
+		(pts
+			(xy 99.06 171.9072) (xy 38.1 171.9072)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "1ace7278-1a2e-4b83-a6b1-c68d2d602c50")
+	)
+	(wire
+		(pts
+			(xy 86.36 67.7672) (xy 86.36 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b6e53d4-0f13-4612-9cb8-2e805a0c5a33")
+	)
+	(polyline
+		(pts
+			(xy 53.34 156.6672) (xy 53.34 171.9072)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "233454b6-1715-434c-a415-f6a79dc3b22b")
+	)
+	(wire
+		(pts
+			(xy 116.84 49.9872) (xy 101.6 49.9872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2545052f-2137-4bfc-a9df-24be1e1bdd3b")
+	)
+	(wire
+		(pts
+			(xy 154.94 131.2672) (xy 154.94 128.7272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25b2cf53-6192-4642-91f9-877cce05fde5")
+	)
+	(wire
+		(pts
+			(xy 116.84 70.3072) (xy 106.68 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "261e8e66-805d-4cb6-9bec-4a4e08e82c44")
+	)
+	(polyline
+		(pts
+			(xy 193.04 123.6472) (xy 137.16 123.6472)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "2aa5e33a-4403-4355-9834-1ed3e687669e")
+	)
+	(wire
+		(pts
+			(xy 91.44 47.4472) (xy 91.44 55.0672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d2b4ae9-6d8a-427c-b3b7-26111b42a604")
+	)
+	(wire
+		(pts
+			(xy 96.52 103.3272) (xy 182.88 103.3272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30b87d3d-98ff-47c0-9300-6f349f7d1b92")
+	)
+	(wire
+		(pts
+			(xy 116.84 60.1472) (xy 96.52 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "312481b6-47b6-43e5-b26f-041f692a9b27")
+	)
+	(polyline
+		(pts
+			(xy 60.96 156.6672) (xy 60.96 171.9072)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "31d516ea-3b3e-4c9f-83e4-25390d845de9")
+	)
+	(wire
+		(pts
+			(xy 73.66 47.4472) (xy 91.44 47.4472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "360c5c3e-be4e-46a8-a096-68ee1e01b3ab")
+	)
+	(wire
+		(pts
+			(xy 71.12 103.3272) (xy 73.66 103.3272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "399a3ffe-b8cf-4079-b8e1-d043b30a133a")
+	)
+	(wire
+		(pts
+			(xy 210.82 44.9072) (xy 170.18 44.9072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a61c38d-8954-4a6a-bb2c-502a4da98e32")
+	)
+	(wire
+		(pts
+			(xy 185.42 105.8672) (xy 185.42 65.2272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cef7a76-a013-4f20-b198-1d5cc0b91b9a")
+	)
+	(wire
+		(pts
+			(xy 208.28 95.7072) (xy 187.96 95.7072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e1e09c5-a2cb-4a3c-94fd-24c72729c4a9")
+	)
+	(polyline
+		(pts
+			(xy 38.1 161.7472) (xy 99.06 161.7472)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "3f87a6ae-82a6-4acd-ae71-3ed215ffd8e1")
+	)
+	(wire
+		(pts
+			(xy 170.18 80.4672) (xy 193.04 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44cb3613-4791-4521-85ed-7dc96ee0ae3f")
+	)
+	(wire
+		(pts
+			(xy 73.66 67.7672) (xy 86.36 67.7672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44d3a68c-bda2-473f-9431-357374b47f82")
+	)
+	(polyline
+		(pts
+			(xy 261.62 202.3872) (xy 287.02 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "44f557b9-ec1a-4674-a5eb-64c2ff304fdf")
+	)
+	(polyline
+		(pts
+			(xy 81.28 156.6672) (xy 81.28 171.9072)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "45b8bba9-9e56-40ae-b54c-be07d18ddd25")
+	)
+	(polyline
+		(pts
+			(xy 220.98 72.8472) (xy 220.98 85.5472)
+		)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 17 3 127 1)
+		)
+		(uuid "45ebf2bd-5989-4529-a41f-c3db8b2fb1d6")
+	)
+	(wire
+		(pts
+			(xy 71.12 85.5472) (xy 73.66 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b78c7a6-c05c-4b71-b0e9-46891d771589")
+	)
+	(wire
+		(pts
+			(xy 218.44 103.3272) (xy 223.52 103.3272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c36018f-e980-4d1e-99ef-848c2845c07d")
+	)
+	(wire
+		(pts
+			(xy 116.84 80.4672) (xy 116.84 83.0072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52c958b0-6e3a-48e8-b014-4ae53aba7f22")
+	)
+	(wire
+		(pts
+			(xy 91.44 105.8672) (xy 185.42 105.8672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54bc5c04-c954-4a5a-8b00-722e18b77cf6")
+	)
+	(polyline
+		(pts
+			(xy 269.24 192.2272) (xy 269.24 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "581f283b-82f3-428c-badf-d44d54ed18de")
+	)
+	(wire
+		(pts
+			(xy 172.72 75.3872) (xy 172.72 93.1672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "598d3bd5-b775-4d93-b834-bdbc2dfe68bf")
+	)
+	(polyline
+		(pts
+			(xy 261.62 202.3872) (xy 170.18 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "5bb5cca0-7c40-4b19-8774-adf8ba18a08a")
+	)
+	(wire
+		(pts
+			(xy 116.84 65.2272) (xy 91.44 65.2272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d8ff898-8d72-47ea-8d08-55272e2ea363")
+	)
+	(polyline
+		(pts
+			(xy 137.16 123.6472) (xy 137.16 149.0472)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "5d9bd696-8b4a-4f6c-885c-ae680ec92b5f")
+	)
+	(polyline
+		(pts
+			(xy 170.18 192.2272) (xy 170.18 204.9272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "5f27328c-1116-489e-b9b1-c5cdac45aeb2")
+	)
+	(wire
+		(pts
+			(xy 172.72 93.1672) (xy 101.6 93.1672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6076400f-433a-4cae-9bd7-d51140cfaf9d")
+	)
+	(wire
+		(pts
+			(xy 96.52 60.1472) (xy 96.52 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6136af37-ed27-40c3-bcd4-0c0b3f54e9b8")
+	)
+	(polyline
+		(pts
+			(xy 38.1 171.9072) (xy 38.1 159.2072)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "6193cda2-eab0-429c-a13c-ea10e1a95663")
+	)
+	(wire
+		(pts
+			(xy 71.12 133.8072) (xy 88.9 133.8072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63d37af7-30ce-4ada-824f-59d9bacfa603")
+	)
+	(polyline
+		(pts
+			(xy 228.6 72.8472) (xy 228.6 67.7672)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "6632523b-8df6-429b-aac2-829b73760349")
+	)
+	(wire
+		(pts
+			(xy 147.32 131.2672) (xy 147.32 128.7272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67e956bb-baa3-400e-a5f0-71a1ecc96cb4")
+	)
+	(polyline
+		(pts
+			(xy 45.72 156.6672) (xy 45.72 171.9072)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "69600736-1894-40ea-938d-411c64e1e4dd")
+	)
+	(wire
+		(pts
+			(xy 73.66 85.5472) (xy 96.52 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "697b1dc5-152e-42a4-a1ed-01a255298a35")
+	)
+	(wire
+		(pts
+			(xy 226.06 44.9072) (xy 210.82 44.9072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a86a0dd-91d7-4053-8781-51b2ed6c899c")
+	)
+	(polyline
+		(pts
+			(xy 170.18 199.8472) (xy 228.6 199.8472)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "706c23fa-36b5-4bed-8cff-a44ee870a030")
+	)
+	(polyline
+		(pts
+			(xy 137.16 149.0472) (xy 193.04 149.0472)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "7143816f-2677-49b5-a678-5c4b6559bd01")
+	)
+	(wire
+		(pts
+			(xy 203.2 80.4672) (xy 208.28 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71ae05fc-e2b8-4f16-91c6-2ed89f86f299")
+	)
+	(polyline
+		(pts
+			(xy 205.74 67.7672) (xy 205.74 72.8472)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "71f556e7-c826-44b6-b416-85e67ae6e07f")
+	)
+	(wire
+		(pts
+			(xy 55.88 138.8872) (xy 88.9 138.8872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "732da6b4-e592-4a25-8ad3-c3e1a5379ba7")
+	)
+	(wire
+		(pts
+			(xy 55.88 133.8072) (xy 60.96 133.8072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74928a92-68e6-475d-9ffd-5d5dd20c561d")
+	)
+	(wire
+		(pts
+			(xy 60.96 103.3272) (xy 53.34 103.3272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75f7b70c-4d2b-4cb8-8832-8c31888d1cf1")
+	)
+	(wire
+		(pts
+			(xy 73.66 103.3272) (xy 91.44 103.3272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79cba277-5944-4515-833c-0bfeabba00a5")
+	)
+	(wire
+		(pts
+			(xy 182.88 103.3272) (xy 182.88 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86b66108-37af-46e0-95b4-1ed62662f210")
+	)
+	(polyline
+		(pts
+			(xy 210.82 199.8472) (xy 210.82 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "8bda39d7-2611-46da-8720-810951942e85")
+	)
+	(wire
+		(pts
+			(xy 185.42 65.2272) (xy 170.18 65.2272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c2f717e-5ca6-477c-85ab-f00735227d31")
+	)
+	(polyline
+		(pts
+			(xy 205.74 72.8472) (xy 228.6 72.8472)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "9116623b-6af4-4597-8c3c-8369ab6ef479")
+	)
+	(polyline
+		(pts
+			(xy 287.02 192.2272) (xy 170.18 192.2272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "91f4ad2f-473e-48dd-9ab3-4fc94450c5ae")
+	)
+	(wire
+		(pts
+			(xy 106.68 95.7072) (xy 175.26 95.7072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94234019-d190-4aa5-8c3f-1c2b4c941464")
+	)
+	(wire
+		(pts
+			(xy 134.62 128.7272) (xy 147.32 128.7272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9649c3a0-f12b-4fb6-b231-73904a0e860c")
+	)
+	(wire
+		(pts
+			(xy 210.82 44.9072) (xy 210.82 47.4472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "969aa291-fd65-4ec4-905b-2a9fbbe07f1a")
+	)
+	(polyline
+		(pts
+			(xy 99.06 156.6672) (xy 99.06 171.9072)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "97db5437-f8bd-4796-a521-9f4fc0b9ff15")
+	)
+	(wire
+		(pts
+			(xy 175.26 60.1472) (xy 170.18 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bb52d6b-7031-4c1a-beca-044b13491fc9")
+	)
+	(wire
+		(pts
+			(xy 106.68 70.3072) (xy 106.68 95.7072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fbd00cf-eff6-4194-b8f4-368c6028f7d5")
+	)
+	(wire
+		(pts
+			(xy 60.96 67.7672) (xy 53.34 67.7672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4865c9b-e851-4746-9195-24efe6a0373e")
+	)
+	(wire
+		(pts
+			(xy 60.96 85.5472) (xy 53.34 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b034e5a6-194f-4b3a-8954-9f5067a7fe50")
+	)
+	(wire
+		(pts
+			(xy 187.96 95.7072) (xy 187.96 128.7272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1bcc108-136c-4872-9569-345fc21d0568")
+	)
+	(wire
+		(pts
+			(xy 182.88 128.7272) (xy 187.96 128.7272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b45a2404-ba94-4eff-a7f4-9dc71799aedf")
+	)
+	(wire
+		(pts
+			(xy 172.72 37.2872) (xy 114.3 37.2872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6c260df-5206-4dfe-bfe6-9836873c17b1")
+	)
+	(polyline
+		(pts
+			(xy 228.6 192.2272) (xy 228.6 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "ba249733-81dd-47a9-ae51-fd65ecafe22e")
+	)
+	(wire
+		(pts
+			(xy 218.44 88.0872) (xy 254 88.0872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc49ab41-29e4-4b87-a627-c96b8442c1fd")
+	)
+	(wire
+		(pts
+			(xy 71.12 67.7672) (xy 73.66 67.7672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcc7d7ac-9f72-4494-abe7-d89246699c8e")
+	)
+	(wire
+		(pts
+			(xy 223.52 103.3272) (xy 223.52 105.8672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be80a868-bae7-4ea4-8f43-5961a62a8a79")
+	)
+	(wire
+		(pts
+			(xy 55.88 128.7272) (xy 60.96 128.7272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3a866f7-d96d-4450-94b0-3d35f6982631")
+	)
+	(wire
+		(pts
+			(xy 114.3 44.9072) (xy 116.84 44.9072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5d5d4e2-ac10-4df7-bd22-e1ecb6b1038b")
+	)
+	(wire
+		(pts
+			(xy 91.44 103.3272) (xy 91.44 105.8672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c64c4ade-e5d9-4383-bfce-ba714de162a3")
+	)
+	(polyline
+		(pts
+			(xy 38.1 164.2872) (xy 99.06 164.2872)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "cbbf8ad0-3b9c-4c92-86c8-a2306ed61d40")
+	)
+	(wire
+		(pts
+			(xy 91.44 65.2272) (xy 91.44 103.3272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cde71063-e122-4b1a-9b33-c9b9276baaf9")
+	)
+	(wire
+		(pts
+			(xy 114.3 37.2872) (xy 114.3 44.9072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d189cff3-4555-4f41-8a52-f58f2ae6d956")
+	)
+	(wire
+		(pts
+			(xy 91.44 55.0672) (xy 101.6 55.0672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d32984f9-76fe-4cd7-881c-ddf7d87d5842")
+	)
+	(polyline
+		(pts
+			(xy 193.04 149.0472) (xy 193.04 123.6472)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "d52f77cf-4cf0-4941-9bce-0ce2bdad484c")
+	)
+	(wire
+		(pts
+			(xy 147.32 128.7272) (xy 154.94 128.7272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5cc03ee-363f-4d61-a8b9-25c39710fda7")
+	)
+	(wire
+		(pts
+			(xy 99.06 110.9472) (xy 193.04 110.9472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6310897-63ee-436b-8f03-f6dc0f8c0745")
+	)
+	(wire
+		(pts
+			(xy 96.52 85.5472) (xy 96.52 103.3272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d95800ad-7376-4a53-9c57-372b2db2a141")
+	)
+	(wire
+		(pts
+			(xy 60.96 47.4472) (xy 53.34 47.4472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbfb7406-4a17-456c-bc9e-130086c1269d")
+	)
+	(wire
+		(pts
+			(xy 101.6 55.0672) (xy 116.84 55.0672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcc66ad9-147e-4049-b759-a36beddc1d2a")
+	)
+	(wire
+		(pts
+			(xy 114.3 44.9072) (xy 101.6 44.9072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4870c3f-f4ae-410c-8acf-d183f23b3d51")
+	)
+	(wire
+		(pts
+			(xy 203.2 110.9472) (xy 208.28 110.9472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e68d1c9f-2c68-480f-bbdc-900ce791f4dd")
+	)
+	(polyline
+		(pts
+			(xy 38.1 169.3672) (xy 99.06 169.3672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "e73626b9-1b05-4dc7-93e7-9cc9d27888d5")
+	)
+	(wire
+		(pts
+			(xy 154.94 128.7272) (xy 157.48 128.7272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9ade612-cdac-4ac5-a00c-152bc0e1f079")
+	)
+	(polyline
+		(pts
+			(xy 68.58 156.6672) (xy 68.58 171.9072)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "edc53c42-23b2-49e9-a81f-8d2789e907fa")
+	)
+	(wire
+		(pts
+			(xy 182.88 70.3072) (xy 170.18 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edd07f68-84c2-42ae-a5a9-d410abe8f840")
+	)
+	(wire
+		(pts
+			(xy 116.84 75.3872) (xy 99.06 75.3872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edd61f21-0a49-400a-9623-dbdd5f260e18")
+	)
+	(wire
+		(pts
+			(xy 71.12 47.4472) (xy 73.66 47.4472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f10a5ee5-aaaa-4ff1-8084-1cd04a163b5b")
+	)
+	(polyline
+		(pts
+			(xy 38.1 156.6672) (xy 99.06 156.6672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "f34adc01-274c-4d83-bf50-63a8a5711b4c")
+	)
+	(polyline
+		(pts
+			(xy 228.6 67.7672) (xy 205.74 67.7672)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "f4a36909-a6c4-4f91-9c0e-e0a788edcf43")
+	)
+	(polyline
+		(pts
+			(xy 38.1 159.2072) (xy 99.06 159.2072)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "f7dec259-6d78-4b2e-a609-a7ebd9f96af8")
+	)
+	(text "TX Mixer"
+		(exclude_from_sim no)
+		(at 241.3 199.8472 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left bottom)
+		)
+		(uuid "0251eea6-f16d-42ba-a92f-f1d4ea815777")
+	)
+	(text "Revision:"
+		(exclude_from_sim no)
+		(at 193.04 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0cc3ad48-e028-4ea3-8efc-b225ba3249b9")
+	)
+	(text "${CURRENT_DATE}"
+		(exclude_from_sim no)
+		(at 180.34 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0da5ee06-4ed7-4e98-a642-d03a1494f5ee")
+	)
+	(text "${##}"
+		(exclude_from_sim no)
+		(at 226.06 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "168e936c-4943-4d7c-831a-9aaabb64cd90")
+	)
+	(text "All Open"
+		(exclude_from_sim no)
+		(at 71.12 171.9072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "179c3f6f-7d4f-4046-ae61-b5abf26c0828")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 48.26 161.7472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e0d4652-5bb7-4c73-b448-ed1fce6a5a80")
+	)
+	(text "TX"
+		(exclude_from_sim no)
+		(at 40.64 164.2872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f05b891-b523-4649-a3b8-8c7c591f49d8")
+	)
+	(text "${AUTHOR}"
+		(exclude_from_sim no)
+		(at 271.78 197.3072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "20199cb8-0d76-445c-a1d3-8a1c2ff53624")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 48.26 171.9072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2188131b-f22a-40d5-835b-5d061d123aa2")
+	)
+	(text "RX"
+		(exclude_from_sim no)
+		(at 40.64 171.9072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "26bb65ab-7dac-4cb9-8a7e-775f690eb213")
+	)
+	(text "of"
+		(exclude_from_sim no)
+		(at 223.52 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "27786c7e-219b-4f89-b25c-41b4dcd1634e")
+	)
+	(text "2B3/1B3"
+		(exclude_from_sim no)
+		(at 71.12 169.3672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b2143e2-8726-4d78-8ec1-ec73a821bcf6")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 63.5 169.3672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "39c2bc3f-c415-442c-a72a-e9037db7a7e4")
+	)
+	(text "${COMPANY}"
+		(exclude_from_sim no)
+		(at 274.32 199.8472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "3a909144-f894-4a8e-adff-bbeaf728c29a")
+	)
+	(text "3 dBm max here, to"
+		(exclude_from_sim no)
+		(at 205.74 70.3072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c904bbb-7e2d-4f14-b5ef-cbfa0a08fb09")
+	)
+	(text "TX"
+		(exclude_from_sim no)
+		(at 40.64 169.3672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "45697ec3-33c4-4f7c-8c14-919b4d1df042")
+	)
+	(text "1B4/2B4"
+		(exclude_from_sim no)
+		(at 71.12 166.8272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "47c14db5-1866-4887-83b2-6c232cefeb2c")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 48.26 166.8272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b2b0796-0b2a-41d7-bbab-861910254d6c")
+	)
+	(text "R71,R72 - damping resistors, as LO divider and mixer on diff power rails"
+		(exclude_from_sim no)
+		(at 38.1 149.0472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5524363f-0724-4088-92ba-0abf09d80595")
+	)
+	(text "Switches"
+		(exclude_from_sim no)
+		(at 71.12 159.2072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f4e629a-5091-489c-a667-27e113ddac3b")
+	)
+	(text "could be replaced with jumpers if one feels they are not needed"
+		(exclude_from_sim no)
+		(at 48.26 151.5872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "735822ab-7e80-491e-9df4-560fcf30883f")
+	)
+	(text "${TITLE}"
+		(exclude_from_sim no)
+		(at 175.26 197.3072 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "74c6adce-3b32-456f-8566-fce20be4aa53")
+	)
+	(text "270/90"
+		(exclude_from_sim no)
+		(at 86.36 169.3672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7670540a-0e10-47ae-8071-f8b7b6273e7d")
+	)
+	(text "${REVISION}"
+		(exclude_from_sim no)
+		(at 203.2 202.3872 0)
+		(effects
+			(font
+				(size 1.397 1.397)
+			)
+			(justify left bottom)
+		)
+		(uuid "79ac5191-d4e7-4f84-8bc4-74437ef31586")
+	)
+	(text "2B2/1B2"
+		(exclude_from_sim no)
+		(at 71.12 164.2872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b6664ce-5ccb-4f84-90aa-69fde156b511")
+	)
+	(text "File:"
+		(exclude_from_sim no)
+		(at 172.72 204.9272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c169a59-6092-401e-82c9-a9eaa42a3937")
+	)
+	(text "TX"
+		(exclude_from_sim no)
+		(at 40.64 166.8272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "86414328-2db1-4b5f-ba17-9fd1339e8392")
+	)
+	(text "180/0"
+		(exclude_from_sim no)
+		(at 86.36 161.7472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a9cf43b-1ef2-47ee-8341-094728f09ea0")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 63.5 166.8272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9429d7fa-6a97-4cf5-a6d1-9860d438f040")
+	)
+	(text "8"
+		(exclude_from_sim no)
+		(at 220.98 199.8472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a2c18299-5195-4b0e-aa78-cd585b259638")
+	)
+	(text "TX"
+		(exclude_from_sim no)
+		(at 40.64 161.7472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a2dc1f5a-faa9-4eb2-b3a2-c5e9fd4430d5")
+	)
+	(text "90/270"
+		(exclude_from_sim no)
+		(at 86.36 164.2872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a6ea9b1b-202c-4693-af30-352804678fa4")
+	)
+	(text "1B1/2B1"
+		(exclude_from_sim no)
+		(at 71.12 161.7472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a6eb005e-c1d2-4eea-a08e-30f02a9c630f")
+	)
+	(text "X"
+		(exclude_from_sim no)
+		(at 55.88 171.9072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ab278f67-5e13-4afc-a9ba-1c07b90a00cf")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 63.5 161.7472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad4ef33d-64a2-4cc1-9547-5962ee9589b6")
+	)
+	(text "Sheet"
+		(exclude_from_sim no)
+		(at 212.09 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "af3e8133-d391-4a42-8dc3-cd84151bc6e1")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 55.88 166.8272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "afb4753d-9fa3-4cf1-8435-1d3f106efddb")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 63.5 164.2872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b2292c82-87c0-48f4-9eb4-3f2b047f9bec")
+	)
+	(text "MODE"
+		(exclude_from_sim no)
+		(at 38.1 159.2072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb1dba68-d4b3-4cb4-91ec-46efd6bd3d9d")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 55.88 164.2872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb07617c-6e49-4647-bee8-e580cb32f0c3")
+	)
+	(text "OE"
+		(exclude_from_sim no)
+		(at 48.26 159.2072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ce2e843b-5cf9-41d3-ac11-83bf76ce9787")
+	)
+	(text "QSE bias"
+		(exclude_from_sim no)
+		(at 165.1 149.0472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ce42d9e0-009b-42b1-9733-cff8ff3693ce")
+	)
+	(text "S1"
+		(exclude_from_sim no)
+		(at 55.88 159.2072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d13819af-186f-412c-834d-1c90e51fd094")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 48.26 164.2872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3f3f04a-2092-4d9f-8c8e-53ca7b557e94")
+	)
+	(text "0/180"
+		(exclude_from_sim no)
+		(at 86.36 166.8272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d4fcfac1-90cd-4f8f-b63f-d5cee4503b16")
+	)
+	(text "prevent mixer overload!"
+		(exclude_from_sim no)
+		(at 205.74 72.8472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "db3dc1e6-598a-43c0-aaea-ed266983ae53")
+	)
+	(text "Phases"
+		(exclude_from_sim no)
+		(at 86.36 159.2072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1470e2c-9728-4ff7-9db4-860193b3650e")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 48.26 169.3672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5bebd0e-4622-440d-ba13-132aec283ae8")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 55.88 169.3672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7844a22-c1be-4166-bb19-509c3cf66118")
+	)
+	(text "S0"
+		(exclude_from_sim no)
+		(at 63.5 159.2072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec28da68-de24-41d8-90f5-007a2fc10ef8")
+	)
+	(text "${FILEPATH}"
+		(exclude_from_sim no)
+		(at 177.8 204.9272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed7b725a-0a13-4add-9a9e-d647ef999740")
+	)
+	(text "Date:"
+		(exclude_from_sim no)
+		(at 172.72 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f247cfbc-c136-487b-8e0d-9239a41b8023")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 55.88 161.7472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fd7de760-f3f2-4547-95f7-30ae7d6594f4")
+	)
+	(text "X"
+		(exclude_from_sim no)
+		(at 63.5 171.9072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ffb8af06-5b6e-43be-ad6a-8965feab1be6")
+	)
+	(label "PTT_N5V"
+		(at 101.6 44.9072 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a5e9e4f-fc13-46cf-bad2-61c5974ab4e3")
+	)
+	(label "PTT_N5V"
+		(at 78.74 138.8872 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "27a96eaf-e9c0-4c3d-a2f6-1d9ccc50fdf4")
+	)
+	(label "TX_CLK_N_L"
+		(at 73.66 133.8072 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3f742a2a-90bd-416b-b68f-d736324f7f65")
+	)
+	(label "TX_CLK_P_L"
+		(at 73.66 128.7272 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "953ee34a-8241-494f-a3e8-780dbc491850")
+	)
+	(label "TX_CLK_P_L"
+		(at 175.26 55.0672 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c5d84ec2-642a-4827-859b-8cbe00752013")
+	)
+	(label "TX_CLK_N_L"
+		(at 101.6 49.9872 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8891887-73b0-46fe-b189-95c90f5f37fe")
+	)
+	(hierarchical_label "TX_MIX"
+		(shape output)
+		(at 254 88.0872 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "20f51025-311f-4cd1-946f-bca90ab593e0")
+	)
+	(hierarchical_label "TX_CLK_P"
+		(shape input)
+		(at 55.88 128.7272 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "24bff7dd-c8fc-4ee7-876c-e93d91f40dd2")
+	)
+	(hierarchical_label "TXE_0"
+		(shape input)
+		(at 53.34 47.4472 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "36832490-2f4d-4fe8-b6c2-027b6c0d1f6b")
+	)
+	(hierarchical_label "TX_CLK_N"
+		(shape input)
+		(at 55.88 133.8072 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "41be34a9-163a-4979-b902-75a5e757a32a")
+	)
+	(hierarchical_label "TXE_180"
+		(shape input)
+		(at 53.34 67.7672 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5cd053ec-afb0-48ed-b7c1-2e863eb73b7c")
+	)
+	(hierarchical_label "TXE_270"
+		(shape input)
+		(at 53.34 103.3272 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6a6ea49e-6704-4969-b19a-55a6aac0287e")
+	)
+	(hierarchical_label "PTT_N5V"
+		(shape input)
+		(at 55.88 138.8872 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7774a3f9-91e9-412d-842b-3a61aa4d8387")
+	)
+	(hierarchical_label "TXE_90"
+		(shape input)
+		(at 53.34 85.5472 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b57695c1-e449-48dc-9b33-48f713e2369c")
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_0_RES_0")
+		(at 63.5 65.2272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08a7e4bd-6655-44af-8936-107a000c01cd")
+		(property "Reference" "R64"
+			(at 63.5 72.8472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47"
+			(at 63.5 75.3872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 63.5 65.2272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 65.2272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 63.5 65.2272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.052"
+			(at 60.452 71.3232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 173-8942"
+			(at 60.452 71.3232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00293"
+			(at 60.452 66.7512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7975a761-b771-40f6-8b3b-a44b275697e8")
+		)
+		(pin "1"
+			(uuid "7227279b-aeee-4436-b24f-dc7c857ca912")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "R64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_0_CAP")
+		(at 71.12 88.0872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0de34fe4-d2e7-431b-9ca1-2843fe96b2e7")
+		(property "Reference" "C86"
+			(at 76.2 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "22nF"
+			(at 76.2 92.9132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "CAP_B"
+			(at 71.12 88.0872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 88.0872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 71.12 88.0872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.84"
+			(at 71.12 85.0392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 221-1120"
+			(at 71.12 85.0392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "VOLTAGE" "100V/NPO"
+			(at 76.2 95.7072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 71.12 85.0392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "157d171b-c473-41cf-b10f-1dc363239628")
+		)
+		(pin "2"
+			(uuid "6ecfd519-7aad-49f2-bc32-05095d987b31")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "C86")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 116.84 83.0072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14ccc810-49d2-42cb-b440-3879050895da")
+		(property "Reference" "#PWR?"
+			(at 116.84 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.84 89.3572 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "5325ccc3-086a-4345-99e6-d7769e15d1c0")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_2_RES_0")
+		(at 68.58 136.3472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1862244e-74f9-42b5-845f-a89edc55e439")
+		(property "Reference" "R72"
+			(at 58.42 133.8072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100"
+			(at 68.58 133.8072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 68.58 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 68.58 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 933-2375"
+			(at 60.452 132.7912 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.027"
+			(at 60.452 132.7912 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00301"
+			(at 58.42 131.2672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9f8f072f-7161-45a5-bec4-dd0126cdaf2b")
+		)
+		(pin "1"
+			(uuid "df6829d9-429b-462a-93c0-e42ff6b48b7d")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "R72")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_0_CAP")
+		(at 71.12 105.8672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "18ded92a-4287-455c-88bd-ff5bbfadfa4b")
+		(property "Reference" "C87"
+			(at 76.2 108.1532 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "22nF"
+			(at 76.2 110.6932 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "CAP_B"
+			(at 71.12 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 71.12 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.84"
+			(at 71.12 102.8192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 221-1120"
+			(at 71.12 102.8192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "VOLTAGE" "100V/NPO"
+			(at 76.2 113.4872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 71.12 102.8192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be5f8699-6617-4608-b459-ceafd3a5d1e2")
+		)
+		(pin "2"
+			(uuid "8d7d034d-4e2c-43fb-8b46-84aeefe2db2d")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "C87")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:VCC_5V_BAR")
+		(at 134.62 128.7272 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1981b58a-b292-4321-8431-59a6e34ce725")
+		(property "Reference" "#PWR?"
+			(at 134.62 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC_5V"
+			(at 130.81 128.7272 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "a91b8d7b-459c-42fd-b331-39a8425d63e5")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_0_RES_0")
+		(at 63.5 44.9072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "294cc85b-847e-4e76-b281-f3e014ba8486")
+		(property "Reference" "R63"
+			(at 63.5 52.5272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47"
+			(at 63.5 55.0672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 63.5 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 63.5 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.052"
+			(at 60.452 51.0032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 173-8942"
+			(at 60.452 51.0032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00293"
+			(at 60.452 46.4312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "684e333f-f46a-48a0-a804-0a4a94415716")
+		)
+		(pin "1"
+			(uuid "eb365a4e-e822-40db-9c69-9909217500b7")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "R63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_2_CAP")
+		(at 213.36 52.5272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "41432fd9-fab5-4cc4-b28c-6039497fdbd8")
+		(property "Reference" "C88"
+			(at 213.36 49.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 213.36 52.5272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 213.36 52.5272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 52.5272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 213.36 52.5272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.068"
+			(at 208.28 58.1152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 252-2090"
+			(at 208.28 58.1152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00154"
+			(at 208.28 46.9392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a4eb6a5-a9d0-4a1e-b960-4c7ebe4a8d47")
+		)
+		(pin "2"
+			(uuid "42c8212f-d2e9-44ae-a13f-7390fe7e364e")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "C88")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_3_CAP-POL_0")
+		(at 154.94 131.2672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "49227b15-c93c-4f8b-aa2a-883595f9d41d")
+		(property "Reference" "C90"
+			(at 149.86 133.8072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10uF"
+			(at 149.86 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "1206_Elec_Cap_N"
+			(at 154.94 131.2672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 131.2672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Electrolitic capacitor"
+			(at 154.94 131.2672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.204"
+			(at 152.654 130.7592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 233-3009"
+			(at 152.654 130.7592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00166"
+			(at 152.654 130.7592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ca1d826-c40f-43d0-bc30-0acf61f7b1eb")
+		)
+		(pin "2"
+			(uuid "6160475d-6202-4d5a-8cd7-16a00b831d39")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "C90")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_0_CAP")
+		(at 71.12 70.3072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4a5c67b2-7324-4b3d-abd4-77db6e0b2c49")
+		(property "Reference" "C85"
+			(at 76.2 72.5932 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "22nF"
+			(at 76.2 75.1332 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "CAP_B"
+			(at 71.12 70.3072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 70.3072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 71.12 70.3072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.84"
+			(at 71.12 67.2592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 221-1120"
+			(at 71.12 67.2592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "VOLTAGE" "100V/NPO"
+			(at 76.2 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 71.12 67.2592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6217b74b-64b5-40e8-a094-e5572324d982")
+		)
+		(pin "2"
+			(uuid "10461acd-bc36-4d25-86ba-964ba36f77dd")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "C85")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 210.82 55.0672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4c5e2eb3-6f3d-4ce5-b1fc-dc0fc6d0a8f5")
+		(property "Reference" "#PWR?"
+			(at 210.82 55.0672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 210.82 61.4172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 55.0672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 55.0672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 55.0672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "84bec0cd-43a1-447b-88ac-154000ba6a58")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 147.32 138.8872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a3a4015-b469-4c57-966d-2987fbcf3ca9")
+		(property "Reference" "#PWR?"
+			(at 147.32 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 147.32 145.2372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 147.32 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "a7ab4e14-23b6-4248-b5b1-b6f25ceb9548")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_0_TDK-NLV25T")
+		(at 160.02 126.1872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73ac34c8-38ef-4970-87d1-48244e605b22")
+		(property "Reference" "RFC4"
+			(at 160.02 127.4572 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47uH"
+			(at 160.02 132.0292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 160.02 126.1872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 126.1872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "INDUCTOR, SIGNAL LINE, 4.7UH, 1005"
+			(at 160.02 126.1872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 166-9895"
+			(at 156.972 134.5692 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.166"
+			(at 156.972 134.5692 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ff73c59-ca51-4ae6-8418-302ecb29f824")
+		)
+		(pin "2"
+			(uuid "9813f425-19b6-4fb6-a7ee-ad1bd7ef20b1")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "RFC4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 223.52 105.8672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "75259403-5000-4298-af12-d3b8ddc7d6fc")
+		(property "Reference" "#PWR?"
+			(at 223.52 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 223.52 112.2172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 223.52 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "d2e0155c-6fcd-4629-96a5-4480e9b2e05b")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_0_RES_0")
+		(at 195.58 77.9272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7a9f2090-0122-4132-82be-93f2645784e0")
+		(property "Reference" "R67"
+			(at 195.58 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47"
+			(at 195.58 88.0872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 195.58 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 195.58 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.052"
+			(at 192.532 84.0232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 173-8942"
+			(at 192.532 84.0232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00293"
+			(at 192.532 79.4512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0d2ef88d-b19a-43c0-9d7e-cff061cbd06f")
+		)
+		(pin "1"
+			(uuid "53b0d341-5199-4024-b721-9760c35efea3")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "R67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_2_CX2074NL")
+		(at 218.44 113.4872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7cbdb3bb-dde5-4df7-885d-e71c4d3097a9")
+		(property "Reference" "T4"
+			(at 210.566 79.7052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "CX2074NL"
+			(at 210.566 114.2492 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "SOP5_NEW1"
+			(at 218.44 113.4872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 113.4872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Wideband RF Transformer 1:4"
+			(at 218.44 113.4872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "DK 553-1655-ND"
+			(at 207.772 79.7052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "2.01"
+			(at 207.772 79.7052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 207.772 77.1652 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "d02baa54-91ef-43a7-9b67-a455d1d8659e")
+		)
+		(pin "4"
+			(uuid "2c70d7b9-bbcc-4ebc-a0fc-6f29e20373a5")
+		)
+		(pin "1"
+			(uuid "d0617a1f-d241-48bb-aa8f-ec60467790d5")
+		)
+		(pin "2"
+			(uuid "67030148-9177-43e4-8432-024525ec596f")
+		)
+		(pin "3"
+			(uuid "715aaa5e-2d7f-403e-b1ad-87c101ed59d4")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "T4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 73.66 75.3872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f96b727-d387-44f2-a3d1-b4c1920b47ba")
+		(property "Reference" "#PWR?"
+			(at 73.66 75.3872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 73.66 81.7372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 75.3872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 75.3872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 75.3872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "b8cf6be2-1993-47ac-9f60-55f1e8004ddc")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_2_CAP")
+		(at 149.86 136.3472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "91b9d069-f3b9-42c9-8fda-ce53a0d6bd11")
+		(property "Reference" "C89"
+			(at 142.24 133.8072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 139.7 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 149.86 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 149.86 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.068"
+			(at 144.78 141.9352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 252-2090"
+			(at 144.78 141.9352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00154"
+			(at 137.16 130.7592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57524975-374d-46d4-b0b4-813c4e6cf8ba")
+		)
+		(pin "2"
+			(uuid "e7930b6b-5be4-4fd7-a00b-e586d4c055c0")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "C89")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 73.66 93.1672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "98750196-963b-472d-a88e-8d8e8896b964")
+		(property "Reference" "#PWR?"
+			(at 73.66 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 73.66 99.5172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "1919db54-8c2c-4181-975d-e770cc459c55")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_0_RES_0")
+		(at 195.58 108.4072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9b36f9ca-44a7-4ed2-bbaa-0bf0bbe911a8")
+		(property "Reference" "R68"
+			(at 195.58 116.0272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47"
+			(at 195.58 118.5672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 195.58 108.4072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 108.4072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 195.58 108.4072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.052"
+			(at 192.532 114.5032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 173-8942"
+			(at 192.532 114.5032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00293"
+			(at 192.532 109.9312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9f083ee0-e0ad-4d2c-9d83-59d4ae822d10")
+		)
+		(pin "1"
+			(uuid "4daefa11-db54-49dc-bfaf-3c35f006f2d8")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "R68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 187.96 138.8872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a84b051a-6be2-4233-a9c8-992b6cf1af98")
+		(property "Reference" "#PWR?"
+			(at 187.96 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 145.2372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "e811d2f9-cb57-4cc0-9c6b-e61726e28472")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 154.94 138.8872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a9faffd6-0ed7-4471-abfa-532f2b8b3506")
+		(property "Reference" "#PWR?"
+			(at 154.94 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 154.94 145.2372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "23e59d93-d66b-4a52-a0f1-10ab89141508")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_0_SN74CBT3253C")
+		(at 142.24 60.1472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b9c8c4b7-bdb2-4091-a03d-272bfe0f7066")
+		(property "Reference" "U17"
+			(at 124.46 42.3672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "SN74CBT3253C"
+			(at 124.46 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "SO-16-Pro"
+			(at 142.24 60.1472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 60.1472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 4:1 Demux/Analog Switch"
+			(at 142.24 60.1472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 175-0447"
+			(at 116.332 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.69"
+			(at 116.332 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 116.332 39.8272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "b4dab847-8773-4e6d-aea2-ee8c0f6d6340")
+		)
+		(pin "5"
+			(uuid "db7c2bd1-2129-4d98-b978-e78b4cc35ebf")
+		)
+		(pin "1"
+			(uuid "413ebc76-7aff-45e6-a078-26d490313b9e")
+		)
+		(pin "2"
+			(uuid "9c31d3c8-6352-468d-ae1c-0c76b3e64503")
+		)
+		(pin "3"
+			(uuid "45494317-29ef-448e-8d91-01fc65deae51")
+		)
+		(pin "4"
+			(uuid "24e197c8-caa2-44cc-af28-e24df0013203")
+		)
+		(pin "8"
+			(uuid "610533e5-afc1-4324-92a9-3d6c48f1bbde")
+		)
+		(pin "7"
+			(uuid "2f57afeb-d9e2-4fa6-83d1-df53c68244e5")
+		)
+		(pin "9"
+			(uuid "e83753b9-cd76-40d8-a3bf-c5d6faaff197")
+		)
+		(pin "10"
+			(uuid "0215a657-27b1-4ee8-be0a-6492ecc04627")
+		)
+		(pin "11"
+			(uuid "dca533b3-6790-46b1-a988-c95d4932beb7")
+		)
+		(pin "12"
+			(uuid "ab3f6023-2686-4012-914f-98633519288c")
+		)
+		(pin "13"
+			(uuid "141a9425-6beb-40f2-af4e-ab9b93ffac45")
+		)
+		(pin "14"
+			(uuid "0c0d348b-715a-4a55-bed0-7781579eef6e")
+		)
+		(pin "15"
+			(uuid "8fca3d1b-958d-49c8-afb7-969ea060117c")
+		)
+		(pin "16"
+			(uuid "234de759-4922-45b6-aaa9-734e5164779a")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "U17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_0_RES_0")
+		(at 63.5 100.7872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba3ccf4d-b2f0-48b6-83d0-8221616a8c43")
+		(property "Reference" "R66"
+			(at 63.5 108.4072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47"
+			(at 63.5 110.9472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 63.5 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 63.5 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.052"
+			(at 60.452 106.8832 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 173-8942"
+			(at 60.452 106.8832 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00293"
+			(at 60.452 102.3112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7aa9eaf9-d096-4e56-9d18-8a6b50e4698c")
+		)
+		(pin "1"
+			(uuid "01b73e05-441b-4768-aaad-4f77e26173a1")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "R66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 73.66 110.9472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb45d9e2-33a1-4324-a7ce-4abdc73e7b7a")
+		(property "Reference" "#PWR?"
+			(at 73.66 110.9472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 73.66 117.2972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 110.9472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 110.9472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 110.9472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "1217b3cf-c86a-4e4b-b0d2-cc15167808c1")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_2_RES_0")
+		(at 68.58 131.2672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c77f1053-3fd0-46b1-83bd-a4b57b5ddda6")
+		(property "Reference" "R71"
+			(at 58.42 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100"
+			(at 68.58 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 68.58 131.2672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 131.2672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 68.58 131.2672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 933-2375"
+			(at 60.452 127.7112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.027"
+			(at 60.452 127.7112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00301"
+			(at 58.42 126.1872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e50cda77-9de2-4605-a1f9-2f2e6882cce8")
+		)
+		(pin "1"
+			(uuid "aac3d8dc-4542-4bc7-992b-01e5b678f773")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "R71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_2_RES_0")
+		(at 180.34 131.2672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c8d81286-0274-46c6-88ec-8aff1ddad822")
+		(property "Reference" "R70"
+			(at 175.26 127.7112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 175.26 132.2832 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 180.34 131.2672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 131.2672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 180.34 131.2672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 188-7289"
+			(at 172.212 127.7112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.046"
+			(at 172.212 127.7112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00333"
+			(at 172.212 125.1712 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "097baca5-5514-4243-a140-c1fccaf8a835")
+		)
+		(pin "1"
+			(uuid "8e2789dd-dc37-40d9-935b-2b0900849477")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "R70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_0_RES_0")
+		(at 63.5 83.0072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca658e55-111c-4bc0-8c8a-aee538962a1f")
+		(property "Reference" "R65"
+			(at 63.5 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47"
+			(at 63.5 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 63.5 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 63.5 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.052"
+			(at 60.452 89.1032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 173-8942"
+			(at 60.452 89.1032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00293"
+			(at 60.452 84.5312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d5751a6d-1fcc-4316-b5fa-4d9572dddbd4")
+		)
+		(pin "1"
+			(uuid "63e9a249-1eb0-48f6-b97a-96975b3aa566")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "R65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_1_RES_0")
+		(at 185.42 136.3472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d6603234-002a-42c8-b700-05cd0b607071")
+		(property "Reference" "R69"
+			(at 188.976 133.8072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 188.976 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 185.42 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 185.42 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 188-7289"
+			(at 186.944 128.2192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.046"
+			(at 186.944 128.2192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00333"
+			(at 186.944 128.2192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0fa4383d-c6e9-4c0e-a70b-7e056e7cfea0")
+		)
+		(pin "1"
+			(uuid "f60c461c-d22c-42ba-b1c0-dfa4799fc05e")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "R69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 73.66 55.0672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9924eaa-19cd-4775-b452-c7e756824fd7")
+		(property "Reference" "#PWR?"
+			(at 73.66 55.0672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 73.66 61.4172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 55.0672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 55.0672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 55.0672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "0623f5e6-5e72-4ad3-be71-3742478183fb")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:VCC_5V_BAR")
+		(at 226.06 44.9072 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4081ab4-268e-4a6b-a22c-172bfb65e95f")
+		(property "Reference" "#PWR?"
+			(at 226.06 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC_5V"
+			(at 229.87 44.9072 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 226.06 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "471c8210-42bb-44cc-a9e0-163fe306b6db")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Mixer_0_CAP")
+		(at 71.12 49.9872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f761dbe8-3eec-4827-b11d-d0dbcd94cfa8")
+		(property "Reference" "C84"
+			(at 76.2 52.2732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "22nF"
+			(at 76.2 54.8132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "CAP_B"
+			(at 71.12 49.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 49.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 71.12 49.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.84"
+			(at 71.12 46.9392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 221-1120"
+			(at 71.12 46.9392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "VOLTAGE" "100V/NPO"
+			(at 76.2 57.6072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 71.12 46.9392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd7c098e-7183-41b8-a973-326f8a349a1a")
+		)
+		(pin "2"
+			(uuid "06d5ba1b-8b2b-44de-b29b-1ab9cb3b1ec4")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/df3803f4-3df0-4777-85ef-72be945587cf"
+					(reference "C84")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

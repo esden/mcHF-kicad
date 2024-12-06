@@ -1,0 +1,4117 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "ddcdc573-3ccc-4139-8a28-b729cab9cc04")
+	(paper "A4")
+	(title_block
+		(title "mcHF QRP Transceiver RF board")
+		(rev "0.6.3")
+		(company "M0NKA")
+	)
+	(lib_symbols
+		(symbol "rf_main-altium-import:GND_POWER_GROUND"
+			(power)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name 'GND'"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_POWER_GROUND_0_0"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -3.302) (xy 1.778 -3.302)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -4.064) (xy 1.016 -4.064)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -4.826) (xy 0.254 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:SWR/Power meter_0_RES_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SWR/Power meter_0_RES_0_1_0"
+				(rectangle
+					(start 5.08 -1.524)
+					(end 0 -3.556)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:SWR/Power meter_0_SWR_TR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SWR Bridge transformer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*SWR_TR{space}_new*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SWR/Power meter_0_SWR_TR_1_0"
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 4.572) (xy 17.78 4.572)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 5.588) (xy 17.78 5.588)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 7.62) (xy 8.89 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 11.43 7.62) (xy 17.78 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 15.24 2.54) (xy 17.78 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 3.556)
+					(radius 0.508)
+					(stroke
+						(width -0.0001)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 4.318 6.604)
+					(radius 0.508)
+					(stroke
+						(width -0.0001)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 7.62 2.54)
+					(mid 6.35 3.81)
+					(end 5.08 2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 8.89 7.62)
+					(mid 10.16 6.35)
+					(end 11.43 7.62)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 10.16 2.54)
+					(mid 8.89 3.81)
+					(end 7.62 2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 12.7 2.54)
+					(mid 11.43 3.81)
+					(end 10.16 2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 15.24 2.54)
+					(mid 13.97 3.81)
+					(end 12.7 2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 90)
+					(length 2.54)
+					(name "Pri+"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 0 90)
+					(length 2.54)
+					(name "Pri-"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 10.16 270)
+					(length 2.54)
+					(name "Sec+"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 10.16 270)
+					(length 2.54)
+					(name "Sec-"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 10.16 270)
+					(length 2.54)
+					(name "Shield"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:SWR/Power meter_0_TDK-NLV25T"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "INDUCTOR, SIGNAL LINE, 4.7UH, 1005"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SWR/Power meter_0_TDK-NLV25T_1_0"
+				(arc
+					(start 1.27 -1.27)
+					(mid 0.372 -1.642)
+					(end 0 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 -2.54)
+					(mid 2.168 -1.642)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.81 -1.27)
+					(mid 2.912 -1.642)
+					(end 2.54 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 5.08 -2.54)
+					(mid 4.708 -1.642)
+					(end 3.81 -1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 6.35 -1.27)
+					(mid 5.452 -1.642)
+					(end 5.08 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 7.62 -2.54)
+					(mid 7.248 -1.642)
+					(end 6.35 -1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 8.89 -1.27)
+					(mid 7.992 -1.642)
+					(end 7.62 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 10.16 -2.54)
+					(mid 9.788 -1.642)
+					(end 8.89 -1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:SWR/Power meter_1_16/30HB"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "NEON LAMP, WIRE ENDED, T2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*SIP2*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SWR/Power meter_1_16/30HB_1_0"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 6.35) (xy 2.54 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.556 1.27) (xy 1.524 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.556 6.35) (xy 1.524 6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.508 3.81)
+					(radius 0.762)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 2.032)
+					(radius 0.762)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 3.81)
+					(radius 3.81)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 5.588)
+					(radius 0.762)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 12.7 270)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:SWR/Power meter_1_CAP"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SWR/Power meter_1_CAP_1_0"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.254) (xy 0.762 4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 0.254) (xy 1.778 4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:SWR/Power meter_2_SWR_TR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SWR Bridge transformer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*SWR_TR{space}_new*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SWR/Power meter_2_SWR_TR_1_0"
+				(arc
+					(start -15.24 -2.54)
+					(mid -13.97 -3.81)
+					(end -12.7 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -12.7 -2.54)
+					(mid -11.43 -3.81)
+					(end -10.16 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -10.16 -2.54)
+					(mid -8.89 -3.81)
+					(end -7.62 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -8.89 -7.62)
+					(mid -10.16 -6.35)
+					(end -11.43 -7.62)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -7.62 -2.54)
+					(mid -6.35 -3.81)
+					(end -5.08 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -4.318 -6.604)
+					(radius 0.508)
+					(stroke
+						(width -0.0001)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -4.318 -3.556)
+					(radius 0.508)
+					(stroke
+						(width -0.0001)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -15.24 -2.54) (xy -17.78 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -11.43 -7.62) (xy -17.78 -7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -7.62) (xy -8.89 -7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -5.588) (xy -17.78 -5.588)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -4.572) (xy -17.78 -4.572)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -5.08 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 0 270)
+					(length 2.54)
+					(name "Pri+"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 0 270)
+					(length 2.54)
+					(name "Pri-"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "Sec+"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 -10.16 90)
+					(length 2.54)
+					(name "Sec-"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -10.16 90)
+					(length 2.54)
+					(name "Shield"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:SWR/Power meter_3_PMEG6010CEH"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "DIODE, SCHOTTKY, 1A, 60V, SOD-123F"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*SOD87*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SWR/Power meter_3_PMEG6010CEH_1_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.54 -7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy -2.54 -5.08) (xy -5.08 -2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width -0.0001)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -5.08) (xy -5.08 -5.334) (xy 0 -5.334) (xy 0 -5.08) (xy -5.08 -5.08)
+					)
+					(stroke
+						(width -0.0001)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at -2.54 5.08 270)
+					(length 5.08)
+					(name "A"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -12.7 90)
+					(length 5.08)
+					(name "K"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 157.48 121.1072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "047546fc-30d3-4f6d-939d-75ebe6d3c511")
+	)
+	(junction
+		(at 142.24 103.3272)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b98de98-6d0e-4845-a5db-56dc9732d257")
+	)
+	(junction
+		(at 142.24 131.2672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d46c5b5-9139-4e9a-9258-8284f7ebde4a")
+	)
+	(junction
+		(at 124.46 72.8472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31b5e480-0da2-4e4a-8594-c3e7b7b538be")
+	)
+	(junction
+		(at 157.48 103.3272)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e2fc93f-9fb5-4057-9084-3b50e986525a")
+	)
+	(junction
+		(at 119.38 121.1072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9433ce21-2232-4868-8e07-7a60b2ce3c12")
+	)
+	(junction
+		(at 157.48 131.2672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "afd56948-4db6-4b8f-b11f-6b7801439d14")
+	)
+	(junction
+		(at 119.38 103.3272)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8776904-c5f9-4a7a-a9ab-693b098cdf5f")
+	)
+	(junction
+		(at 157.48 98.2472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba788c80-32a2-48e7-974f-11db5b45110f")
+	)
+	(junction
+		(at 142.24 121.1072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0cb97fc-be1a-47a5-ba5a-6bb3cfaefe72")
+	)
+	(junction
+		(at 220.98 72.8472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e31714af-b229-46f4-9994-43c8755beefa")
+	)
+	(junction
+		(at 142.24 83.0072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e492b720-e1dd-4fb0-9083-2071771ecef6")
+	)
+	(junction
+		(at 180.34 121.1072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec7486f1-5826-4b94-9513-9552e1eb7b13")
+	)
+	(junction
+		(at 180.34 103.3272)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed6008c9-8887-4dbb-8287-abdb7f73e849")
+	)
+	(wire
+		(pts
+			(xy 165.1 131.2672) (xy 157.48 131.2672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01d4275a-2aa7-453d-bf7b-5d90103f2ec8")
+	)
+	(wire
+		(pts
+			(xy 180.34 121.1072) (xy 180.34 103.3272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09a56c7f-0d32-4ab2-8643-209427750508")
+	)
+	(wire
+		(pts
+			(xy 157.48 88.0872) (xy 157.48 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fb9d318-d7c3-4814-96bd-c425c3687714")
+	)
+	(wire
+		(pts
+			(xy 142.24 131.2672) (xy 142.24 146.5072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1636ec44-618a-4626-9d38-8559c56fceec")
+	)
+	(wire
+		(pts
+			(xy 165.1 121.1072) (xy 157.48 121.1072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18262969-da24-45fc-befc-26fe1b8f582f")
+	)
+	(wire
+		(pts
+			(xy 134.62 131.2672) (xy 142.24 131.2672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19f56c8c-1620-40b1-b2dd-48f5903a0c1e")
+	)
+	(wire
+		(pts
+			(xy 220.98 72.8472) (xy 269.24 72.8472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21271b66-a2cc-4047-955d-dfde44b457c4")
+	)
+	(wire
+		(pts
+			(xy 157.48 98.2472) (xy 157.48 103.3272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23e1070e-7a5c-4440-96e4-608e43c883b2")
+	)
+	(wire
+		(pts
+			(xy 33.02 151.5872) (xy 139.7 151.5872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26465e08-9c6d-40fc-9e8e-c27f7b7e6759")
+	)
+	(wire
+		(pts
+			(xy 180.34 103.3272) (xy 175.26 103.3272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "297cd068-5777-4d27-98a5-fd2b5f9c755a")
+	)
+	(wire
+		(pts
+			(xy 157.48 85.5472) (xy 142.24 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ae40e92-280d-4572-8053-e694e652d9aa")
+	)
+	(polyline
+		(pts
+			(xy 261.62 202.3872) (xy 170.18 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "4372f538-b525-4557-b10a-488f4e0f22cf")
+	)
+	(polyline
+		(pts
+			(xy 287.02 192.2272) (xy 170.18 192.2272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "4e65f599-947e-429d-9108-3d4a628d960e")
+	)
+	(polyline
+		(pts
+			(xy 170.18 192.2272) (xy 170.18 204.9272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "530ea705-d253-4e8e-b2c0-ee93766153bc")
+	)
+	(polyline
+		(pts
+			(xy 10.16 141.4272) (xy 10.16 156.6672)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "58bf97f8-d024-4395-a137-cd466eb7e6e2")
+	)
+	(wire
+		(pts
+			(xy 124.46 88.0872) (xy 142.24 88.0872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bcc5b98-bf39-479e-a192-02d46e4042e1")
+	)
+	(wire
+		(pts
+			(xy 142.24 83.0072) (xy 137.16 83.0072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e479b86-1bef-4411-8d6c-565e09225f23")
+	)
+	(wire
+		(pts
+			(xy 119.38 103.3272) (xy 119.38 121.1072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fe4553c-f778-4ca7-9db8-16072de5cd90")
+	)
+	(wire
+		(pts
+			(xy 157.48 103.3272) (xy 165.1 103.3272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "624ada1a-3eee-4266-84cf-c601984aac48")
+	)
+	(wire
+		(pts
+			(xy 157.48 131.2672) (xy 157.48 151.5872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a47b11a-9fbf-4404-a3a3-9d579fbd0375")
+	)
+	(wire
+		(pts
+			(xy 142.24 121.1072) (xy 142.24 131.2672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6eb40758-98ac-41a0-9619-262b59ec2117")
+	)
+	(polyline
+		(pts
+			(xy 261.62 202.3872) (xy 287.02 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "769c7add-9d73-42f6-9f0a-5489fffc338a")
+	)
+	(wire
+		(pts
+			(xy 162.56 83.0072) (xy 162.56 98.2472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76a2ebdc-8381-40f2-bcff-25e2fee24e5b")
+	)
+	(polyline
+		(pts
+			(xy 228.6 192.2272) (xy 228.6 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "7af85f53-d84d-4115-a2c0-ac4bab0d6512")
+	)
+	(wire
+		(pts
+			(xy 172.72 121.1072) (xy 180.34 121.1072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "818d9c52-9806-4b5a-9954-3316a475a74f")
+	)
+	(wire
+		(pts
+			(xy 33.02 146.5072) (xy 119.38 146.5072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89aaaf6d-c51b-4ead-b330-a18797abab2a")
+	)
+	(polyline
+		(pts
+			(xy 210.82 199.8472) (xy 210.82 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "92cd6238-9568-4194-bab2-54ed330832c7")
+	)
+	(wire
+		(pts
+			(xy 157.48 151.5872) (xy 154.94 151.5872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9db12981-bfee-4d8e-b609-1a92b5e326b3")
+	)
+	(polyline
+		(pts
+			(xy 43.18 156.6672) (xy 43.18 141.4272)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "9e405caa-c609-4ff5-8e78-cc6e99beeeba")
+	)
+	(wire
+		(pts
+			(xy 142.24 146.5072) (xy 134.62 146.5072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3f05867-3525-4c89-af1a-68979b0a6e46")
+	)
+	(wire
+		(pts
+			(xy 124.46 72.8472) (xy 142.24 72.8472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa0ce66c-e168-4c07-8a81-60da7979b45a")
+	)
+	(polyline
+		(pts
+			(xy 170.18 199.8472) (xy 228.6 199.8472)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "b0015deb-cd3f-4337-a288-a30acbd5c510")
+	)
+	(wire
+		(pts
+			(xy 162.56 98.2472) (xy 157.48 98.2472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1f48e0e-13ae-4a14-8c4f-5433c40d3496")
+	)
+	(wire
+		(pts
+			(xy 33.02 72.8472) (xy 124.46 72.8472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5139f78-77da-4afd-8dc3-6f2433db4b63")
+	)
+	(wire
+		(pts
+			(xy 127 121.1072) (xy 119.38 121.1072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1e248f6-c53b-4b2e-b1a5-97b9c219c1ae")
+	)
+	(wire
+		(pts
+			(xy 119.38 121.1072) (xy 119.38 131.2672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c368913b-c970-4e08-8a59-1e8d4f5be60b")
+	)
+	(wire
+		(pts
+			(xy 157.48 83.0072) (xy 162.56 83.0072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4075801-375c-4bbc-9e99-a8b71aabc923")
+	)
+	(polyline
+		(pts
+			(xy 287.02 202.3872) (xy 287.02 192.2272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "c6888a8a-7006-4493-a6ec-276621d89ad8")
+	)
+	(wire
+		(pts
+			(xy 142.24 85.5472) (xy 142.24 83.0072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccf17e97-545e-43d2-8098-9304c7db2ff1")
+	)
+	(polyline
+		(pts
+			(xy 10.16 156.6672) (xy 43.18 156.6672)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "d28e6898-9903-4177-889a-e01f7e503aa7")
+	)
+	(wire
+		(pts
+			(xy 124.46 72.8472) (xy 124.46 88.0872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daab1b36-38cc-4d2d-a941-09ca5167eb07")
+	)
+	(wire
+		(pts
+			(xy 124.46 103.3272) (xy 119.38 103.3272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dde835e5-5067-4af4-a30e-b2997f5345b7")
+	)
+	(polyline
+		(pts
+			(xy 43.18 141.4272) (xy 10.16 141.4272)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "e4389651-2cbe-4b7e-a3f7-b23e99ad6a1a")
+	)
+	(wire
+		(pts
+			(xy 157.48 121.1072) (xy 157.48 131.2672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5aae87a-c943-4b7b-8bf2-2e2b6c6343be")
+	)
+	(wire
+		(pts
+			(xy 119.38 131.2672) (xy 124.46 131.2672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea2c34cb-ad43-47c3-a1ad-73448bde7767")
+	)
+	(wire
+		(pts
+			(xy 157.48 72.8472) (xy 220.98 72.8472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec6520bd-9adf-4605-b801-b7c04a8da118")
+	)
+	(polyline
+		(pts
+			(xy 269.24 192.2272) (xy 269.24 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "ecfc288f-c9c5-4285-a182-d6222bab419c")
+	)
+	(wire
+		(pts
+			(xy 134.62 103.3272) (xy 142.24 103.3272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9482a8f-b2f0-406a-bae3-339004196f70")
+	)
+	(wire
+		(pts
+			(xy 142.24 103.3272) (xy 142.24 98.2472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc658ed5-39cd-4f5d-9602-9a51ac7354f1")
+	)
+	(wire
+		(pts
+			(xy 180.34 131.2672) (xy 180.34 121.1072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe719f98-0d3c-4d9e-8fc6-98f58a66525b")
+	)
+	(wire
+		(pts
+			(xy 134.62 121.1072) (xy 142.24 121.1072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feaffdf1-0502-4740-a521-351ce9c8d13c")
+	)
+	(wire
+		(pts
+			(xy 175.26 131.2672) (xy 180.34 131.2672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff5a36fa-5bd5-42ee-b36b-aaaf5052889c")
+	)
+	(text "${COMPANY}"
+		(exclude_from_sim no)
+		(at 274.32 199.8472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "00ff449d-b879-4028-bb1c-74c8ed5916c9")
+	)
+	(text "Revision:"
+		(exclude_from_sim no)
+		(at 193.04 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "114a6cc3-3380-4a2f-9ace-f39c84d01aa3")
+	)
+	(text "Forward/Return"
+		(exclude_from_sim no)
+		(at 27.94 156.6672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "14dc1fdf-8fed-4ebe-acfc-5dcc6cd8a1c3")
+	)
+	(text "if not planning to fly kite antennas"
+		(exclude_from_sim no)
+		(at 236.22 83.0072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "42729704-0a4e-4dbf-b4bf-390b8b06fc3a")
+	)
+	(text "1T with coax, check mod docs"
+		(exclude_from_sim no)
+		(at 165.1 83.0072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "47ae7193-ab2b-4e83-9fd0-1db9e037290f")
+	)
+	(text "${AUTHOR}"
+		(exclude_from_sim no)
+		(at 271.78 197.3072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "481b3f16-9754-45af-a52d-a6f4dfe3b81a")
+	)
+	(text "of"
+		(exclude_from_sim no)
+		(at 223.52 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "490e1381-db43-4193-8085-623f4ed1be25")
+	)
+	(text "${FILEPATH}"
+		(exclude_from_sim no)
+		(at 177.8 204.9272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "51b4be84-09dd-4343-8ae8-f9c3b11a14c1")
+	)
+	(text "0.45mm wire"
+		(exclude_from_sim no)
+		(at 127 95.7072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "5c1ec8c3-3b77-4771-921f-56207e339354")
+	)
+	(text "${REVISION}"
+		(exclude_from_sim no)
+		(at 203.2 202.3872 0)
+		(effects
+			(font
+				(size 1.397 1.397)
+			)
+			(justify left bottom)
+		)
+		(uuid "5dc696e7-0b15-438a-889a-9f841eb25758")
+	)
+	(text "${TITLE}"
+		(exclude_from_sim no)
+		(at 175.26 197.3072 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "62ad2309-4a72-4c13-b2c1-4879416bfb29")
+	)
+	(text "0.45mm wire"
+		(exclude_from_sim no)
+		(at 165.1 80.4672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "658448c7-d9a2-4938-b9d0-419da6bd6e63")
+	)
+	(text "File:"
+		(exclude_from_sim no)
+		(at 172.72 204.9272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "987929cd-439e-49ca-b71d-ab138b3b30c8")
+	)
+	(text "Date:"
+		(exclude_from_sim no)
+		(at 172.72 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a4c39278-3cf7-483a-bda1-a5fe905b5332")
+	)
+	(text "static protection, could be skipped"
+		(exclude_from_sim no)
+		(at 236.22 80.4672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ab918306-2dc3-47e2-b643-a108ec7aefa8")
+	)
+	(text "1T with coax, check mod docs"
+		(exclude_from_sim no)
+		(at 111.76 98.2472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b72a519d-78ef-4479-b234-375f85d4a195")
+	)
+	(text "${CURRENT_DATE}"
+		(exclude_from_sim no)
+		(at 180.34 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c3eba166-79ef-4818-9e19-b01f3bad7fe1")
+	)
+	(text "12"
+		(exclude_from_sim no)
+		(at 219.202 199.8472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d81319bc-2fca-41cd-ac68-63b80e1ef46b")
+	)
+	(text "rated for 90V, suitable for upto 8-10W"
+		(exclude_from_sim no)
+		(at 236.22 85.5472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e78b6e4e-548e-432f-83d4-d46cf1ddac37")
+	)
+	(text "to LPFs"
+		(exclude_from_sim no)
+		(at 50.8 72.8472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e8dd7a9a-af51-4b38-be78-64ced3ad35e8")
+	)
+	(text "${##}"
+		(exclude_from_sim no)
+		(at 226.06 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f158c599-2b30-4145-a7f3-352cfe8fd6b7")
+	)
+	(text "Sheet"
+		(exclude_from_sim no)
+		(at 212.09 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f93985f6-47ff-4cb5-94d2-5e20d3237e55")
+	)
+	(text "SWR/PWR Meter"
+		(exclude_from_sim no)
+		(at 238.252 199.5932 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc20cf89-f538-4313-9d1b-4da4c7497aa8")
+	)
+	(hierarchical_label "LPF_OUT"
+		(shape input)
+		(at 33.02 72.8472 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "12dc2356-80b1-4f87-ae5c-d4af27ff74cd")
+	)
+	(hierarchical_label "PWR_FWD"
+		(shape output)
+		(at 33.02 146.5072 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "27471547-dc87-41e9-84b9-7063ad251d2d")
+	)
+	(hierarchical_label "PWR_RET"
+		(shape output)
+		(at 33.02 151.5872 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bc97a2c0-edae-40b7-b7c4-605dd972deb8")
+	)
+	(hierarchical_label "ANT"
+		(shape output)
+		(at 269.24 72.8472 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dfae315f-b536-40f8-9f22-1f0c4ee63d69")
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 119.38 103.3272 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08c8ba63-3e78-4b33-90ad-41fd8d2b9011")
+		(property "Reference" "#PWR?"
+			(at 119.38 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.03 103.3272 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "8a30115c-4950-4b4f-9b1f-301bf1f0559f")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 180.34 103.3272 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "150b3746-6ddd-4d33-96c7-3a2fec20acde")
+		(property "Reference" "#PWR?"
+			(at 180.34 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.69 103.3272 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 180.34 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "d2480afd-e590-4bcb-baf7-b78cbf001a65")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 220.98 90.6272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "25b5f257-83fb-45f3-9feb-2fa300246f08")
+		(property "Reference" "#PWR?"
+			(at 220.98 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 220.98 96.9772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "ce8d7995-4bdc-40ee-9389-9ade757da3b3")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:SWR/Power meter_1_CAP")
+		(at 129.54 123.6472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2820413e-b42c-4254-9c8d-0f81abf91b02")
+		(property "Reference" "C82"
+			(at 132.08 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 132.08 126.1872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 129.54 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 129.54 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.115"
+			(at 126.492 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 184-5751"
+			(at 126.492 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00103"
+			(at 126.492 118.5672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5950542-41bd-40b2-9b84-14eed1284c22")
+		)
+		(pin "2"
+			(uuid "f3325084-987b-4384-88e7-c4c7fff454d8")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "C82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:SWR/Power meter_3_PMEG6010CEH")
+		(at 144.78 108.4072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "288ea86e-2e12-4241-9598-11fe5061b107")
+		(property "Reference" "D5"
+			(at 121.92 110.9472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PMEG6010CEH"
+			(at 121.92 113.4872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "SOD87"
+			(at 144.78 108.4072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 108.4072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "DIODE, SCHOTTKY, 1A, 60V, SOD-123F"
+			(at 144.78 108.4072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 151-0694"
+			(at 139.446 102.8192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.085"
+			(at 139.446 102.8192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCD-00034"
+			(at 121.92 102.8192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c11c6fa2-5717-46e3-845c-6de9be41df68")
+		)
+		(pin "2"
+			(uuid "d4bc1bc1-9782-4406-8fe9-1e97ec3fc5ff")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 137.16 83.0072 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31bdae24-9ad6-4f9c-a80f-5431cf8a4836")
+		(property "Reference" "#PWR?"
+			(at 137.16 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 130.81 83.0072 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "b6172edb-2ee1-4dd6-8be5-78a69970fd54")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:SWR/Power meter_0_RES_0")
+		(at 127 100.7872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55cbcf5e-6c3d-43db-bdb8-e4411d7b6fbc")
+		(property "Reference" "R57"
+			(at 127 108.4072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47"
+			(at 132.08 108.4072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 127 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 127 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.052"
+			(at 123.952 106.8832 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 173-8942"
+			(at 123.952 106.8832 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00293"
+			(at 123.952 102.3112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8e2946c9-b0d9-4cc3-9fa6-7faea6df5c01")
+		)
+		(pin "1"
+			(uuid "dc89553d-f4a2-4b9b-89ef-24d589a6a449")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "R57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:SWR/Power meter_0_TDK-NLV25T")
+		(at 121.92 143.9672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5865e991-5f53-4e6f-a35d-3e0bef697cef")
+		(property "Reference" "RFC10"
+			(at 121.92 145.2372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47uH"
+			(at 121.92 149.8092 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 121.92 143.9672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 143.9672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "INDUCTOR, SIGNAL LINE, 4.7UH, 1005"
+			(at 121.92 143.9672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 166-9895"
+			(at 118.872 152.3492 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.166"
+			(at 118.872 152.3492 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4ce14b7-a3f6-4216-af97-157448e630a1")
+		)
+		(pin "2"
+			(uuid "d9a2a3e2-6898-4491-ae2f-36696b598ade")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "RFC10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:SWR/Power meter_1_CAP")
+		(at 167.64 123.6472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64afae6a-afe4-4a7b-8928-801e866fa95c")
+		(property "Reference" "C83"
+			(at 170.18 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 170.18 126.1872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 167.64 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 167.64 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.115"
+			(at 164.592 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 184-5751"
+			(at 164.592 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00103"
+			(at 164.592 118.5672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f6f60e6-575d-431c-84b5-91ebcfcb6227")
+		)
+		(pin "2"
+			(uuid "3b00323c-f470-4ef9-bb79-499049a5d6de")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "C83")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:SWR/Power meter_0_TDK-NLV25T")
+		(at 142.24 149.0472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "66b3078b-535c-472d-9e08-8426738acb89")
+		(property "Reference" "RFC11"
+			(at 142.24 150.3172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47uH"
+			(at 142.24 154.8892 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 142.24 149.0472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 149.0472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "INDUCTOR, SIGNAL LINE, 4.7UH, 1005"
+			(at 142.24 149.0472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 166-9895"
+			(at 139.192 157.4292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.166"
+			(at 139.192 157.4292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f105b54-f2f3-42ec-8ca5-e30cdfee9aa0")
+		)
+		(pin "2"
+			(uuid "d2635e4c-9b86-48b9-8db9-66dad230167a")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "RFC11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:SWR/Power meter_0_RES_0")
+		(at 167.64 128.7272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7f4c41c6-33d4-497f-b088-7ce246e587b5")
+		(property "Reference" "R62"
+			(at 167.64 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 172.72 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 167.64 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 167.64 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 188-7289"
+			(at 162.56 134.8232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.046"
+			(at 162.56 134.8232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00333"
+			(at 164.592 130.2512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9adf05f6-b973-47bc-a464-67beef87ed12")
+		)
+		(pin "1"
+			(uuid "db252cc2-abf4-465b-993c-aa9ec12d2a69")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "R62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:SWR/Power meter_0_RES_0")
+		(at 167.64 100.7872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "80b0dda4-40b7-4fab-b30e-92f7c73035d5")
+		(property "Reference" "R61"
+			(at 165.1 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47"
+			(at 170.18 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 167.64 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 167.64 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.052"
+			(at 164.592 106.8832 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 173-8942"
+			(at 164.592 106.8832 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00293"
+			(at 164.592 98.2472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ccd9fe30-3617-46c1-83ae-2f7a33bd4cac")
+		)
+		(pin "1"
+			(uuid "45851994-00b9-48e8-b20b-55de9adbaebb")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "R61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:SWR/Power meter_2_SWR_TR")
+		(at 160.02 88.0872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e937ca6-e8f1-4e85-9655-16b6c3eab141")
+		(property "Reference" "T3"
+			(at 121.92 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "FT50-43 10:1 ratio"
+			(at 121.92 95.7072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "SWR_TR _new"
+			(at 160.02 88.0872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 88.0872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SWR Bridge transformer"
+			(at 160.02 88.0872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "EB 300771069431"
+			(at 141.478 87.5792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.795"
+			(at 141.478 87.5792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 121.92 87.5792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b481e86-e2dd-4158-ab3c-b6d113350856")
+		)
+		(pin "2"
+			(uuid "e2604fbe-5de9-4bcd-91b4-55dd807be9dd")
+		)
+		(pin "3"
+			(uuid "c5c8a645-50ae-4f48-836a-52671f6bb839")
+		)
+		(pin "4"
+			(uuid "ab256e54-5b39-4fdf-b61c-f053087c0bb8")
+		)
+		(pin "5"
+			(uuid "d3ef0a74-1555-40f8-8f1d-0c2f915c2c45")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "T3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:SWR/Power meter_3_PMEG6010CEH")
+		(at 160.02 108.4072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9f9f53b7-1f48-4183-8ee4-809a241cb43b")
+		(property "Reference" "D6"
+			(at 162.56 110.9472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PMEG6010CEH"
+			(at 162.56 113.4872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "SOD87"
+			(at 160.02 108.4072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 108.4072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "DIODE, SCHOTTKY, 1A, 60V, SOD-123F"
+			(at 160.02 108.4072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 151-0694"
+			(at 154.686 102.8192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.085"
+			(at 154.686 102.8192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCD-00034"
+			(at 154.686 102.8192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "80271c78-0546-4c6d-98c3-1739bb402ff9")
+		)
+		(pin "2"
+			(uuid "c87f73d1-43fb-446d-83aa-421cb7f23159")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:SWR/Power meter_1_16/30HB")
+		(at 218.44 85.5472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a21ba550-dd4c-4373-aa34-cb9f26651b33")
+		(property "Reference" "DS1"
+			(at 224.79 80.2132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "16/30HB"
+			(at 224.79 82.7532 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "SIP2"
+			(at 218.44 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "NEON LAMP, WIRE ENDED, T2"
+			(at 218.44 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 113-9250"
+			(at 217.17 72.3392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.243"
+			(at 217.17 72.3392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 217.17 72.3392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3360fa07-625b-4903-9a5b-225e4c5c680b")
+		)
+		(pin "2"
+			(uuid "dbbf2da5-636d-4881-95ad-b66f2703d1ea")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "DS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 149.86 98.2472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a619e847-a32d-4f96-8330-e83965105e77")
+		(property "Reference" "#PWR?"
+			(at 149.86 98.2472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 149.86 104.5972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 98.2472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 98.2472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 149.86 98.2472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "3bb22d3a-84f1-45b6-a679-ebdf3da9d686")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 149.86 72.8472 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a694f171-fd20-410c-aecf-f853bbaf2e7b")
+		(property "Reference" "#PWR?"
+			(at 149.86 72.8472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 149.86 66.4972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 72.8472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 72.8472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 149.86 72.8472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "3e5050d3-13a4-46b9-862f-2aa52566607a")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:SWR/Power meter_0_SWR_TR")
+		(at 139.7 83.0072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ef5406ef-90a5-488a-834f-a1432d413d13")
+		(property "Reference" "T2"
+			(at 165.1 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "FT50-43 10:1 ratio"
+			(at 165.1 80.4672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "SWR_TR _new"
+			(at 139.7 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SWR Bridge transformer"
+			(at 139.7 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "EB 300771069431"
+			(at 129.54 86.0552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.795"
+			(at 129.54 86.0552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 141.478 72.3392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "224f04f2-9ce9-40e4-97ee-0390e87ae45e")
+		)
+		(pin "2"
+			(uuid "019ef8ae-c313-46bb-9b5a-44012535fcf2")
+		)
+		(pin "3"
+			(uuid "d936d2cb-6e01-4cec-8227-bc914c08299b")
+		)
+		(pin "4"
+			(uuid "64e93b44-10e8-4c0a-83c8-322a1affef32")
+		)
+		(pin "5"
+			(uuid "82fe379b-7c79-4ad0-a48b-822026dbee19")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "T2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:SWR/Power meter_0_RES_0")
+		(at 127 128.7272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f38fd413-2cdc-4fd8-8c69-1423b6ffae1f")
+		(property "Reference" "R58"
+			(at 132.08 133.8072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 132.08 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 127 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 127 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 188-7289"
+			(at 121.92 134.8232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.046"
+			(at 121.92 134.8232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00333"
+			(at 123.952 130.2512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1eddce08-2988-4ae4-9d8d-db8eeed13b80")
+		)
+		(pin "1"
+			(uuid "1b5186b1-e72f-4705-a408-432c0b181988")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/3b5b5153-8264-49dd-8e95-95b8b5b9dba9"
+					(reference "R58")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

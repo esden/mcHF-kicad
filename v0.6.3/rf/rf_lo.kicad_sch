@@ -1,0 +1,6726 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "d8016165-54e9-4851-95f3-8e18434baa2d")
+	(paper "A4")
+	(title_block
+		(title "mcHF QRP Transceiver RF board")
+		(rev "0.6.3")
+		(company "M0NKA")
+	)
+	(lib_symbols
+		(symbol "rf_main-altium-import:GND_POWER_GROUND"
+			(power)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name 'GND'"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_POWER_GROUND_0_0"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -3.302) (xy 1.778 -3.302)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -4.064) (xy 1.016 -4.064)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -4.826) (xy 0.254 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Local Oscillator_0_74LCX74M_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Low Voltage Dual D-Type Positive Edge-Triggered  Flip-Flop with 5V Tolerant Inputs"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*SO-14-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Local Oscillator_0_74LCX74M_0_1_0"
+				(rectangle
+					(start 12.7 17.78)
+					(end -12.7 -17.78)
+					(stroke
+						(width 0.0254)
+						(type solid)
+						(color 128 0 0 1)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -20.32 15.24 0)
+					(length 7.62)
+					(name "CD1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -5.08 180)
+					(length 7.62)
+					(name "SD2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 0 180)
+					(length 7.62)
+					(name "CP2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 5.08 180)
+					(length 7.62)
+					(name "D2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 10.16 180)
+					(length 7.62)
+					(name "CD2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 15.24 180)
+					(length 7.62)
+					(name "Vcc"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 10.16 0)
+					(length 7.62)
+					(name "D1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 5.08 0)
+					(length 7.62)
+					(name "CP1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 0 0)
+					(length 7.62)
+					(name "SD1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 -5.08 0)
+					(length 7.62)
+					(name "Q1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 -10.16 0)
+					(length 7.62)
+					(name "Q1n"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 -15.24 0)
+					(length 7.62)
+					(name "Vss"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -15.24 180)
+					(length 7.62)
+					(name "Q2n"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -10.16 180)
+					(length 7.62)
+					(name "Q2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Local Oscillator_0_CAP-POL_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Electrolitic capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*1206_Elec_Cap_N*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Local Oscillator_0_CAP-POL_0_1_0"
+				(polyline
+					(pts
+						(xy 1.524 2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 2.032) (xy 2.032 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 3.048 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.048 -2.032) (xy 3.048 2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.572 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.572 2.032) (xy 4.572 -2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Local Oscillator_0_CAP_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Local Oscillator_0_CAP_0_1_0"
+				(polyline
+					(pts
+						(xy 0.254 -1.778) (xy 4.826 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 -0.762) (xy 4.826 -0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.778) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.54 -0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 2.54 270)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Local Oscillator_0_Header 2X2"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Header, 2-Pin, Dual row"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*HDR2X2*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Local Oscillator_0_Header 2X2_1_0"
+				(rectangle
+					(start 10.16 0)
+					(end 0 -7.62)
+					(stroke
+						(width 0.0254)
+						(type solid)
+						(color 128 0 0 1)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -2.54 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -5.08 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Local Oscillator_0_MCP9801_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2-Wire High-Accuracy Temperature Sensor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*SO-8*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Local Oscillator_0_MCP9801_0_1_0"
+				(rectangle
+					(start 12.7 10.16)
+					(end -12.7 -10.16)
+					(stroke
+						(width 0.0254)
+						(type solid)
+						(color 128 0 0 1)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 7.62 0)
+					(length 7.62)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 2.54 0)
+					(length 7.62)
+					(name "SCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 -2.54 0)
+					(length 7.62)
+					(name "Alert"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 -7.62 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -7.62 180)
+					(length 7.62)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -2.54 180)
+					(length 7.62)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 2.54 180)
+					(length 7.62)
+					(name "A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 7.62 180)
+					(length 7.62)
+					(name "Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Local Oscillator_0_RES_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Local Oscillator_0_RES_0_1_0"
+				(rectangle
+					(start 5.08 -1.524)
+					(end 0 -3.556)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Local Oscillator_0_SI570_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "I2C programmable XO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*SI570_m*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Local Oscillator_0_SI570_0_1_0"
+				(rectangle
+					(start 12.7 10.16)
+					(end -12.7 -10.16)
+					(stroke
+						(width 0.0254)
+						(type solid)
+						(color 128 0 0 1)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -20.32 7.62 0)
+					(length 7.62)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 2.54 0)
+					(length 7.62)
+					(name "OE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 -2.54 0)
+					(length 7.62)
+					(name "Vss"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 -7.62 0)
+					(length 7.62)
+					(name "CLK+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -7.62 180)
+					(length 7.62)
+					(name "CLK-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 -2.54 180)
+					(length 7.62)
+					(name "Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 2.54 180)
+					(length 7.62)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 7.62 180)
+					(length 7.62)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Local Oscillator_1_CAP_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Local Oscillator_1_CAP_0_1_0"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.254) (xy 0.762 4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 0.254) (xy 1.778 4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Local Oscillator_1_RES_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Local Oscillator_1_RES_0_1_0"
+				(rectangle
+					(start 3.556 5.08)
+					(end 1.524 0)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Local Oscillator_2_RES_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Local Oscillator_2_RES_0_1_0"
+				(rectangle
+					(start 0 3.556)
+					(end -5.08 1.524)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 2.54 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Local Oscillator_3_CAP_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Local Oscillator_3_CAP_0_1_0"
+				(polyline
+					(pts
+						(xy -1.778 -2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.254) (xy -1.778 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -0.254) (xy -0.762 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy -0.762 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:VCC_3V_BAR"
+			(power)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VCC_3V"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name 'VCC_3V'"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VCC_3V_BAR_0_0"
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 0) hide
+					(name "VCC_3V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 162.56 166.8272)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "067f1205-3334-49e2-a0c2-414afe3f7791")
+	)
+	(junction
+		(at 157.48 136.3472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36567fb8-e577-4472-a51a-16690f23d3a9")
+	)
+	(junction
+		(at 149.86 80.4672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43736b18-0eb4-4c8b-bdd7-8a9c2b9053cd")
+	)
+	(junction
+		(at 129.54 75.3872)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a585ca7-4a50-441a-a4b2-d52421fba7c7")
+	)
+	(junction
+		(at 99.06 136.3472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d3cb786-1a9d-49a7-b50e-1c2abd54ee8d")
+	)
+	(junction
+		(at 20.32 80.4672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "509cbc27-6007-4f13-8868-0dbc73d1bb23")
+	)
+	(junction
+		(at 157.48 141.4272)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56ef2f1b-90b5-4630-a65f-9329f28f0b0e")
+	)
+	(junction
+		(at 157.48 123.6472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "577e16bb-bb5f-4091-a74b-52b380ae5bb3")
+	)
+	(junction
+		(at 149.86 62.6872)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6314924d-bb5d-4661-b8df-db5afe9ba138")
+	)
+	(junction
+		(at 104.14 156.6672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a11c599-b4b0-4b0c-98d4-3efbe82cf150")
+	)
+	(junction
+		(at 104.14 47.4472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "937deae7-1d07-44ff-b7da-c706371b2911")
+	)
+	(junction
+		(at 81.28 80.4672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a322436c-bade-4543-be6c-03610c6eba84")
+	)
+	(junction
+		(at 109.22 47.4472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9c022a2-ff85-4267-808f-44c8334eead8")
+	)
+	(junction
+		(at 104.14 70.3072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bccc8b8b-ffc4-47ee-a3a0-e46ff74e63d1")
+	)
+	(junction
+		(at 261.62 164.2872)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9f50d31-41e3-4f92-9bb8-eaad9c04689d")
+	)
+	(junction
+		(at 86.36 146.5072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc117c99-44f8-4cbf-b88e-1ac01d0e01e6")
+	)
+	(junction
+		(at 129.54 80.4672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc694fcb-ed5f-4375-abd0-cec21fb609f5")
+	)
+	(junction
+		(at 261.62 159.2072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ecd194d4-50d5-44f6-83a4-185792dcb013")
+	)
+	(junction
+		(at 109.22 75.3872)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed402124-8773-4608-99b3-3e94e6109ff8")
+	)
+	(junction
+		(at 149.86 123.6472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc34e592-7c2d-4876-b12a-268e2659534e")
+	)
+	(no_connect
+		(at 215.9 105.8672)
+		(uuid "0359d562-9477-4ace-9b1e-9f5974104164")
+	)
+	(no_connect
+		(at 256.54 105.8672)
+		(uuid "55822707-768d-4f33-8fd2-f9eb00fcbaa6")
+	)
+	(no_connect
+		(at 220.98 108.4072)
+		(uuid "6651aa28-8336-47d6-8fa8-321d82968cfd")
+	)
+	(no_connect
+		(at 30.48 75.3872)
+		(uuid "8382d1f2-460e-442a-91f5-21360c1fea5e")
+	)
+	(no_connect
+		(at 251.46 108.4072)
+		(uuid "d2cf35cc-57de-4867-a4d4-8de58ee493ee")
+	)
+	(wire
+		(pts
+			(xy 99.06 151.5872) (xy 109.22 151.5872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04999d75-13d0-4737-8a7c-7c7fa123befc")
+	)
+	(polyline
+		(pts
+			(xy 241.3 83.0072) (xy 256.54 83.0072)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "060a3ab7-6420-4eb5-817b-00362869a8d2")
+	)
+	(wire
+		(pts
+			(xy 104.14 47.4472) (xy 88.9 47.4472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08376711-81e2-44d2-be31-8e82add5c67b")
+	)
+	(wire
+		(pts
+			(xy 193.04 123.6472) (xy 193.04 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c0ebfbd-5b5a-4c70-8163-4eae4b918386")
+	)
+	(wire
+		(pts
+			(xy 129.54 75.3872) (xy 129.54 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c710911-d74d-4413-aaab-fe24c2fbf686")
+	)
+	(polyline
+		(pts
+			(xy 45.72 164.2872) (xy 76.2 164.2872)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "0ded4056-1b25-4374-a655-58a3b01b9bb0")
+	)
+	(polyline
+		(pts
+			(xy 45.72 166.8272) (xy 45.72 154.1272)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "0e4a79ce-856b-4233-8a2b-01c6304e836b")
+	)
+	(wire
+		(pts
+			(xy 251.46 65.2272) (xy 215.9 65.2272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f9dc72e-b2b0-4671-a5e6-e5c3022ad8b0")
+	)
+	(wire
+		(pts
+			(xy 71.12 70.3072) (xy 104.14 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "116b635e-7633-45f1-8c97-20df6e86c046")
+	)
+	(polyline
+		(pts
+			(xy 236.22 80.4672) (xy 236.22 93.1672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "143797c4-ebd7-4fe2-b5bf-2cc18189353e")
+	)
+	(wire
+		(pts
+			(xy 215.9 32.2072) (xy 251.46 32.2072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15c00e69-591b-4fb6-82b8-b6777ae8029e")
+	)
+	(wire
+		(pts
+			(xy 180.34 182.0672) (xy 104.14 182.0672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "168f584f-966e-4f88-ac62-da1b6959df65")
+	)
+	(polyline
+		(pts
+			(xy 220.98 85.5472) (xy 236.22 85.5472)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "1cf4f3a9-1ff0-462d-8e8f-095b171ed62b")
+	)
+	(polyline
+		(pts
+			(xy 220.98 80.4672) (xy 236.22 80.4672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "212a5c11-d349-475e-9a2a-9de0bf325254")
+	)
+	(wire
+		(pts
+			(xy 215.9 105.8672) (xy 226.06 105.8672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "219993cd-70ce-4c60-8f80-15f5f16cdd8f")
+	)
+	(wire
+		(pts
+			(xy 157.48 123.6472) (xy 149.86 123.6472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23a08c69-ca75-4f61-87c3-f7b1da22fbbd")
+	)
+	(wire
+		(pts
+			(xy 149.86 80.4672) (xy 149.86 62.6872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23ac484f-bcc1-4b30-87d0-b9353b8456b7")
+	)
+	(wire
+		(pts
+			(xy 205.74 65.2272) (xy 187.96 65.2272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "263061be-11af-44da-90aa-b1688aa67ab6")
+	)
+	(wire
+		(pts
+			(xy 104.14 47.4472) (xy 104.14 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "267e0d51-8481-4f58-8212-406f0b3ab5f1")
+	)
+	(wire
+		(pts
+			(xy 106.68 128.7272) (xy 162.56 128.7272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a3c08dc-9231-437f-9a2f-9d167c1297cc")
+	)
+	(wire
+		(pts
+			(xy 124.46 47.4472) (xy 109.22 47.4472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e9131c2-bf8a-4442-993e-16f7ec815c13")
+	)
+	(wire
+		(pts
+			(xy 17.78 80.4672) (xy 20.32 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f6750cd-ee22-4d3e-89b1-11dec0f0821b")
+	)
+	(wire
+		(pts
+			(xy 157.48 141.4272) (xy 149.86 141.4272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3006ce21-0a48-4d18-95fe-8555d3d603fa")
+	)
+	(wire
+		(pts
+			(xy 109.22 29.6672) (xy 109.22 47.4472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "308a5922-6588-4fbd-a626-ec16b7387b0d")
+	)
+	(wire
+		(pts
+			(xy 205.74 55.0672) (xy 187.96 55.0672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30a82dbb-8001-4027-9a9a-faa4267432bc")
+	)
+	(wire
+		(pts
+			(xy 71.12 80.4672) (xy 81.28 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3279e07a-e0af-4121-a15c-beb339cbafbc")
+	)
+	(polyline
+		(pts
+			(xy 256.54 93.1672) (xy 241.3 93.1672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "335f6d27-57f4-47f9-a926-9c93e313a0b9")
+	)
+	(polyline
+		(pts
+			(xy 45.72 159.2072) (xy 76.2 159.2072)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "343f2601-fa2b-4cc5-8575-bb684163aa5d")
+	)
+	(wire
+		(pts
+			(xy 162.56 128.7272) (xy 162.56 166.8272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "367748a8-810e-46a9-927f-0f7ce0e7ae7a")
+	)
+	(polyline
+		(pts
+			(xy 220.98 83.0072) (xy 236.22 83.0072)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "36b8835e-1deb-42b7-a192-60d687eff54e")
+	)
+	(wire
+		(pts
+			(xy 261.62 164.2872) (xy 261.62 159.2072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a014180-7b40-475c-ae4f-97f1a9ff99ad")
+	)
+	(wire
+		(pts
+			(xy 127 70.3072) (xy 129.54 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a8c8daa-d2a4-44a0-8f1e-4d81e729b625")
+	)
+	(polyline
+		(pts
+			(xy 228.6 80.4672) (xy 228.6 93.1672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "3c760e84-8149-45c3-b994-208a070a866d")
+	)
+	(wire
+		(pts
+			(xy 149.86 146.5072) (xy 180.34 146.5072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cc4f627-627c-46d6-94e2-b931cb2befb0")
+	)
+	(wire
+		(pts
+			(xy 81.28 80.4672) (xy 81.28 83.0072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40e8cf95-c6d7-4581-84dc-bbd50a309ee5")
+	)
+	(wire
+		(pts
+			(xy 104.14 70.3072) (xy 116.84 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44fd9cd3-50af-4c26-a255-161fee3b5a2a")
+	)
+	(wire
+		(pts
+			(xy 213.36 149.0472) (xy 198.12 149.0472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45e8a61e-871b-4623-937d-6862ba0ee936")
+	)
+	(wire
+		(pts
+			(xy 149.86 151.5872) (xy 152.4 151.5872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c1d92ac-2896-430e-8791-62d04a6d9242")
+	)
+	(wire
+		(pts
+			(xy 20.32 70.3072) (xy 20.32 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52d8a636-72f5-4235-967f-477c47132870")
+	)
+	(wire
+		(pts
+			(xy 81.28 80.4672) (xy 129.54 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5486cff4-bb4a-4307-9ed5-13c1404c091d")
+	)
+	(wire
+		(pts
+			(xy 71.12 75.3872) (xy 109.22 75.3872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54f0dd51-8e29-4131-872c-aafe118f6b8b")
+	)
+	(polyline
+		(pts
+			(xy 220.98 93.1672) (xy 220.98 80.4672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "556b8409-5f82-4328-9f8f-fb73194feae8")
+	)
+	(wire
+		(pts
+			(xy 99.06 123.6472) (xy 99.06 136.3472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "577f0511-acac-4b1f-a3aa-c5a45990dc84")
+	)
+	(polyline
+		(pts
+			(xy 261.62 202.3872) (xy 170.18 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "58099885-880c-4070-88c5-f2fa47b4ca9d")
+	)
+	(wire
+		(pts
+			(xy 60.96 29.6672) (xy 109.22 29.6672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "584ff82a-1330-4a39-9c6e-ccfbb16d179f")
+	)
+	(wire
+		(pts
+			(xy 180.34 146.5072) (xy 180.34 182.0672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dee80d5-87c8-4402-9383-76d2ca0a761d")
+	)
+	(wire
+		(pts
+			(xy 157.48 141.4272) (xy 157.48 136.3472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f75a382-530c-4ba0-b3fd-3d54e354355b")
+	)
+	(polyline
+		(pts
+			(xy 60.96 154.1272) (xy 60.96 166.8272)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "62964fd0-5da9-42e8-9ad9-9756302051f8")
+	)
+	(polyline
+		(pts
+			(xy 236.22 93.1672) (xy 220.98 93.1672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "63eedef6-4c29-4d1e-a240-a33a19476021")
+	)
+	(wire
+		(pts
+			(xy 175.26 161.7472) (xy 149.86 161.7472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "640be886-1db2-4cf9-bda0-179fa0ba1656")
+	)
+	(wire
+		(pts
+			(xy 152.4 62.6872) (xy 149.86 62.6872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a576c42-6548-4c9f-812c-30ead23bfeb7")
+	)
+	(wire
+		(pts
+			(xy 261.62 149.0472) (xy 261.62 123.6472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ca074e2-9e87-4d01-be9b-690b45dd1fca")
+	)
+	(wire
+		(pts
+			(xy 30.48 29.6672) (xy 50.8 29.6672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "708d8072-320c-4da6-8732-f69c83bc8480")
+	)
+	(wire
+		(pts
+			(xy 129.54 80.4672) (xy 149.86 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72317bb5-eadb-4160-9864-813f5d995e6d")
+	)
+	(wire
+		(pts
+			(xy 261.62 123.6472) (xy 193.04 123.6472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "727c92ea-c13a-4cd6-a1a2-7b6cfb076e3f")
+	)
+	(wire
+		(pts
+			(xy 162.56 166.8272) (xy 175.26 166.8272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7300038b-cc8b-4bd9-99ae-8b03cf1e4c9b")
+	)
+	(wire
+		(pts
+			(xy 104.14 34.7472) (xy 104.14 47.4472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75dff9b0-b38b-426f-8973-621268153417")
+	)
+	(polyline
+		(pts
+			(xy 287.02 192.2272) (xy 170.18 192.2272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "7b0eb325-e409-418c-b82c-14b3cd72b3ae")
+	)
+	(wire
+		(pts
+			(xy 261.62 154.1272) (xy 254 154.1272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b538365-fdac-4bde-ba30-d7e3d38520a5")
+	)
+	(wire
+		(pts
+			(xy 254 149.0472) (xy 261.62 149.0472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7be413d5-269e-4ebb-b929-e04baaa0ffb2")
+	)
+	(wire
+		(pts
+			(xy 208.28 164.2872) (xy 213.36 164.2872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bebed3c-b2a4-483c-a5e8-30511910402b")
+	)
+	(wire
+		(pts
+			(xy 22.86 70.3072) (xy 20.32 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d339c0a-1edc-43d4-9252-f0f47e1feccb")
+	)
+	(wire
+		(pts
+			(xy 109.22 47.4472) (xy 109.22 75.3872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e1ac7b0-ddb5-4100-895e-a4b5a544dc97")
+	)
+	(wire
+		(pts
+			(xy 215.9 55.0672) (xy 251.46 55.0672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fa20f30-dd9a-4aa6-8821-5838c9025e65")
+	)
+	(polyline
+		(pts
+			(xy 45.72 156.6672) (xy 76.2 156.6672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "829ec45a-e4fa-4ffc-8699-42cef22d6478")
+	)
+	(polyline
+		(pts
+			(xy 220.98 88.0872) (xy 236.22 88.0872)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "82b84c7e-99ae-4517-bf86-ed31881b83ce")
+	)
+	(wire
+		(pts
+			(xy 152.4 151.5872) (xy 152.4 187.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88269325-e4c6-4cec-8c6f-ef90481d5990")
+	)
+	(wire
+		(pts
+			(xy 205.74 42.3672) (xy 187.96 42.3672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8856bb73-80f9-4719-ba21-9ae71be77d0e")
+	)
+	(wire
+		(pts
+			(xy 220.98 108.4072) (xy 226.06 108.4072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8977357c-027a-4279-b7f7-418168f91126")
+	)
+	(polyline
+		(pts
+			(xy 170.18 199.8472) (xy 228.6 199.8472)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "8b5b688e-a770-453b-8854-d777e2a4adef")
+	)
+	(wire
+		(pts
+			(xy 20.32 80.4672) (xy 30.48 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bc3de31-d6c9-416b-acb7-f8d8d270cd23")
+	)
+	(wire
+		(pts
+			(xy 109.22 156.6672) (xy 104.14 156.6672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cafd525-746c-4c12-b83a-4d97aca84d5f")
+	)
+	(wire
+		(pts
+			(xy 99.06 136.3472) (xy 109.22 136.3472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d947f53-65eb-4d34-9800-bc6dee9358ab")
+	)
+	(polyline
+		(pts
+			(xy 241.3 88.0872) (xy 256.54 88.0872)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "8e7a8ca7-127c-4993-9167-b5c3ba2521a9")
+	)
+	(polyline
+		(pts
+			(xy 241.3 93.1672) (xy 241.3 80.4672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "9073fef0-8713-4d6a-bf5e-77510242342c")
+	)
+	(polyline
+		(pts
+			(xy 269.24 192.2272) (xy 269.24 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "907f5f0d-8315-46fe-bd9a-4c4f54e8e24c")
+	)
+	(wire
+		(pts
+			(xy 246.38 105.8672) (xy 256.54 105.8672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90e9ea45-ea19-4390-9603-2c9d8da318d6")
+	)
+	(polyline
+		(pts
+			(xy 287.02 202.3872) (xy 287.02 192.2272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "9738e53c-5009-4ce0-8838-9eda654bdaa2")
+	)
+	(wire
+		(pts
+			(xy 104.14 182.0672) (xy 104.14 156.6672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "980fbdf6-2601-4e68-9518-3a698ac9d1e5")
+	)
+	(wire
+		(pts
+			(xy 109.22 166.8272) (xy 109.22 171.9072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a9849f5-4149-49a9-a16f-4c320d8f6927")
+	)
+	(polyline
+		(pts
+			(xy 210.82 199.8472) (xy 210.82 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "9b7b7aca-41ca-43b4-a842-a380d91ae2a7")
+	)
+	(wire
+		(pts
+			(xy 261.62 159.2072) (xy 254 159.2072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c036742-abbf-4265-b9c8-8f5e67e8d15b")
+	)
+	(polyline
+		(pts
+			(xy 170.18 192.2272) (xy 170.18 204.9272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "9ec12313-7421-434f-b1e8-5e15c789d552")
+	)
+	(polyline
+		(pts
+			(xy 76.2 166.8272) (xy 45.72 166.8272)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "9ef86966-75d8-4341-b724-ecaea0d62568")
+	)
+	(polyline
+		(pts
+			(xy 241.3 90.6272) (xy 256.54 90.6272)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "9f7fb60d-0dd9-4acf-9441-4d5ca70a2fe4")
+	)
+	(wire
+		(pts
+			(xy 109.22 141.4272) (xy 106.68 141.4272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a584a9ca-a39f-4448-9d3f-9e0b924fdecd")
+	)
+	(wire
+		(pts
+			(xy 30.48 98.2472) (xy 30.48 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a699b3a5-4110-4052-84df-5efc84b8dcba")
+	)
+	(wire
+		(pts
+			(xy 99.06 136.3472) (xy 99.06 151.5872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7202cc1-e3cb-4c2d-8aff-a49c50a49720")
+	)
+	(polyline
+		(pts
+			(xy 76.2 154.1272) (xy 76.2 166.8272)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "ab8efe4f-03d5-4220-b817-7ba7c9d01c55")
+	)
+	(polyline
+		(pts
+			(xy 220.98 90.6272) (xy 236.22 90.6272)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "ae4f8f6a-1a84-4dbf-94b9-1b7f92254e45")
+	)
+	(polyline
+		(pts
+			(xy 53.34 154.1272) (xy 53.34 166.8272)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "b1a0bbaf-c7f9-4706-b8c7-ad8cd5d2442a")
+	)
+	(wire
+		(pts
+			(xy 193.04 80.4672) (xy 149.86 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b393e264-1aef-4151-a51b-1d0dd903e98b")
+	)
+	(polyline
+		(pts
+			(xy 256.54 80.4672) (xy 256.54 93.1672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "b8bd06b3-86bc-4250-834a-a96502681d33")
+	)
+	(wire
+		(pts
+			(xy 149.86 166.8272) (xy 162.56 166.8272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc602855-ff1b-4940-be6e-a88d92fc3b97")
+	)
+	(wire
+		(pts
+			(xy 109.22 161.7472) (xy 91.44 161.7472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be23b88c-1fe4-4724-8dfd-c38f02553c78")
+	)
+	(wire
+		(pts
+			(xy 261.62 159.2072) (xy 261.62 154.1272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3383d2a-7325-4da5-a10e-af24f281badf")
+	)
+	(wire
+		(pts
+			(xy 152.4 187.1472) (xy 86.36 187.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4d867d9-53d3-4d64-90be-6b6bf94a3b9a")
+	)
+	(wire
+		(pts
+			(xy 205.74 32.2072) (xy 187.96 32.2072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5f6b1f1-8cd1-4ffa-b2bc-631481471206")
+	)
+	(wire
+		(pts
+			(xy 157.48 136.3472) (xy 149.86 136.3472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c964d88f-7cc1-4d8b-88ac-0153efa552df")
+	)
+	(wire
+		(pts
+			(xy 157.48 136.3472) (xy 157.48 123.6472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc3bf191-80eb-42bc-bcd6-4c0c1c5e11d5")
+	)
+	(wire
+		(pts
+			(xy 149.86 156.6672) (xy 157.48 156.6672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdaf114b-81d4-4000-aa17-3f2d90ada989")
+	)
+	(wire
+		(pts
+			(xy 157.48 156.6672) (xy 157.48 141.4272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5bc309f-8f97-4150-9070-06d7de442f1c")
+	)
+	(wire
+		(pts
+			(xy 254 164.2872) (xy 261.62 164.2872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5d10286-8ac1-4a93-9949-3df26855f51b")
+	)
+	(polyline
+		(pts
+			(xy 261.62 202.3872) (xy 287.02 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "d5f8bb65-75cf-46a4-865f-a3661566e269")
+	)
+	(wire
+		(pts
+			(xy 251.46 42.3672) (xy 215.9 42.3672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d82bcc73-2bac-441b-9ccd-562d79d6d1e9")
+	)
+	(polyline
+		(pts
+			(xy 248.92 80.4672) (xy 248.92 93.1672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "da5670a2-86a3-47ea-9055-bfb001a75f97")
+	)
+	(wire
+		(pts
+			(xy 213.36 154.1272) (xy 198.12 154.1272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da60e514-746f-4d45-bdce-3ff630d0731c")
+	)
+	(polyline
+		(pts
+			(xy 228.6 192.2272) (xy 228.6 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "dc53b19c-b9bb-4877-a055-32c100eeda1c")
+	)
+	(wire
+		(pts
+			(xy 86.36 146.5072) (xy 109.22 146.5072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc7cffba-cd13-4949-a7e1-f4c74f0cfeee")
+	)
+	(wire
+		(pts
+			(xy 170.18 123.6472) (xy 157.48 123.6472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd8e446d-4535-43ca-a62e-607165b08ab9")
+	)
+	(wire
+		(pts
+			(xy 246.38 108.4072) (xy 251.46 108.4072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0b8950a-f6a0-48ea-aaa9-610f2c57c002")
+	)
+	(wire
+		(pts
+			(xy 149.86 80.4672) (xy 149.86 123.6472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e136e376-280c-4efa-ad24-d2157d521f1c")
+	)
+	(wire
+		(pts
+			(xy 30.48 34.7472) (xy 63.5 34.7472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e234abe9-64d2-4340-83d2-a45bc1288e40")
+	)
+	(wire
+		(pts
+			(xy 129.54 70.3072) (xy 129.54 75.3872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e282aa51-a401-45ba-a8ed-e138f0b5ca92")
+	)
+	(polyline
+		(pts
+			(xy 45.72 161.7472) (xy 76.2 161.7472)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "e5704409-1d37-4663-9393-af68d43b52c0")
+	)
+	(wire
+		(pts
+			(xy 106.68 141.4272) (xy 106.68 128.7272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6bbea29-1ec6-483d-ade1-593daff1869c")
+	)
+	(polyline
+		(pts
+			(xy 45.72 154.1272) (xy 76.2 154.1272)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "e723620f-a83c-4734-ac70-9c46274de728")
+	)
+	(wire
+		(pts
+			(xy 149.86 62.6872) (xy 149.86 34.7472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e841a424-2fb3-4d50-a936-4df76ba4c183")
+	)
+	(polyline
+		(pts
+			(xy 68.58 154.1272) (xy 68.58 166.8272)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "eacbeba7-d7e4-428c-bfcc-ade634ef7034")
+	)
+	(wire
+		(pts
+			(xy 86.36 187.1472) (xy 86.36 146.5072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb40e9c5-fb51-48b7-ace9-bdce290b2a19")
+	)
+	(wire
+		(pts
+			(xy 73.66 34.7472) (xy 104.14 34.7472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeb6d0f6-0bd9-4b9d-bdcf-49bda8fdad3c")
+	)
+	(polyline
+		(pts
+			(xy 241.3 80.4672) (xy 256.54 80.4672)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "f1d09ecf-8b88-4937-b950-1a20416018f2")
+	)
+	(wire
+		(pts
+			(xy 119.38 75.3872) (xy 129.54 75.3872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f227e205-124b-4145-aa94-ae7a3b5eb1b6")
+	)
+	(wire
+		(pts
+			(xy 30.48 146.5072) (xy 86.36 146.5072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7beac99-976f-4a5d-b8ee-077568d0750f")
+	)
+	(wire
+		(pts
+			(xy 104.14 156.6672) (xy 91.44 156.6672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7f6574e-6356-44dd-bc62-338f21905980")
+	)
+	(wire
+		(pts
+			(xy 149.86 123.6472) (xy 99.06 123.6472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc063ed2-b6bc-49ba-ae77-e31dc4fb9458")
+	)
+	(wire
+		(pts
+			(xy 30.48 108.4072) (xy 30.48 146.5072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff81c8c7-d4ed-4972-b5ea-c8bf51dcb06a")
+	)
+	(polyline
+		(pts
+			(xy 241.3 85.5472) (xy 256.54 85.5472)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "fff0a4ce-5c82-4ab6-8c1c-776e0203f9d7")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 223.52 85.5472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "059bfbbf-fdc3-4df8-921f-bd4b85a476ae")
+	)
+	(text "${AUTHOR}"
+		(exclude_from_sim no)
+		(at 271.78 197.3072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "0a1a77b0-94fe-4b0e-93cf-53511cd167c2")
+	)
+	(text "File:"
+		(exclude_from_sim no)
+		(at 172.72 204.9272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "134db501-df79-4724-b086-25ccd9eb9458")
+	)
+	(text "Q2N"
+		(exclude_from_sim no)
+		(at 71.12 156.6672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1da94be5-9f2c-4d48-9dbe-4cba6987787d")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 243.84 90.6272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2042a564-17b0-43b7-b117-12bac211913a")
+	)
+	(text "but using the rule to keep traces impedance the same"
+		(exclude_from_sim no)
+		(at 205.74 75.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "20dea358-bdf8-491b-ac2a-08475daade7e")
+	)
+	(text "Q1N"
+		(exclude_from_sim no)
+		(at 55.88 156.6672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "22da2efc-f35c-427b-af0d-ecbe5afef0d6")
+	)
+	(text "Clock lines are 90 deg diff, not 180"
+		(exclude_from_sim no)
+		(at 205.74 72.8472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2bd7f8ae-3363-4c09-a9a6-76ebac01ef75")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 63.5 161.7472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2d2fc90d-5877-42bc-9e1b-4e1b3b7a366b")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 63.5 166.8272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2eb2d1fd-07c9-43b8-82d8-a7f32e5d3061")
+	)
+	(text "4"
+		(exclude_from_sim no)
+		(at 220.98 199.8472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "3530db9a-ce17-42c5-92b2-36af99f52a3c")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 223.52 90.6272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "36c0de9e-1763-4d79-9c40-fff18b1ee9ab")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 63.5 164.2872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5792b8ff-cdd3-48c5-8122-24f533fd04f3")
+	)
+	(text "TX clock"
+		(exclude_from_sim no)
+		(at 241.3 95.7072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c53b694-a6eb-4a1d-96eb-1bfea05d4231")
+	)
+	(text "${REVISION}"
+		(exclude_from_sim no)
+		(at 203.2 202.3872 0)
+		(effects
+			(font
+				(size 1.397 1.397)
+			)
+			(justify left bottom)
+		)
+		(uuid "60e19f31-b330-485b-893c-bdd0feb7c135")
+	)
+	(text "Local Oscillator"
+		(exclude_from_sim no)
+		(at 238.76 199.8472 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left bottom)
+		)
+		(uuid "635b5ab2-0adc-46ad-b42e-69b159910a08")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 71.12 159.2072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6cf305af-0432-497a-ab4f-6579287db42c")
+	)
+	(text "${FILEPATH}"
+		(exclude_from_sim no)
+		(at 177.8 204.9272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "72940070-a589-48e7-98f2-8e4425cf3ec4")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 251.46 85.5472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "736cc64e-8b0d-4fdd-a1e0-4afe5d02a307")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 243.84 88.0872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7449e3a0-c380-4348-a78a-2298cb6ba26a")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 55.88 166.8272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c9756cc-3247-4b54-84cc-106564fac681")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 48.26 166.8272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7db05881-8693-4c19-8c32-c706c80bd34b")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 71.12 161.7472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e44fa93-fc59-4fa5-94ca-0cc762bb3183")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 251.46 93.1672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8158464b-3397-4a1a-8a48-07804a2d86f5")
+	)
+	(text "Q1"
+		(exclude_from_sim no)
+		(at 48.26 156.6672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "818b09e9-c372-4481-a19c-37c711e34759")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 55.88 159.2072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "834e6a31-f0bc-4de6-95da-6b47b70ce8ba")
+	)
+	(text "S0"
+		(exclude_from_sim no)
+		(at 231.14 83.0072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a53c300-6212-4484-851a-e9bf72febeb9")
+	)
+	(text "S1"
+		(exclude_from_sim no)
+		(at 223.52 83.0072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8ff51a8f-a980-40c6-b7a0-1fa02339dd32")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 48.26 159.2072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "92b031ba-f088-48dd-9fb5-900d39a32f37")
+	)
+	(text "of"
+		(exclude_from_sim no)
+		(at 223.52 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "958d6c67-334e-4a14-9eed-39cd1a7ce00e")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 231.14 88.0872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9624a49b-f9e7-486f-af46-e2689de4c0a9")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 71.12 166.8272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "968647d0-a024-4b83-8a9c-a563e5344f17")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 231.14 90.6272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "988355a1-bede-4327-a215-e598a63b6d28")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 63.5 159.2072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9981c321-8804-4f0b-993f-31d337d4a2ce")
+	)
+	(text "${CURRENT_DATE}"
+		(exclude_from_sim no)
+		(at 180.34 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1d82fee-0c29-433c-8e66-2d147cd55fcd")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 251.46 90.6272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1ffdd9b-0f6b-40a4-a29c-b9702cd788cd")
+	)
+	(text "Revision:"
+		(exclude_from_sim no)
+		(at 193.04 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a56fc8b0-144d-43ea-bd63-ed7212b10568")
+	)
+	(text "${##}"
+		(exclude_from_sim no)
+		(at 226.06 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b4a7e5df-e1b6-4666-a412-3b4e624e52b0")
+	)
+	(text "Johnson counter states"
+		(exclude_from_sim no)
+		(at 45.72 169.3672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b567153d-81b7-422a-9604-0b4a68af4d1a")
+	)
+	(text "Q2"
+		(exclude_from_sim no)
+		(at 63.5 156.6672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be12a992-1e85-47c2-9ad8-e904e725ac9c")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 71.12 164.2872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf288386-1b39-4820-a387-fe8cd25f5d97")
+	)
+	(text "S1"
+		(exclude_from_sim no)
+		(at 243.84 83.0072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c3a90b8d-42d5-469f-a40c-7bb7c0a9913d")
+	)
+	(text "Date:"
+		(exclude_from_sim no)
+		(at 172.72 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c7f80745-1b36-4dbc-818d-3d4b99459984")
+	)
+	(text "S0"
+		(exclude_from_sim no)
+		(at 251.46 83.0072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c844b909-3ad0-4ee5-ae84-c2a3519e293f")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 243.84 85.5472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8f4c8b4-d42e-420c-8d5f-557a21c163b8")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 55.88 164.2872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9382f40-317d-4f59-840e-55b9a9927d10")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 48.26 164.2872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd49e491-8fd4-4339-a281-4fcddecf5719")
+	)
+	(text "Optional in latest revisions"
+		(exclude_from_sim no)
+		(at 231.14 143.9672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ce9eb5c2-06fe-4b2d-9297-35beb47898b5")
+	)
+	(text "${TITLE}"
+		(exclude_from_sim no)
+		(at 175.26 197.3072 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "d33a0800-6bc7-4d4a-971c-c79e4b4d4505")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 48.26 161.7472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d4571ee3-36bd-4250-804b-ebbb2683bd12")
+	)
+	(text "RX clock"
+		(exclude_from_sim no)
+		(at 220.98 95.7072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da13c58c-641a-4fd2-a744-1480e198a04b")
+	)
+	(text "Sheet"
+		(exclude_from_sim no)
+		(at 212.09 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da879f5c-8f96-41d3-8b29-bc94e07517a2")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 231.14 93.1672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e0000761-51f5-4990-a253-94cc010926b9")
+	)
+	(text "${COMPANY}"
+		(exclude_from_sim no)
+		(at 274.32 199.8472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1cc78c4-2b89-4363-8a99-1ba53f350391")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 251.46 88.0872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e792344e-2ef2-4cc7-b15d-a2fe5e384b78")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 223.52 88.0872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7ecd107-cddb-4b52-abe9-5804e5d52a8f")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 243.84 93.1672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e8a34a8a-395a-41e7-8f21-7ac3289f5268")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 231.14 85.5472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc31b6b0-853d-40b1-8623-0168c5a0d778")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 55.88 161.7472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ff8ba39a-89fe-48f0-b3dd-b6bcba8a962f")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 223.52 93.1672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ff938b7b-41f9-48b3-b393-a488e07110e1")
+	)
+	(label "LO_SCL"
+		(at 88.9 47.4472 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1024c4a9-7dbe-451a-bb17-be01ebaf6a99")
+	)
+	(label "JC_CLK3"
+		(at 187.96 55.0672 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ced8c33-41e0-41cd-be85-87898c8c779c")
+	)
+	(label "RX_CLK_N"
+		(at 220.98 32.2072 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2321c181-d6dc-40a3-a0e0-88cc0983f498")
+	)
+	(label "JC_CLK2"
+		(at 187.96 65.2272 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3585a9fe-a0ec-461a-b0e2-6e2c9ba76058")
+	)
+	(label "TX_CLK_P"
+		(at 220.98 55.0672 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d457617-1518-494e-bb2f-d9e255a53fed")
+	)
+	(label "JC_CLK4"
+		(at 187.96 32.2072 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "506f0a22-b580-4d67-a856-4f04cf53d9c3")
+	)
+	(label "LO_SDA"
+		(at 198.12 149.0472 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ba9fc0e-fa28-4a6d-b8a1-f50731e04df4")
+	)
+	(label "JC_CLK2"
+		(at 91.44 161.7472 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "73a6f703-79f2-4dec-9c96-e8a35bbf7d2c")
+	)
+	(label "RX_CLK_P"
+		(at 220.98 42.3672 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7ca1e10d-6c1f-4007-9bff-f29c2a1ec8a0")
+	)
+	(label "LO_SCL"
+		(at 198.12 154.1272 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8053a883-9219-4f66-949a-8361d07ccbb1")
+	)
+	(label "JC_CLK4"
+		(at 165.1 166.8272 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "97c9bfa5-9f09-4cbe-9e7a-6a207a33d5e4")
+	)
+	(label "LO_SDA"
+		(at 114.3 47.4472 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "acdc34cb-4816-4b70-85a1-c6f500f3e37c")
+	)
+	(label "JC_CLK3"
+		(at 165.1 161.7472 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b484b910-3c4b-49f1-85b4-ee2e8d417b6c")
+	)
+	(label "TX_CLK_N"
+		(at 220.98 65.2272 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d757174c-c442-477c-85ed-d01fb6820b96")
+	)
+	(label "JC_CLK1"
+		(at 187.96 42.3672 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2bda0af-2375-448e-925e-102ec00e6f65")
+	)
+	(label "JC_CLK1"
+		(at 91.44 156.6672 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed48ec92-be6a-4365-b84c-fc31e546da66")
+	)
+	(hierarchical_label "RX_CLK_P"
+		(shape output)
+		(at 251.46 42.3672 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0fa38a1a-13bb-41f9-984e-4fc1a989428f")
+	)
+	(hierarchical_label "SCL"
+		(shape passive)
+		(at 30.48 34.7472 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "389d2ed5-547f-49fc-b6c0-f8606dce619c")
+	)
+	(hierarchical_label "SDA"
+		(shape passive)
+		(at 30.48 29.6672 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c3eca18-e1a4-46d3-aede-7fb5ab630def")
+	)
+	(hierarchical_label "RX_CLK_N"
+		(shape output)
+		(at 251.46 32.2072 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6edf1ef4-1575-402f-901e-e2d93c6a2ffc")
+	)
+	(hierarchical_label "TX_CLK_N"
+		(shape output)
+		(at 251.46 65.2272 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "780b3a57-4daa-490a-b98c-9836de335d2d")
+	)
+	(hierarchical_label "TX_CLK_P"
+		(shape output)
+		(at 251.46 55.0672 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b212a588-61bb-4a1e-8283-308298796af8")
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_3_CAP_0")
+		(at 175.26 121.1072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05e73416-1a00-44d9-a1a9-4196fd2f8955")
+		(property "Reference" "C42"
+			(at 172.466 121.1072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 172.466 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 175.26 121.1072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 121.1072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 175.26 121.1072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.068"
+			(at 169.672 121.1072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 252-2090"
+			(at 169.672 121.1072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00154"
+			(at 169.672 118.5672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3cd9322f-6d37-4537-811a-8384235fed44")
+		)
+		(pin "2"
+			(uuid "a828c974-a513-43c5-861a-fddd156834c8")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_0_CAP-POL_0")
+		(at 152.4 62.6872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "094930f1-4d8e-42db-baaa-fdcbac1c22a1")
+		(property "Reference" "C40"
+			(at 153.67 59.3852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10uF"
+			(at 153.67 67.5132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "1206_Elec_Cap_N"
+			(at 152.4 62.6872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 62.6872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Electrolitic capacitor"
+			(at 152.4 62.6872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.204"
+			(at 151.892 59.3852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 233-3009"
+			(at 151.892 59.3852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00166"
+			(at 151.892 56.8452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a9330d6-f9db-42ad-ab11-8b58dc887eb3")
+		)
+		(pin "2"
+			(uuid "4df1d798-ffa6-46f5-aa89-bd5ece24caee")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 261.62 164.2872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1479cbd6-1fcb-4d39-b739-8cf3bd37f870")
+		(property "Reference" "#PWR?"
+			(at 261.62 164.2872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 261.62 170.6372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 164.2872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 164.2872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 164.2872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "4ba92420-3497-4543-896b-c04ca89c69b1")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_0_RES_0")
+		(at 111.76 72.8472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15339878-9ebf-47f9-a332-64bb47ed227a")
+		(property "Reference" "R21"
+			(at 111.76 74.3712 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "4.7K"
+			(at 111.76 78.9432 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 111.76 72.8472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 72.8472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 111.76 72.8472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.024"
+			(at 108.712 74.3712 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 200-8383"
+			(at 108.712 74.3712 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00341"
+			(at 108.712 71.8312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c68acd8f-4619-4168-8dcd-75f01aad4d9c")
+		)
+		(pin "1"
+			(uuid "c09a7948-9048-4fd8-8032-d61e23113e0c")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_1_CAP_0")
+		(at 25.4 72.8472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24b505be-ed2d-404c-9a66-02b3d684b287")
+		(property "Reference" "C35"
+			(at 22.86 65.2272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10nF"
+			(at 22.86 67.7672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 25.4 72.8472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 72.8472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 25.4 72.8472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.059"
+			(at 22.352 67.7672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 233-2713"
+			(at 22.352 67.7672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00097"
+			(at 22.352 62.6872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "230b866d-e6be-492d-88c9-da10a3696fec")
+		)
+		(pin "2"
+			(uuid "1e81b31a-68e1-49af-a3e4-3746b05b1bcd")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_2_RES_0")
+		(at 213.36 57.6072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c74642e-2143-43a4-9c0c-2b5996449ad6")
+		(property "Reference" "R24"
+			(at 209.042 54.3052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "0"
+			(at 210.312 58.6232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 213.36 57.6072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 57.6072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 57.6072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.009"
+			(at 205.232 54.0512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 933-3681"
+			(at 205.232 54.0512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00268"
+			(at 205.232 51.5112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e829990b-26af-4015-8238-69c92fbc9f90")
+		)
+		(pin "2"
+			(uuid "fef8c74e-b520-496d-b5f9-f67e2004917f")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 160.02 62.6872 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "331b61b6-3592-473a-8bff-b3c265fb4d3a")
+		(property "Reference" "#PWR?"
+			(at 160.02 62.6872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 166.37 62.6872 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 62.6872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 62.6872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 62.6872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "83d319b9-401e-43f5-9597-d851b2c719d5")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_2_RES_0")
+		(at 213.36 44.9072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3e8a62c1-e290-4ad4-9d6a-8c2ed63c5f8a")
+		(property "Reference" "R23"
+			(at 209.042 41.6052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "0"
+			(at 210.312 45.9232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 213.36 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.009"
+			(at 205.232 41.3512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 933-3681"
+			(at 205.232 41.3512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00268"
+			(at 205.232 38.8112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "680a69c2-b257-463e-8f97-9c7cc4bdafc7")
+		)
+		(pin "1"
+			(uuid "65db7fae-bbca-44d6-8ab8-c49ad5a52662")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_2_RES_0")
+		(at 213.36 67.7672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f7b301e-5d4b-4079-b6ca-1002fe4a63cf")
+		(property "Reference" "R25"
+			(at 209.042 64.4652 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "0"
+			(at 210.312 68.7832 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 213.36 67.7672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 67.7672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 67.7672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.009"
+			(at 205.232 64.2112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 933-3681"
+			(at 205.232 64.2112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00268"
+			(at 205.232 61.6712 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cad6cb56-805b-4af2-8b2a-edae914f6d39")
+		)
+		(pin "1"
+			(uuid "4b4d4e32-d84c-4b2f-9b0e-83643791a86c")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 208.28 164.2872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "559c4ad0-03da-4b0e-9b68-fcf8a9df5fbe")
+		(property "Reference" "#PWR?"
+			(at 208.28 164.2872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 208.28 170.6372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 164.2872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 164.2872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 208.28 164.2872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "58745ba3-d648-4f25-b9e0-2b8cf6848308")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_0_74LCX74M_0")
+		(at 129.54 151.5872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5fcbcaf1-e580-40e0-a3f0-584d42f2514d")
+		(property "Reference" "U11"
+			(at 116.84 133.8072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PO74G74A"
+			(at 116.84 171.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "SO-14-Pro"
+			(at 129.54 151.5872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 151.5872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low Voltage Dual D-Type Positive Edge-Triggered  Flip-Flop with 5V Tolerant Inputs"
+			(at 129.54 151.5872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.23"
+			(at 108.712 171.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 985-3502"
+			(at 108.712 171.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 108.712 131.2672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "00a437be-defa-443e-b735-9ec17a4f5275")
+		)
+		(pin "6"
+			(uuid "f6443081-3f6e-489b-8232-b169b4c10c5d")
+		)
+		(pin "5"
+			(uuid "dca774ea-feb2-4586-9744-727dcb201f87")
+		)
+		(pin "1"
+			(uuid "9db6924e-274e-4df2-b779-baaa7a527ee1")
+		)
+		(pin "3"
+			(uuid "549b5373-dbfe-40e4-b104-a22cdf82768b")
+		)
+		(pin "4"
+			(uuid "3edc3c6a-e8a3-4366-8aa4-7ed8d2f09dc8")
+		)
+		(pin "8"
+			(uuid "99612695-3cc3-4439-abf3-de8c894887da")
+		)
+		(pin "7"
+			(uuid "d0d56683-87a8-4b64-887a-86614ca6cfc3")
+		)
+		(pin "9"
+			(uuid "29bee1f4-893b-4e5d-a06c-52cb90e8fd67")
+		)
+		(pin "10"
+			(uuid "a2ca3b82-09c1-4ea0-9257-8364e78be9f0")
+		)
+		(pin "11"
+			(uuid "732ebb6c-8b21-4654-ae1f-c434cda390d3")
+		)
+		(pin "12"
+			(uuid "80d15718-c079-4b59-8d11-c06348ba7a85")
+		)
+		(pin "13"
+			(uuid "3ecfbb12-2335-40e4-9b02-be3d185ab2b7")
+		)
+		(pin "14"
+			(uuid "c91db622-335b-4ad9-bdaf-66e8343295cc")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 177.8 123.6472 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6b503a6b-7997-4988-a277-fee05cd5d0c7")
+		(property "Reference" "#PWR?"
+			(at 177.8 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 184.15 123.6472 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 177.8 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "9c5551f2-ccd6-4085-96c4-cdf396cefa61")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 17.78 80.4672 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c6173fd-a9ba-4b9d-a38d-d7fcf5e40f5f")
+		(property "Reference" "#PWR?"
+			(at 17.78 80.4672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 11.43 80.4672 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 17.78 80.4672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 17.78 80.4672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 17.78 80.4672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "5443592c-cf3e-4bad-933f-0ba55d905803")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 81.28 90.6272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b0a8f21-aaa1-41a1-960b-f730697a22c3")
+		(property "Reference" "#PWR?"
+			(at 81.28 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 96.9772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "d49cc663-dd8e-4d7c-b7af-eac5623e9dc1")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_0_RES_0")
+		(at 119.38 67.7672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a39715f0-746b-4e94-a881-d87961bd79f8")
+		(property "Reference" "R20"
+			(at 119.38 69.2912 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "4.7K"
+			(at 119.38 73.8632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 119.38 67.7672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 67.7672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 119.38 67.7672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.024"
+			(at 116.332 69.2912 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 200-8383"
+			(at 116.332 69.2912 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00341"
+			(at 116.332 66.7512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2dc97e77-b8ce-4001-be30-47b818552d8d")
+		)
+		(pin "1"
+			(uuid "9c8463e0-4d30-42a9-8259-47eb0a5d8499")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:VCC_3V_BAR")
+		(at 149.86 34.7472 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b97b0be5-9326-435e-9fb5-6b1074931547")
+		(property "Reference" "#PWR?"
+			(at 149.86 34.7472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC_3V"
+			(at 149.86 30.9372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 34.7472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 34.7472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 149.86 34.7472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "3f1d1770-39aa-48d2-9a23-f910a5fefd03")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_0_Header 2X2")
+		(at 231.14 103.3272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bdb3e42f-facd-4396-8c6a-e1d1549a2bff")
+		(property "Reference" "P8"
+			(at 231.14 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "Header 2X2"
+			(at 231.14 113.4872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "HDR2X2"
+			(at 231.14 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header, 2-Pin, Dual row"
+			(at 231.14 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LATESTREVISIONDATE" "17-Jul-2002"
+			(at 231.14 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "LATESTREVISIONNOTE" "Re-released for DXP Platform."
+			(at 231.14 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PUBLISHER" "Altium Limited"
+			(at 231.14 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa8f4c83-5937-49a8-97dd-1a0a6341fd8f")
+		)
+		(pin "2"
+			(uuid "32fa6995-bee2-4bc1-a793-9e8e3cf204e8")
+		)
+		(pin "3"
+			(uuid "63d46f64-8013-48d8-aac5-4368b7735c85")
+		)
+		(pin "4"
+			(uuid "550620eb-b13c-4257-9ede-6f4b15631d2a")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "P8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_2_RES_0")
+		(at 71.12 37.2872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bff3e8ee-a9a6-4b6e-9c0d-5dd33a1d8f0b")
+		(property "Reference" "R17"
+			(at 63.5 39.8272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100"
+			(at 68.58 39.8272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 71.12 37.2872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 37.2872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 71.12 37.2872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 933-2375"
+			(at 62.992 33.7312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.027"
+			(at 62.992 33.7312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00301"
+			(at 62.992 33.7312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "11c8ab76-728e-45d8-88a0-ac0c1762d967")
+		)
+		(pin "1"
+			(uuid "57723fac-cb74-4ff5-9e9a-a4be981b9397")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_0_CAP_0")
+		(at 78.74 85.5472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c85ca3b8-85cb-480e-b2a4-c1b50690c1e8")
+		(property "Reference" "C36"
+			(at 83.82 87.8332 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 83.82 90.3732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 78.74 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 78.74 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.068"
+			(at 78.74 82.4992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 252-2090"
+			(at 78.74 82.4992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00154"
+			(at 78.74 82.4992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0a90845-6eea-41af-87d8-9bdf02062f2f")
+		)
+		(pin "2"
+			(uuid "c4396eff-6bc8-403a-959a-75230e93d9de")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_0_MCP9801_0")
+		(at 233.68 156.6672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d57566d0-dcc4-485a-a9f7-f08dd77ce61f")
+		(property "Reference" "U10"
+			(at 220.98 146.5072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "MCP9801"
+			(at 220.98 169.3672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "SO-8"
+			(at 233.68 156.6672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 156.6672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2-Wire High-Accuracy Temperature Sensor"
+			(at 233.68 156.6672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 143-9486"
+			(at 212.852 169.3672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "1.05"
+			(at 212.852 169.3672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 212.852 143.9672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "cda7fab1-0eee-43ea-bae1-ce1b8abcb4bd")
+		)
+		(pin "5"
+			(uuid "4605f744-41bd-4427-b25d-caa85b3dc0f9")
+		)
+		(pin "1"
+			(uuid "1c4c8b30-717c-4438-a61f-fe42810f1481")
+		)
+		(pin "2"
+			(uuid "83b45418-bf0f-46e8-b04d-f669aca777f2")
+		)
+		(pin "3"
+			(uuid "93358f5a-1bb9-4ef2-a096-e7261de5fac9")
+		)
+		(pin "4"
+			(uuid "4c360eee-f1e5-4752-a0f9-46df6bc27ddf")
+		)
+		(pin "8"
+			(uuid "abeeec8f-05c2-45b9-89c5-39af0af479de")
+		)
+		(pin "7"
+			(uuid "32c1740f-d017-4085-a282-127b5f7d6fb0")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_2_RES_0")
+		(at 58.42 32.2072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e79691e0-d949-4ace-9972-2ccaa251b726")
+		(property "Reference" "R16"
+			(at 50.8 27.1272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100"
+			(at 55.88 27.1272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 58.42 32.2072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 32.2072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 58.42 32.2072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 933-2375"
+			(at 50.292 28.6512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.027"
+			(at 50.292 28.6512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00301"
+			(at 50.292 24.5872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4005da73-9f2c-4eb5-97b9-4a5f8741a850")
+		)
+		(pin "1"
+			(uuid "3fc3b91e-75c4-41f2-860a-b11a6d450bd1")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_1_RES_0")
+		(at 27.94 105.8672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e9b8c586-b419-4854-81c9-fad31934d3c1")
+		(property "Reference" "R18"
+			(at 31.496 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100"
+			(at 31.496 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 27.94 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 27.94 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 933-2375"
+			(at 29.464 97.7392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.027"
+			(at 29.464 97.7392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00301"
+			(at 29.464 97.7392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ee3f135c-011c-4d53-9965-ccc3f631adfa")
+		)
+		(pin "1"
+			(uuid "06ea9844-863f-4322-a109-a67b6c32d544")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_0_SI570_0")
+		(at 50.8 77.9272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f35bdc72-fae4-47bf-a761-355819b30e5d")
+		(property "Reference" "U8"
+			(at 38.1 67.7672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "SI570"
+			(at 38.1 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "SI570_m"
+			(at 50.8 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "I2C programmable XO"
+			(at 50.8 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "DK 336-2518-ND"
+			(at 29.972 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "8.72"
+			(at 29.972 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 29.972 65.2272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "8578ba44-a522-4742-9b2e-5bec5596138e")
+		)
+		(pin "5"
+			(uuid "3cf795db-6fd1-4c93-8f6f-a5cc1b560a3f")
+		)
+		(pin "1"
+			(uuid "5cfd508a-5ee0-401f-b314-bc63890c6421")
+		)
+		(pin "2"
+			(uuid "a42834d2-568d-4503-92b3-15e5ffda3750")
+		)
+		(pin "3"
+			(uuid "f2b761ee-8cbf-4ee5-8d13-362e17e16cf4")
+		)
+		(pin "4"
+			(uuid "03a3507d-0bc2-4ecc-8de5-25c3b932051c")
+		)
+		(pin "8"
+			(uuid "1d96188f-5301-40fd-917e-d6e70927444f")
+		)
+		(pin "7"
+			(uuid "a2a0e5a2-bc52-44dd-9651-26ebf5f7a627")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Local Oscillator_2_RES_0")
+		(at 213.36 34.7472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f5f06014-09ca-499b-a6fc-a4b544d1b5d1")
+		(property "Reference" "R22"
+			(at 209.042 31.4452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "0"
+			(at 210.312 35.7632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 213.36 34.7472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 34.7472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 34.7472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.009"
+			(at 205.232 31.1912 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 933-3681"
+			(at 205.232 31.1912 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00268"
+			(at 205.232 28.6512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5b51b8bb-0c69-4e8b-b092-2272494ba242")
+		)
+		(pin "1"
+			(uuid "5b3dc4bd-78db-4da2-bca1-04482ee725b4")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 109.22 171.9072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fb2792a6-81c9-424e-addd-d7d7fda8241e")
+		(property "Reference" "#PWR?"
+			(at 109.22 171.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 178.2572 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 171.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 171.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 171.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "abc6e74c-72a0-433c-97e5-e02800d4af8d")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/66aa9ca3-517d-4077-bedc-3ead42bfc157"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

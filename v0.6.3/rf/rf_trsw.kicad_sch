@@ -1,0 +1,2825 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "44917f43-222f-4705-855c-adc9d5512c60")
+	(paper "A4")
+	(title_block
+		(title "mcHF QRP Transceiver RF board")
+		(rev "0.6.3")
+		(company "M0NKA")
+	)
+	(lib_symbols
+		(symbol "rf_main-altium-import:Antenna Switching_0_MA4P7102F"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "MELF & HIPAX PIN Diod"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*1072T*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Antenna Switching_0_MA4P7102F_1_0"
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 5.08 -2.54) (xy 2.54 -5.08) (xy 2.54 0)
+					)
+					(stroke
+						(width -0.0001)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -5.08) (xy 5.334 -5.08) (xy 5.334 0) (xy 5.08 0) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width -0.0001)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 12.7 -2.54 180)
+					(length 5.08)
+					(name "K"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 5.08)
+					(name "A"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Antenna Switching_0_RES_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Antenna Switching_0_RES_0_1_0"
+				(rectangle
+					(start 5.08 -1.524)
+					(end 0 -3.556)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Antenna Switching_1_TDK-NLV25T"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "INDUCTOR, SIGNAL LINE, 4.7UH, 1005"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Antenna Switching_1_TDK-NLV25T_1_0"
+				(arc
+					(start 1.27 1.27)
+					(mid 1.642 0.372)
+					(end 2.54 0)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 3.81)
+					(mid 1.642 2.912)
+					(end 2.54 2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 6.35)
+					(mid 1.642 5.452)
+					(end 2.54 5.08)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 8.89)
+					(mid 1.642 7.992)
+					(end 2.54 7.62)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 2.54)
+					(mid 1.642 2.168)
+					(end 1.27 1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 5.08)
+					(mid 1.642 4.708)
+					(end 1.27 3.81)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 7.62)
+					(mid 1.642 7.248)
+					(end 1.27 6.35)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 10.16)
+					(mid 1.642 9.788)
+					(end 1.27 8.89)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 12.7 270)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Antenna Switching_2_RES_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Antenna Switching_2_RES_0_1_0"
+				(rectangle
+					(start 0 3.556)
+					(end -5.08 1.524)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 2.54 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Antenna Switching_3_CAP"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Antenna Switching_3_CAP_1_0"
+				(polyline
+					(pts
+						(xy -1.778 -2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.254) (xy -1.778 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -0.254) (xy -0.762 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy -0.762 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:Antenna Switching_3_MA4P7102F"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "MELF & HIPAX PIN Diod"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*1072T*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Antenna Switching_3_MA4P7102F_1_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.54 -7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy -2.54 -5.08) (xy -5.08 -2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width -0.0001)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -5.08) (xy -5.08 -5.334) (xy 0 -5.334) (xy 0 -5.08) (xy -5.08 -5.08)
+					)
+					(stroke
+						(width -0.0001)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at -2.54 -12.7 90)
+					(length 5.08)
+					(name "K"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 5.08 270)
+					(length 5.08)
+					(name "A"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:GND_POWER_GROUND"
+			(power)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name 'GND'"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_POWER_GROUND_0_0"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -3.302) (xy 1.778 -3.302)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -4.064) (xy 1.016 -4.064)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -4.826) (xy 0.254 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 144.78 108.4072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d3e5482-e4a0-4f45-b71d-631f881a3178")
+	)
+	(junction
+		(at 144.78 85.5472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f595593-9b9f-47c6-9e2a-1cc8900cb744")
+	)
+	(junction
+		(at 180.34 80.4672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83606ca2-3aa2-4637-8488-8b2428c994e1")
+	)
+	(junction
+		(at 180.34 108.4072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b91ca3c2-f3c0-4622-bdf8-244d8b98cfbd")
+	)
+	(junction
+		(at 170.18 108.4072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be715e05-1402-4f1f-b283-30ec8aae88bd")
+	)
+	(wire
+		(pts
+			(xy 198.12 108.4072) (xy 180.34 108.4072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09d0e948-f765-4306-aa35-7cb2f3563a29")
+	)
+	(wire
+		(pts
+			(xy 180.34 80.4672) (xy 180.34 88.0872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "102e252c-c0ac-4dc7-82e9-ed73c39d7d39")
+	)
+	(wire
+		(pts
+			(xy 180.34 103.3272) (xy 180.34 108.4072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14428119-bdfe-46bc-a6b5-c0e4b867eaef")
+	)
+	(wire
+		(pts
+			(xy 144.78 103.3272) (xy 144.78 108.4072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d32eeec-0e83-499e-a10e-461574b5d9d4")
+	)
+	(polyline
+		(pts
+			(xy 261.62 202.3872) (xy 170.18 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "2648c805-2e72-4070-9da6-97db6f52bd75")
+	)
+	(polyline
+		(pts
+			(xy 210.82 199.8472) (xy 210.82 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "2bdd9577-4776-4ef0-91f1-4dceef6f5b22")
+	)
+	(polyline
+		(pts
+			(xy 287.02 192.2272) (xy 170.18 192.2272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "2ecd7682-1d89-48d5-8be9-01d598b7a7be")
+	)
+	(polyline
+		(pts
+			(xy 63.5 75.3872) (xy 30.48 75.3872)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "305b7279-ddea-4dab-bcc2-0130c1db9547")
+	)
+	(polyline
+		(pts
+			(xy 170.18 199.8472) (xy 228.6 199.8472)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "492a71ed-d539-4695-94aa-d0cc1ce64968")
+	)
+	(polyline
+		(pts
+			(xy 287.02 202.3872) (xy 287.02 192.2272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "4f117fd8-b260-4e5b-bc84-7d71dcecdedf")
+	)
+	(wire
+		(pts
+			(xy 144.78 85.5472) (xy 147.32 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61feef70-b467-4a34-ba0c-2b7401251e23")
+	)
+	(polyline
+		(pts
+			(xy 30.48 75.3872) (xy 30.48 90.6272)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "72efe5b2-7b67-4d4f-8011-d0aecf07b21c")
+	)
+	(wire
+		(pts
+			(xy 53.34 80.4672) (xy 86.36 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77456dee-66c9-4b36-95ed-a250ba441738")
+	)
+	(wire
+		(pts
+			(xy 96.52 80.4672) (xy 180.34 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7875c660-6c53-48c2-b55c-c201db8ca18f")
+	)
+	(polyline
+		(pts
+			(xy 218.44 77.9272) (xy 111.76 77.9272)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "83421a26-e848-477f-9f02-d56df6a45b54")
+	)
+	(wire
+		(pts
+			(xy 170.18 123.6472) (xy 170.18 126.1872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "860c32fb-0397-4fbb-9ea6-99608ccaf43a")
+	)
+	(wire
+		(pts
+			(xy 53.34 85.5472) (xy 99.06 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "869ee7bc-28a1-4155-a690-1f314fb24b3a")
+	)
+	(polyline
+		(pts
+			(xy 111.76 136.3472) (xy 218.44 136.3472)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "89239b43-11b6-46ca-8e02-68aaa05f0945")
+	)
+	(wire
+		(pts
+			(xy 53.34 108.4072) (xy 121.92 108.4072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9345560c-8ae9-40fa-8c32-02291dd87054")
+	)
+	(polyline
+		(pts
+			(xy 269.24 192.2272) (xy 269.24 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "94b61d86-b554-49fd-9ce0-5cfe42517c06")
+	)
+	(wire
+		(pts
+			(xy 129.54 108.4072) (xy 144.78 108.4072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98bf4349-e6b9-4af4-a749-860dd6accb98")
+	)
+	(wire
+		(pts
+			(xy 205.74 108.4072) (xy 246.38 108.4072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "992a0ce9-a8c6-481c-8f6d-5b0972d9d756")
+	)
+	(wire
+		(pts
+			(xy 144.78 108.4072) (xy 152.4 108.4072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a5d2e28-9efd-41a5-9c5f-3e1d591b31e6")
+	)
+	(polyline
+		(pts
+			(xy 218.44 136.3472) (xy 218.44 77.9272)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "9e298b24-33ec-444f-b2bb-df2ff7d1f0bf")
+	)
+	(polyline
+		(pts
+			(xy 63.5 90.6272) (xy 63.5 75.3872)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "a4fe8c34-d788-49ca-9d84-00ff83f1278b")
+	)
+	(wire
+		(pts
+			(xy 180.34 80.4672) (xy 182.88 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a593b533-83b4-41bc-9d38-09e41b022a6a")
+	)
+	(polyline
+		(pts
+			(xy 170.18 192.2272) (xy 170.18 204.9272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "a9450cff-7764-4f02-8c4b-3a5e98b9f03e")
+	)
+	(wire
+		(pts
+			(xy 109.22 85.5472) (xy 144.78 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abfa15a1-2737-4544-93d9-97f88e267812")
+	)
+	(wire
+		(pts
+			(xy 154.94 85.5472) (xy 157.48 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adcf81bd-09ec-45d7-8228-ff2769c9c35c")
+	)
+	(polyline
+		(pts
+			(xy 111.76 77.9272) (xy 111.76 136.3472)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "b0f4859d-a0fc-4511-a29c-04d11d76813d")
+	)
+	(wire
+		(pts
+			(xy 180.34 108.4072) (xy 170.18 108.4072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b53354bf-3f1d-4866-ae06-7151e8344d4d")
+	)
+	(wire
+		(pts
+			(xy 144.78 85.5472) (xy 144.78 88.0872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc0fc4c4-501a-45db-b371-1a79a93c074c")
+	)
+	(polyline
+		(pts
+			(xy 261.62 202.3872) (xy 287.02 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "c20d6594-cf3c-447a-b5c8-79a18397133c")
+	)
+	(wire
+		(pts
+			(xy 190.5 80.4672) (xy 193.04 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3104765-4c41-4dde-9dad-a12385f31979")
+	)
+	(polyline
+		(pts
+			(xy 30.48 90.6272) (xy 63.5 90.6272)
+		)
+		(stroke
+			(width 0.254)
+			(type dot)
+			(color 0 0 180 1)
+		)
+		(uuid "e94aa0a8-fcbe-4e4c-9115-9a1e55588898")
+	)
+	(polyline
+		(pts
+			(xy 228.6 192.2272) (xy 228.6 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "ee88fc1e-35e0-4469-9c75-e99635ec71ad")
+	)
+	(text "${##}"
+		(exclude_from_sim no)
+		(at 226.06 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05ecebbc-37b1-4db2-8632-166f06306c7a")
+	)
+	(text "${REVISION}"
+		(exclude_from_sim no)
+		(at 203.2 202.3872 0)
+		(effects
+			(font
+				(size 1.397 1.397)
+			)
+			(justify left bottom)
+		)
+		(uuid "1033af8d-8d2a-4623-9b4d-89c51d3e811e")
+	)
+	(text "Sheet"
+		(exclude_from_sim no)
+		(at 212.09 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b59d4b5-f189-40e3-8fe7-b37ddc12f7bc")
+	)
+	(text "all switch caps 100V, if you're modding for more than 5W, please replace with 200V"
+		(exclude_from_sim no)
+		(at 121.92 136.3472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b8ae0fa-c6da-4683-88f0-2c37dfc5302f")
+	)
+	(text "Date:"
+		(exclude_from_sim no)
+		(at 172.72 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35039c68-d4e1-48d4-9b8b-20ffbcd08921")
+	)
+	(text "${FILEPATH}"
+		(exclude_from_sim no)
+		(at 177.8 204.9272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "46a562ef-f4ed-4347-bcdc-20e44498c918")
+	)
+	(text "from PA out/LPF in"
+		(exclude_from_sim no)
+		(at 71.12 108.4072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a41458b-6feb-43d0-bd3e-5fcccdd06024")
+	)
+	(text "File:"
+		(exclude_from_sim no)
+		(at 172.72 204.9272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5290d4b4-8dc5-423f-80dc-4b3089206249")
+	)
+	(text "${TITLE}"
+		(exclude_from_sim no)
+		(at 175.26 197.3072 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "6b30e9eb-d84b-4f30-9c91-38ecfb550c02")
+	)
+	(text "${AUTHOR}"
+		(exclude_from_sim no)
+		(at 271.78 197.3072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "776b9c44-c33c-45c2-a7d7-a642a3e54b18")
+	)
+	(text "7"
+		(exclude_from_sim no)
+		(at 220.98 199.8472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "78c685f0-92bf-46d1-b089-4273808c0097")
+	)
+	(text "Antenna Switching"
+		(exclude_from_sim no)
+		(at 261.62 194.7672 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify right top)
+		)
+		(uuid "7afb8d3c-8310-48f9-9484-642711b1bfba")
+	)
+	(text "${CURRENT_DATE}"
+		(exclude_from_sim no)
+		(at 180.34 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8ebb9fdb-b65c-4091-9cd9-ea1dc923019b")
+	)
+	(text "Revision:"
+		(exclude_from_sim no)
+		(at 193.04 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b04900ce-29dd-40ca-ac79-5fc333186e4f")
+	)
+	(text "TR switching"
+		(exclude_from_sim no)
+		(at 50.8 90.6272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc7af259-6911-4834-8209-0add23514eff")
+	)
+	(text "to BPFs"
+		(exclude_from_sim no)
+		(at 228.6 108.4072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2fc4ac4-4c56-4550-8055-5a7b4a939afa")
+	)
+	(text "${COMPANY}"
+		(exclude_from_sim no)
+		(at 274.32 199.8472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "eda28e0f-a931-429a-8394-84af27f95af0")
+	)
+	(text "of"
+		(exclude_from_sim no)
+		(at 223.52 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "edf4256a-6171-4aae-ba46-14a858dae74c")
+	)
+	(hierarchical_label "ANT_TX_ON"
+		(shape input)
+		(at 53.34 80.4672 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "071f39be-5cab-45db-8e61-d9e9e8f333e7")
+	)
+	(hierarchical_label "RX_ANT"
+		(shape output)
+		(at 246.38 108.4072 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "58eb071c-a30e-4f75-a091-d4311ba70cff")
+	)
+	(hierarchical_label "ANT_RX_ON"
+		(shape input)
+		(at 53.34 85.5472 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "594a235d-b396-450c-a9c0-2a8192aae61b")
+	)
+	(hierarchical_label "TX_PA_OUT"
+		(shape input)
+		(at 53.34 108.4072 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "601f18b7-f2ec-4cb4-a1a9-147ba5c3c9fa")
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Antenna Switching_2_RES_0")
+		(at 93.98 83.0072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "173eda76-c3f4-4567-af44-8a7d021dda2a")
+		(property "Reference" "R53"
+			(at 88.9 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "220"
+			(at 93.98 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 93.98 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 93.98 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.007"
+			(at 85.852 79.4512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 933-2804"
+			(at 85.852 79.4512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00309"
+			(at 85.852 75.3872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "223e0d9e-44b8-4b78-9cd5-07b45a277912")
+		)
+		(pin "1"
+			(uuid "1e1ae67a-0fa1-4621-9b25-267a89948634")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/7f7dd8bc-6f8a-4ed2-bc33-531d1538dbb1"
+					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 170.18 123.6472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30534276-5518-44dd-9704-c82577ee338d")
+		(property "Reference" "#PWR?"
+			(at 170.18 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.18 129.9972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 170.18 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "484e1324-0144-42e6-b917-37a54752a3a1")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/7f7dd8bc-6f8a-4ed2-bc33-531d1538dbb1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Antenna Switching_3_CAP")
+		(at 203.2 105.8672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3879f3a1-da4e-4063-8362-569d4751da92")
+		(property "Reference" "C81"
+			(at 200.406 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 200.406 113.4872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 203.2 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 203.2 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.068"
+			(at 197.612 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 252-2090"
+			(at 197.612 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "VOLTAGE" "100V"
+			(at 200.66 116.0272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00154"
+			(at 197.612 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "942438c4-8591-41e0-a163-8b64a876864e")
+		)
+		(pin "2"
+			(uuid "0c046fe6-44c1-4099-8a72-7bbf96079793")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/7f7dd8bc-6f8a-4ed2-bc33-531d1538dbb1"
+					(reference "C81")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Antenna Switching_3_CAP")
+		(at 127 105.8672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "390c668a-652e-436b-8770-45b0c6702ffd")
+		(property "Reference" "C78"
+			(at 124.206 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "1nF"
+			(at 124.206 113.4872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 127 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 127 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.083"
+			(at 121.412 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 136-2553"
+			(at 121.412 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "VOLTAGE" "100V"
+			(at 132.08 121.1072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00259"
+			(at 121.412 103.3272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0329db8-44f6-4eb1-93f4-2ba07c331e3e")
+		)
+		(pin "2"
+			(uuid "d4052ea4-349d-4864-a88a-7319cd0ff97c")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/7f7dd8bc-6f8a-4ed2-bc33-531d1538dbb1"
+					(reference "C78")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Antenna Switching_3_MA4P7102F")
+		(at 172.72 113.4872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5620694b-2d99-4130-bbee-763535a8d1ad")
+		(property "Reference" "D4"
+			(at 172.974 115.7732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "MA4P7102F"
+			(at 172.974 118.3132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "1072T"
+			(at 172.72 113.4872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 113.4872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "MELF & HIPAX PIN Diod"
+			(at 172.72 113.4872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "DK 1465-1236-1-ND"
+			(at 167.386 107.8992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "2.20"
+			(at 167.386 107.8992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 167.386 107.8992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8c7104bd-08ec-4168-aeee-1e9143d4c06d")
+		)
+		(pin "1"
+			(uuid "5f329567-68e4-46fa-bfff-fc8a32bc7cf4")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/7f7dd8bc-6f8a-4ed2-bc33-531d1538dbb1"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Antenna Switching_1_TDK-NLV25T")
+		(at 177.8 100.7872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5ece6213-415c-4931-96cd-aa01bef2f301")
+		(property "Reference" "RFC3"
+			(at 170.18 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47uH"
+			(at 170.18 95.7072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 177.8 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "INDUCTOR, SIGNAL LINE, 4.7UH, 1005"
+			(at 177.8 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 166-9895"
+			(at 179.07 87.5792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.166"
+			(at 179.07 87.5792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19412e9e-4bcd-49dc-ac62-941a36075ccc")
+		)
+		(pin "2"
+			(uuid "a053cc8b-8c08-4ab0-b0c1-1b5726674117")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/7f7dd8bc-6f8a-4ed2-bc33-531d1538dbb1"
+					(reference "RFC3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 193.04 80.4672 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7b4e6f04-600d-43d0-8122-1aa89ba15260")
+		(property "Reference" "#PWR?"
+			(at 193.04 80.4672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 199.39 80.4672 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 80.4672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 80.4672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 80.4672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "1f4ef492-a348-4d5c-9ccc-6fd60aa9cdfb")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/7f7dd8bc-6f8a-4ed2-bc33-531d1538dbb1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Antenna Switching_0_RES_0")
+		(at 101.6 83.0072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7eb42261-af8f-4366-abb7-a6bd5a5f62c5")
+		(property "Reference" "R54"
+			(at 99.06 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "3.9K"
+			(at 104.14 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 101.6 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 101.6 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.012"
+			(at 98.552 84.5312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 165-2998"
+			(at 98.552 84.5312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00339"
+			(at 98.552 84.5312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a208b2cb-7f9a-42a1-a174-8dbd9268df71")
+		)
+		(pin "1"
+			(uuid "e3671318-ac03-4021-9622-5bce21e924f2")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/7f7dd8bc-6f8a-4ed2-bc33-531d1538dbb1"
+					(reference "R54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Antenna Switching_1_TDK-NLV25T")
+		(at 142.24 100.7872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9e4f5e84-8b57-405e-9807-825d65f80da3")
+		(property "Reference" "RFC2"
+			(at 132.08 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47uH"
+			(at 132.08 95.7072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 142.24 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "INDUCTOR, SIGNAL LINE, 4.7UH, 1005"
+			(at 142.24 100.7872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 166-9895"
+			(at 143.51 87.5792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.166"
+			(at 143.51 87.5792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ade0d00-e7d5-4238-8cb4-8c141efa943c")
+		)
+		(pin "2"
+			(uuid "8eff8c1a-77a6-47f0-9697-4af7adf618cf")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/7f7dd8bc-6f8a-4ed2-bc33-531d1538dbb1"
+					(reference "RFC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Antenna Switching_0_MA4P7102F")
+		(at 157.48 105.8672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b4efee1a-3642-4037-a8b8-3400240ed6a7")
+		(property "Reference" "D3"
+			(at 157.226 105.6132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "MA4P7102F"
+			(at 157.226 113.7412 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "1072T"
+			(at 157.48 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "MELF & HIPAX PIN Diod"
+			(at 157.48 105.8672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "DK 1465-1236-1-ND"
+			(at 151.892 116.2812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "2.20"
+			(at 151.892 116.2812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 151.892 103.0732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d476bb54-535c-4b6c-8e16-2d01ed872954")
+		)
+		(pin "1"
+			(uuid "19c67226-4c03-431d-9145-e2864a88077c")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/7f7dd8bc-6f8a-4ed2-bc33-531d1538dbb1"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 157.48 85.5472 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c2e84ff6-65d3-4009-863b-30b6d31809ed")
+		(property "Reference" "#PWR?"
+			(at 157.48 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 85.5472 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "3e755966-6df5-4eb3-81f9-0cf382e72935")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/7f7dd8bc-6f8a-4ed2-bc33-531d1538dbb1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Antenna Switching_3_CAP")
+		(at 187.96 77.9272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c3e84576-916c-4900-b938-8bff3994fc0e")
+		(property "Reference" "C80"
+			(at 185.166 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 185.166 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 187.96 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 187.96 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.068"
+			(at 182.372 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 252-2090"
+			(at 182.372 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "VOLTAGE" "100V"
+			(at 185.42 88.0872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00154"
+			(at 182.372 75.3872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab2b0d7b-5694-4dc5-958e-3a443e4472f6")
+		)
+		(pin "2"
+			(uuid "2e83b4b9-7af8-4465-8039-4cf2274d4a76")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/7f7dd8bc-6f8a-4ed2-bc33-531d1538dbb1"
+					(reference "C80")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:Antenna Switching_3_CAP")
+		(at 152.4 83.0072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f042358f-6910-41be-b72b-c7083e2f20a7")
+		(property "Reference" "C79"
+			(at 149.606 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 149.606 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 152.4 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 152.4 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.068"
+			(at 146.812 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 252-2090"
+			(at 146.812 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "VOLTAGE" "100V"
+			(at 149.86 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00154"
+			(at 146.812 80.4672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00e50c31-bf50-4455-a51d-5dd4cc8fb110")
+		)
+		(pin "2"
+			(uuid "dbcea636-9b8f-4103-bb0f-7a9b98b9477a")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/7f7dd8bc-6f8a-4ed2-bc33-531d1538dbb1"
+					(reference "C79")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

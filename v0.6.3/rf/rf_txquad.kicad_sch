@@ -1,0 +1,5715 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "f51a9119-0e16-4772-8dff-224a83f908ae")
+	(paper "A4")
+	(title_block
+		(title "mcHF QRP Transceiver RF board")
+		(rev "0.6.3")
+		(company "M0NKA")
+	)
+	(lib_symbols
+		(symbol "rf_main-altium-import:GND_POWER_GROUND"
+			(power)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name 'GND'"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_POWER_GROUND_0_0"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -3.302) (xy 1.778 -3.302)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -4.064) (xy 1.016 -4.064)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -4.826) (xy 0.254 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Quad preamp_0_CAP-POL_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Electrolitic capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*1206_Elec_Cap_N*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Quad preamp_0_CAP-POL_0_1_0"
+				(polyline
+					(pts
+						(xy 1.524 2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 2.032) (xy 2.032 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 3.048 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.048 -2.032) (xy 3.048 2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.572 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.572 2.032) (xy 4.572 -2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Quad preamp_0_RES_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Quad preamp_0_RES_0_1_0"
+				(rectangle
+					(start 5.08 -1.524)
+					(end 0 -3.556)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Quad preamp_0_TLV2464CD"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Low Power, Rail-To-Rail OpAmp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*SO-14-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Quad preamp_0_TLV2464CD_1_0"
+				(rectangle
+					(start 12.7 17.78)
+					(end -12.7 -17.78)
+					(stroke
+						(width 0.0254)
+						(type solid)
+						(color 128 0 0 1)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin output line
+					(at -20.32 15.24 0)
+					(length 7.62)
+					(name "Out1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -5.08 180)
+					(length 7.62)
+					(name "In3+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 0 180)
+					(length 7.62)
+					(name "Vss"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 5.08 180)
+					(length 7.62)
+					(name "In4+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 10.16 180)
+					(length 7.62)
+					(name "In4-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 15.24 180)
+					(length 7.62)
+					(name "Out4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 10.16 0)
+					(length 7.62)
+					(name "In1-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 5.08 0)
+					(length 7.62)
+					(name "In1+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 0 0)
+					(length 7.62)
+					(name "Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -5.08 0)
+					(length 7.62)
+					(name "In2+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -10.16 0)
+					(length 7.62)
+					(name "In2-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 -15.24 0)
+					(length 7.62)
+					(name "Out2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -15.24 180)
+					(length 7.62)
+					(name "Out3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -10.16 180)
+					(length 7.62)
+					(name "In3-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Quad preamp_1_RES_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Quad preamp_1_RES_0_1_0"
+				(rectangle
+					(start 3.556 5.08)
+					(end 1.524 0)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Quad preamp_1_TDK-NLV25T"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "INDUCTOR, SIGNAL LINE, 4.7UH, 1005"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Quad preamp_1_TDK-NLV25T_1_0"
+				(arc
+					(start 1.27 1.27)
+					(mid 1.642 0.372)
+					(end 2.54 0)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 3.81)
+					(mid 1.642 2.912)
+					(end 2.54 2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 6.35)
+					(mid 1.642 5.452)
+					(end 2.54 5.08)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 8.89)
+					(mid 1.642 7.992)
+					(end 2.54 7.62)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 2.54)
+					(mid 1.642 2.168)
+					(end 1.27 1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 5.08)
+					(mid 1.642 4.708)
+					(end 1.27 3.81)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 7.62)
+					(mid 1.642 7.248)
+					(end 1.27 6.35)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 10.16)
+					(mid 1.642 9.788)
+					(end 1.27 8.89)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 12.7 270)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Quad preamp_2_CAP"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Quad preamp_2_CAP_1_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.54 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.778) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 0.762) (xy -4.826 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.778) (xy -4.826 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 5.08 270)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Quad preamp_3_CAP"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*0805-Pro*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Quad preamp_3_CAP_1_0"
+				(polyline
+					(pts
+						(xy -1.778 -2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.254) (xy -1.778 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -0.254) (xy -0.762 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy -0.762 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:TX Quad preamp_3_CAP-POL_0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Electrolitic capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*1206_Elec_Cap_N*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TX Quad preamp_3_CAP-POL_0_1_0"
+				(polyline
+					(pts
+						(xy -2.032 -3.048) (xy 2.032 -3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -4.572) (xy 0 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -4.572) (xy -2.032 -4.572)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -2.032) (xy 3.048 -2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.524) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 270)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "rf_main-altium-import:VCC_5V_BAR"
+			(power)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VCC_5V"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name 'VCC_5V'"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VCC_5V_BAR_0_0"
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 0) hide
+					(name "VCC_5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 170.18 55.0672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01b31edc-9d53-43d9-8f15-8631a5a12ad2")
+	)
+	(junction
+		(at 109.22 42.3672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04640009-8140-4b86-9ac8-2416949da26b")
+	)
+	(junction
+		(at 101.6 60.1472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0861ffbc-305a-4dcd-b64e-7b98b7bbf595")
+	)
+	(junction
+		(at 109.22 47.4472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "183375d0-aa7e-435f-8277-4235849b4264")
+	)
+	(junction
+		(at 101.6 80.4672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ad462a3-ac54-4567-9896-02d2860ef1b6")
+	)
+	(junction
+		(at 109.22 93.1672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21443e78-9dd0-4fcb-bb82-005d207fc288")
+	)
+	(junction
+		(at 114.3 159.2072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27f1466a-8358-483e-9346-bcdbf24b9b37")
+	)
+	(junction
+		(at 170.18 60.1472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2daa8696-2730-4fc6-861f-41446dbbc30a")
+	)
+	(junction
+		(at 114.3 176.9872)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "351745ea-0333-4c2a-ae27-7ea2699f3db2")
+	)
+	(junction
+		(at 162.56 70.3072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3593b6f0-1b97-4f26-ac35-e0c751be5ff0")
+	)
+	(junction
+		(at 101.6 42.3672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ab1afdc-0584-4ecb-86fd-b812710ddc1e")
+	)
+	(junction
+		(at 170.18 85.5472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46f0b546-2551-45c4-8625-41a9faa820a5")
+	)
+	(junction
+		(at 152.4 80.4672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5bc3d93b-a8fa-4d28-b3be-803408a009a9")
+	)
+	(junction
+		(at 93.98 70.3072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66a931f9-df0e-4945-a2d3-12d48e01fca2")
+	)
+	(junction
+		(at 81.28 159.2072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6986fbbc-5468-41c1-a31d-9e1abac8282f")
+	)
+	(junction
+		(at 93.98 60.1472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b263009-9c04-4cdc-a0a4-b6bba926355b")
+	)
+	(junction
+		(at 152.4 60.1472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d56e6f2-da6e-4fc5-830e-74305da6cbc6")
+	)
+	(junction
+		(at 99.06 159.2072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9d5bc4e-4655-4542-bcd8-6e4cb5a0aad4")
+	)
+	(junction
+		(at 129.54 159.2072)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae95448f-ea34-4d83-ac16-31bab6c73cf7")
+	)
+	(junction
+		(at 129.54 141.4272)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b84e946e-7e85-40ca-a642-efa02b234a69")
+	)
+	(junction
+		(at 152.4 93.1672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc377dda-b1e1-4f72-91eb-1bab488ae123")
+	)
+	(junction
+		(at 152.4 47.4472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c03b1b20-7679-4fdb-8083-9a8bb1a78441")
+	)
+	(junction
+		(at 129.54 176.9872)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c305b3bd-5502-4c7f-80c0-1612f216fc3f")
+	)
+	(junction
+		(at 93.98 80.4672)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cecb4bef-0484-4981-bfa0-63b9db45ffef")
+	)
+	(junction
+		(at 109.22 98.2472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed2fbb7d-37e0-4e87-a0c4-4793922806fe")
+	)
+	(junction
+		(at 101.6 98.2472)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0292908-0f60-48d4-89ce-9ba6f9e6a872")
+	)
+	(junction
+		(at 99.06 176.9872)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5a30f80-8803-4552-8f6f-037826d508c7")
+	)
+	(wire
+		(pts
+			(xy 170.18 85.5472) (xy 180.34 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "040e9b3c-b713-4486-9b91-5ad69cc611a5")
+	)
+	(wire
+		(pts
+			(xy 134.62 93.1672) (xy 152.4 93.1672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0547b3c5-8b2b-4ae8-9f42-746315a45c51")
+	)
+	(polyline
+		(pts
+			(xy 261.62 202.3872) (xy 170.18 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "06de3e71-63cc-4db2-9179-edcd5f8c2f84")
+	)
+	(wire
+		(pts
+			(xy 187.96 42.3672) (xy 215.9 42.3672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "083ce5db-64b7-4f72-a99d-907875ac57a8")
+	)
+	(wire
+		(pts
+			(xy 109.22 70.3072) (xy 99.06 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e035a61-0ac6-438c-9279-7c56ec33ce57")
+	)
+	(wire
+		(pts
+			(xy 129.54 159.2072) (xy 114.3 159.2072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e1771fd-93e5-4811-82d2-febc053b482d")
+	)
+	(wire
+		(pts
+			(xy 162.56 70.3072) (xy 162.56 75.3872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "145715e3-7f19-4880-bd47-92703f479681")
+	)
+	(polyline
+		(pts
+			(xy 210.82 199.8472) (xy 210.82 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "17425f65-742b-4948-835f-62f5ed50ea5e")
+	)
+	(wire
+		(pts
+			(xy 93.98 70.3072) (xy 93.98 75.3872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "175bd512-e5d6-48d5-8b92-c6b4991de1a9")
+	)
+	(wire
+		(pts
+			(xy 109.22 85.5472) (xy 109.22 93.1672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17c299c7-a148-4ccf-a518-3908288c970b")
+	)
+	(wire
+		(pts
+			(xy 149.86 85.5472) (xy 170.18 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21385b06-76cd-4094-850a-fe50ef18500a")
+	)
+	(polyline
+		(pts
+			(xy 228.6 192.2272) (xy 228.6 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "21d75365-f28f-475a-bc6e-8836321f66fd")
+	)
+	(wire
+		(pts
+			(xy 99.06 159.2072) (xy 81.28 159.2072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2244229f-2750-416a-836a-9c935380b451")
+	)
+	(wire
+		(pts
+			(xy 109.22 42.3672) (xy 180.34 42.3672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22730526-c516-424a-a280-999d2e951399")
+	)
+	(wire
+		(pts
+			(xy 187.96 60.1472) (xy 215.9 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22f2557a-4a69-4fd8-bfaa-84b90f44448c")
+	)
+	(wire
+		(pts
+			(xy 81.28 80.4672) (xy 66.04 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ba6683d-d906-4b8c-a183-fe29bdd89c07")
+	)
+	(polyline
+		(pts
+			(xy 170.18 199.8472) (xy 228.6 199.8472)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "2bcf69d2-ad29-465e-aec6-8e05cbac9c7d")
+	)
+	(wire
+		(pts
+			(xy 81.28 159.2072) (xy 63.5 159.2072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3153ce1d-d145-49db-a851-8ff27447e0e3")
+	)
+	(wire
+		(pts
+			(xy 170.18 60.1472) (xy 165.1 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3750cf75-bb4e-4f0f-b4ef-cf8004760567")
+	)
+	(wire
+		(pts
+			(xy 109.22 55.0672) (xy 109.22 47.4472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e7085a0-3f7e-48e7-9fbb-3cee46b4419d")
+	)
+	(wire
+		(pts
+			(xy 114.3 161.7472) (xy 114.3 159.2072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e9753ba-f170-43d7-96eb-baf666d7ea04")
+	)
+	(wire
+		(pts
+			(xy 101.6 60.1472) (xy 109.22 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fdce590-beb9-493f-8666-c86c9a8b637d")
+	)
+	(wire
+		(pts
+			(xy 129.54 141.4272) (xy 134.62 141.4272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "400603f9-a491-483c-9ecc-f86e19a4fdc2")
+	)
+	(wire
+		(pts
+			(xy 114.3 176.9872) (xy 114.3 169.3672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41193eaa-0992-4c27-9d5f-a381703b013b")
+	)
+	(wire
+		(pts
+			(xy 170.18 85.5472) (xy 170.18 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "438dcd82-a85c-4491-841e-e2bbf4b310e3")
+	)
+	(polyline
+		(pts
+			(xy 287.02 202.3872) (xy 287.02 192.2272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "4427f25a-f40e-470e-ba2f-b04bd1f03c26")
+	)
+	(wire
+		(pts
+			(xy 162.56 65.2272) (xy 162.56 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47cc3bad-bff0-4bed-99fb-0bcf93e21aaa")
+	)
+	(wire
+		(pts
+			(xy 99.06 176.9872) (xy 114.3 176.9872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "496e6579-c335-4268-9bd1-70feb8afe2fd")
+	)
+	(wire
+		(pts
+			(xy 101.6 95.7072) (xy 101.6 98.2472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b07d947-43a1-4542-854f-3def575d7cb1")
+	)
+	(wire
+		(pts
+			(xy 147.32 141.4272) (xy 142.24 141.4272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e889661-116a-4b57-8820-f1ff2c22d193")
+	)
+	(wire
+		(pts
+			(xy 93.98 65.2272) (xy 93.98 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "503eff64-2532-4020-a866-92cc42700fb1")
+	)
+	(wire
+		(pts
+			(xy 187.96 98.2472) (xy 215.9 98.2472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51280321-e336-4865-9c38-3cb8448d1fee")
+	)
+	(wire
+		(pts
+			(xy 93.98 60.1472) (xy 101.6 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51e4257a-7d95-40ce-93fa-83c3dd8d7b0c")
+	)
+	(wire
+		(pts
+			(xy 152.4 60.1472) (xy 154.94 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "523a7e24-c51c-48cb-9ec1-458b0ae6e2c3")
+	)
+	(wire
+		(pts
+			(xy 149.86 60.1472) (xy 152.4 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52834c5b-9e0c-4da1-ad61-810ec431b0bc")
+	)
+	(wire
+		(pts
+			(xy 101.6 98.2472) (xy 109.22 98.2472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56e528a6-d3c8-499d-9c60-65c4372cdc2c")
+	)
+	(wire
+		(pts
+			(xy 81.28 161.7472) (xy 81.28 159.2072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58c6c37d-2696-493b-a299-a787ffcf6630")
+	)
+	(wire
+		(pts
+			(xy 129.54 138.8872) (xy 129.54 141.4272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "594d63e2-7a46-4647-af18-483efdec32e7")
+	)
+	(wire
+		(pts
+			(xy 162.56 93.1672) (xy 170.18 93.1672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5958abfb-5b6a-46e3-91e1-211c8bb99600")
+	)
+	(wire
+		(pts
+			(xy 114.3 176.9872) (xy 129.54 176.9872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59ec898a-06ff-41ce-ab93-dd8c329e9bf5")
+	)
+	(wire
+		(pts
+			(xy 109.22 93.1672) (xy 109.22 98.2472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "623e6145-9633-4dcb-9bc2-d6b6338a3403")
+	)
+	(wire
+		(pts
+			(xy 109.22 47.4472) (xy 124.46 47.4472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66c9c62b-fb04-40dd-b8d6-27206665a358")
+	)
+	(wire
+		(pts
+			(xy 101.6 44.9072) (xy 101.6 42.3672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6935ef07-de6d-45b3-8673-d9e739c5a5a0")
+	)
+	(wire
+		(pts
+			(xy 99.06 161.7472) (xy 99.06 159.2072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bffaf34-d040-4bbf-86f7-238fde107f13")
+	)
+	(wire
+		(pts
+			(xy 99.06 169.3672) (xy 99.06 176.9872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d4179bd-ee01-4c88-a69a-6d9e95dd1476")
+	)
+	(polyline
+		(pts
+			(xy 170.18 192.2272) (xy 170.18 204.9272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "75129c08-0977-4b33-859b-137cd5dd98ef")
+	)
+	(wire
+		(pts
+			(xy 81.28 169.3672) (xy 81.28 176.9872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7751d4f9-d66b-45b4-80db-cbf324663855")
+	)
+	(wire
+		(pts
+			(xy 154.94 47.4472) (xy 152.4 47.4472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77f269b0-3a04-4b5c-a868-39cc1914f421")
+	)
+	(wire
+		(pts
+			(xy 93.98 85.5472) (xy 93.98 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79985aac-a442-4ee3-a9a3-9e298dc46b54")
+	)
+	(wire
+		(pts
+			(xy 101.6 88.0872) (xy 101.6 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b47d1d8-ffbd-4e13-bbd5-58455b1e3517")
+	)
+	(wire
+		(pts
+			(xy 170.18 93.1672) (xy 170.18 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dfefa5e-3223-4f3e-b040-0a33071ef85c")
+	)
+	(wire
+		(pts
+			(xy 129.54 141.4272) (xy 114.3 141.4272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eb7b842-88e2-4ee1-ad57-2e0a59c3b65a")
+	)
+	(wire
+		(pts
+			(xy 93.98 80.4672) (xy 101.6 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80b76701-c274-482a-9a99-960806207be4")
+	)
+	(wire
+		(pts
+			(xy 101.6 80.4672) (xy 109.22 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85925d2f-9cbb-4e5f-a497-e5ba94133ab9")
+	)
+	(wire
+		(pts
+			(xy 134.62 47.4472) (xy 152.4 47.4472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8610c7db-d467-4095-8788-c96038a13c4a")
+	)
+	(wire
+		(pts
+			(xy 152.4 93.1672) (xy 154.94 93.1672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8616345c-cf1c-4367-ba4c-e2c02642c327")
+	)
+	(wire
+		(pts
+			(xy 93.98 98.2472) (xy 101.6 98.2472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86d23f37-679d-45e7-9d74-d66055ce52cc")
+	)
+	(wire
+		(pts
+			(xy 162.56 70.3072) (xy 180.34 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87b8c9b8-0716-4130-bb06-e69fa06ccb04")
+	)
+	(wire
+		(pts
+			(xy 109.22 65.2272) (xy 93.98 65.2272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "881d912e-2bc8-4f67-8a81-b44d440c04a5")
+	)
+	(wire
+		(pts
+			(xy 149.86 55.0672) (xy 170.18 55.0672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8890acba-ee11-45a7-bca8-f6fe0dd374e5")
+	)
+	(wire
+		(pts
+			(xy 93.98 70.3072) (xy 78.74 70.3072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bd98c5c-66b1-4017-8c2e-9e393f3736b2")
+	)
+	(wire
+		(pts
+			(xy 109.22 47.4472) (xy 109.22 42.3672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "926cd916-eb8b-4de3-8c07-ede705bac6f2")
+	)
+	(polyline
+		(pts
+			(xy 287.02 192.2272) (xy 170.18 192.2272)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "9a501c1e-e460-42e4-8cc9-4004ec4b3b55")
+	)
+	(wire
+		(pts
+			(xy 93.98 42.3672) (xy 93.98 44.9072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cc741a2-c5fa-4d9e-9af8-2e63bd7d6dd6")
+	)
+	(polyline
+		(pts
+			(xy 261.62 202.3872) (xy 287.02 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "a05594f2-b94c-4258-85c4-3f10f8e3b0d6")
+	)
+	(wire
+		(pts
+			(xy 129.54 141.4272) (xy 129.54 143.9672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a59b91eb-00e3-4d95-9a68-b681dee1e8c8")
+	)
+	(wire
+		(pts
+			(xy 109.22 93.1672) (xy 124.46 93.1672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a778e273-de69-4462-a6c3-ab9a8669b0be")
+	)
+	(wire
+		(pts
+			(xy 149.86 65.2272) (xy 162.56 65.2272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a87c546b-7b79-43cb-a4ca-b15f6a9e57c2")
+	)
+	(wire
+		(pts
+			(xy 129.54 176.9872) (xy 129.54 171.9072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aeceae4c-0b75-4276-8993-694f3f8047af")
+	)
+	(wire
+		(pts
+			(xy 187.96 85.5472) (xy 215.9 85.5472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af2abf73-e091-40ed-aadb-b58ed96bdceb")
+	)
+	(wire
+		(pts
+			(xy 81.28 60.1472) (xy 66.04 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af78feba-82ce-46a2-9822-76ee4d2dd75b")
+	)
+	(wire
+		(pts
+			(xy 162.56 75.3872) (xy 149.86 75.3872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be831ecd-cf7b-4943-9a5b-c66352654477")
+	)
+	(wire
+		(pts
+			(xy 93.98 95.7072) (xy 93.98 98.2472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beb6ded1-a485-48c3-bd8a-120bb1c427e1")
+	)
+	(wire
+		(pts
+			(xy 81.28 176.9872) (xy 99.06 176.9872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf7b6a64-28b2-447c-8619-1e027e46c545")
+	)
+	(wire
+		(pts
+			(xy 129.54 159.2072) (xy 129.54 161.7472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c167eaf5-45cf-4588-9cf5-1360e396a8b4")
+	)
+	(wire
+		(pts
+			(xy 109.22 98.2472) (xy 180.34 98.2472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c22a29f5-74da-4841-9dae-3d7487d0e701")
+	)
+	(wire
+		(pts
+			(xy 129.54 159.2072) (xy 129.54 154.1272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2a2961a-0c06-42c2-9d68-0c575ab816f4")
+	)
+	(wire
+		(pts
+			(xy 152.4 93.1672) (xy 152.4 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c371dd76-ea1c-40ed-84b1-584f8c913eb0")
+	)
+	(wire
+		(pts
+			(xy 91.44 80.4672) (xy 93.98 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c55bf24d-8a06-47c4-a733-2d713d99f7d5")
+	)
+	(wire
+		(pts
+			(xy 162.56 47.4472) (xy 170.18 47.4472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf2857d4-d46c-47ef-8a43-ca74a1f83449")
+	)
+	(wire
+		(pts
+			(xy 109.22 42.3672) (xy 101.6 42.3672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d34133e5-c307-44e3-afed-6992e4806e3d")
+	)
+	(wire
+		(pts
+			(xy 93.98 75.3872) (xy 109.22 75.3872)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d372f12c-5d7b-425c-8f62-f30296e13a61")
+	)
+	(wire
+		(pts
+			(xy 101.6 42.3672) (xy 93.98 42.3672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc7ddcc2-2858-4ee4-b640-2c382ac2d14e")
+	)
+	(wire
+		(pts
+			(xy 170.18 47.4472) (xy 170.18 55.0672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea7f7a7e-e887-435f-82eb-8b2eaa92d67a")
+	)
+	(wire
+		(pts
+			(xy 170.18 55.0672) (xy 170.18 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb2e37b7-cd1a-42db-bdf7-f420a93ee869")
+	)
+	(wire
+		(pts
+			(xy 170.18 80.4672) (xy 165.1 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec0f096c-b10f-4d23-b863-7c7a6bef791d")
+	)
+	(wire
+		(pts
+			(xy 152.4 47.4472) (xy 152.4 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efe4423d-4ded-4262-bccf-5a0c0f0e20d4")
+	)
+	(wire
+		(pts
+			(xy 152.4 80.4672) (xy 154.94 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f075f995-42c0-4f7e-baed-a09d2767d21b")
+	)
+	(wire
+		(pts
+			(xy 101.6 52.5272) (xy 101.6 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2627c35-2987-4824-9bee-ba2bd56c1a78")
+	)
+	(wire
+		(pts
+			(xy 91.44 60.1472) (xy 93.98 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f27f3cf7-6337-4aa3-be97-2965976f06f5")
+	)
+	(polyline
+		(pts
+			(xy 269.24 192.2272) (xy 269.24 202.3872)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "f3a5bdc7-ed77-44d9-b51c-0fa503811c74")
+	)
+	(wire
+		(pts
+			(xy 93.98 55.0672) (xy 93.98 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5a07802-d9a5-46a6-9cff-839a45af4f87")
+	)
+	(wire
+		(pts
+			(xy 149.86 80.4672) (xy 152.4 80.4672)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fad04ee3-3d53-49f8-88a0-7fe2f4688244")
+	)
+	(wire
+		(pts
+			(xy 170.18 60.1472) (xy 180.34 60.1472)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcb733d5-45d7-41df-8a5d-5a443c9693c2")
+	)
+	(wire
+		(pts
+			(xy 114.3 159.2072) (xy 99.06 159.2072)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe63684d-efd4-4501-bf6f-df6c01a101d1")
+	)
+	(text "${TITLE}"
+		(exclude_from_sim no)
+		(at 175.26 197.3072 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e5c6ece-e5b7-4207-a6de-b97b4ea3d66d")
+	)
+	(text "TX Quad preamp"
+		(exclude_from_sim no)
+		(at 238.76 199.8472 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left bottom)
+		)
+		(uuid "16f47034-f2f5-4406-af3d-a81ca4f24a56")
+	)
+	(text "${COMPANY}"
+		(exclude_from_sim no)
+		(at 274.32 199.8472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "2468a6c7-acfa-454e-86a1-af867dd85a8c")
+	)
+	(text "${##}"
+		(exclude_from_sim no)
+		(at 226.06 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d6a7d0c-8837-478d-b994-7ada26088eb4")
+	)
+	(text "${AUTHOR}"
+		(exclude_from_sim no)
+		(at 271.78 197.3072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "417351b5-7bd8-4120-b210-5786a290ed06")
+	)
+	(text "${REVISION}"
+		(exclude_from_sim no)
+		(at 203.2 202.3872 0)
+		(effects
+			(font
+				(size 1.397 1.397)
+			)
+			(justify left bottom)
+		)
+		(uuid "41b2c9cc-ff98-46bd-a3e9-46cc050fb6af")
+	)
+	(text "of"
+		(exclude_from_sim no)
+		(at 223.52 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4f54b41f-adef-4b6f-86f0-5cad9e3da6e3")
+	)
+	(text "File:"
+		(exclude_from_sim no)
+		(at 172.72 204.9272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "57919a80-d9d4-43b1-92d0-1ebd989d007f")
+	)
+	(text "90 deg"
+		(exclude_from_sim no)
+		(at 190.5 98.2472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "64096467-2269-4283-b163-6869f5f68795")
+	)
+	(text "${FILEPATH}"
+		(exclude_from_sim no)
+		(at 177.8 204.9272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6720f78d-f970-41b1-8360-072feb17017b")
+	)
+	(text "270 deg"
+		(exclude_from_sim no)
+		(at 190.5 85.5472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d14579a-e128-4e1c-bb83-25f1747c7a40")
+	)
+	(text "10"
+		(exclude_from_sim no)
+		(at 218.44 199.8472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "72c170c7-0597-4b70-9179-41e5e8ddb41c")
+	)
+	(text "Revision:"
+		(exclude_from_sim no)
+		(at 193.04 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "76e345ea-2f54-4743-89fc-45eb973e7d13")
+	)
+	(text "180 deg"
+		(exclude_from_sim no)
+		(at 190.5 60.1472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9f4314b-7eb1-441e-9d75-ecfef579fa19")
+	)
+	(text "Date:"
+		(exclude_from_sim no)
+		(at 172.72 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ba5c2da6-8d40-4e55-80e9-4263ad591c22")
+	)
+	(text "0 deg"
+		(exclude_from_sim no)
+		(at 190.5 42.3672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f17dc94c-2d5b-41a5-b818-f2085d84b6ba")
+	)
+	(text "Sheet"
+		(exclude_from_sim no)
+		(at 212.09 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f2848563-c71a-4742-a6a2-d98bb1c55f1f")
+	)
+	(text "${CURRENT_DATE}"
+		(exclude_from_sim no)
+		(at 180.34 202.3872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f72ad41d-55a3-44c3-9498-2e5c9b3c1ddb")
+	)
+	(label "TX_OA_BIAS"
+		(at 165.1 70.3072 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ca9d516-c030-4ba1-a113-3a0fd4325f60")
+	)
+	(label "TX_OA_BIAS"
+		(at 63.5 159.2072 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "200a6a7b-415a-4c80-8d35-7854a248d59d")
+	)
+	(label "SC_A5V"
+		(at 99.06 70.3072 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a0c45db1-f38d-4a93-83d3-e522a12d9806")
+	)
+	(label "SC_A5V"
+		(at 114.3 141.4272 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7aebf54-63c7-41ff-8af9-c5d9881c997b")
+	)
+	(label "TX_OA_BIAS"
+		(at 78.74 70.3072 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2974c06-612f-4729-a815-34927099a24f")
+	)
+	(hierarchical_label "TXE_0"
+		(shape output)
+		(at 215.9 42.3672 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "01434a08-7051-4d4f-b7a8-817a42f12b91")
+	)
+	(hierarchical_label "TXE_270"
+		(shape output)
+		(at 215.9 85.5472 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2f248774-07ae-4f3b-8bf7-d3f9d1664b04")
+	)
+	(hierarchical_label "IN_Q"
+		(shape input)
+		(at 66.04 80.4672 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5b137564-dfde-4e6b-9a97-a76630370c12")
+	)
+	(hierarchical_label "TXE_180"
+		(shape output)
+		(at 215.9 60.1472 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c3b82961-1ded-47a5-8030-4b9b20851a5f")
+	)
+	(hierarchical_label "TXE_90"
+		(shape output)
+		(at 215.9 98.2472 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e6b712ed-4028-48cd-8d59-546d6c3727af")
+	)
+	(hierarchical_label "IN_I"
+		(shape input)
+		(at 66.04 60.1472 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f499cf2c-0028-455b-aafc-066c153872a3")
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_1_RES_0")
+		(at 91.44 52.5272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "021dc524-e98e-4a65-88fd-8f1d3c7c9712")
+		(property "Reference" "R86"
+			(at 94.996 49.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10k"
+			(at 94.996 52.5272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 91.44 52.5272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 52.5272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 91.44 52.5272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 146-9856"
+			(at 92.964 44.3992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.021"
+			(at 92.964 44.3992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00349"
+			(at 92.964 44.3992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b8835d37-6d1d-47ee-b8ce-7b9f70c25de2")
+		)
+		(pin "1"
+			(uuid "c790ca58-804f-4001-bd7c-319c8352ed08")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "R86")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 149.86 70.3072 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "166446d1-5d22-48ec-b0be-5ffc053ae1de")
+		(property "Reference" "#PWR?"
+			(at 149.86 70.3072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 156.21 70.3072 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 70.3072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 70.3072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 149.86 70.3072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "0d4d61a2-e9f1-482b-a597-523f04ca456e")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_2_CAP")
+		(at 101.6 166.8272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "17daeff9-d948-4a0e-81db-6f3d568624ed")
+		(property "Reference" "C127"
+			(at 101.6 164.2872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 101.6 166.8272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 101.6 166.8272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 166.8272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 101.6 166.8272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.068"
+			(at 96.52 172.4152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 252-2090"
+			(at 96.52 172.4152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00154"
+			(at 96.52 161.2392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a0eabe4-0636-4bbf-ad54-6f43cc068039")
+		)
+		(pin "2"
+			(uuid "5ce37f18-bcf0-4971-9705-e7ab621997b1")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "C127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_0_CAP-POL_0")
+		(at 180.34 42.3672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "38959f1c-b2e7-4c20-bbaf-f4c079a7471e")
+		(property "Reference" "C109"
+			(at 181.61 39.0652 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10uF"
+			(at 181.61 47.1932 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "1206_Elec_Cap_N"
+			(at 180.34 42.3672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 42.3672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Electrolitic capacitor"
+			(at 180.34 42.3672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.204"
+			(at 179.832 39.0652 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 233-3009"
+			(at 179.832 39.0652 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00166"
+			(at 179.832 36.5252 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6365e17f-6cff-48a9-a52d-6f6797ae8655")
+		)
+		(pin "2"
+			(uuid "15786297-9971-4721-9d60-b5f94b17dc1f")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "C109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_0_RES_0")
+		(at 127 90.6272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3dc2f353-d868-4679-8430-d00c7b6fd9ff")
+		(property "Reference" "R89"
+			(at 132.08 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10k"
+			(at 132.08 95.7072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 127 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 127 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 146-9856"
+			(at 121.92 96.7232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.021"
+			(at 121.92 96.7232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00349"
+			(at 123.952 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "20b4d74f-0b63-4e47-a42a-597836095635")
+		)
+		(pin "1"
+			(uuid "e4ba8c19-acce-4978-aa42-bc594d39086b")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "R89")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_0_RES_0")
+		(at 83.82 77.9272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d58cf07-31f9-4cfc-8cad-565ff7a42f06")
+		(property "Reference" "R85"
+			(at 78.74 80.4672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10k"
+			(at 78.74 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 83.82 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 83.82 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 146-9856"
+			(at 78.74 84.0232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.021"
+			(at 78.74 84.0232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00349"
+			(at 78.74 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "84fa4c9d-76f0-45c7-b3d5-a4d52a4cd42e")
+		)
+		(pin "1"
+			(uuid "88cd278c-161e-41be-8e6a-cc00369b849c")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "R85")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_3_CAP")
+		(at 139.7 138.8872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5589f8a9-aa09-43cd-b149-66c264dacdf2")
+		(property "Reference" "C129"
+			(at 136.906 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 136.906 146.5072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 139.7 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 139.7 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.068"
+			(at 134.112 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 252-2090"
+			(at 134.112 138.8872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00154"
+			(at 134.112 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2312b01-aeae-4fd1-865e-c3814f9c7fbb")
+		)
+		(pin "2"
+			(uuid "c6d87495-83b7-447a-8dce-2cf7c6301beb")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "C129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_0_CAP-POL_0")
+		(at 180.34 85.5472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b2ff3a2-a8d6-4098-b1f4-4a387cdde3c5")
+		(property "Reference" "C111"
+			(at 181.61 82.2452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10uF"
+			(at 181.61 90.3732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "1206_Elec_Cap_N"
+			(at 180.34 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Electrolitic capacitor"
+			(at 180.34 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.204"
+			(at 179.832 82.2452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 233-3009"
+			(at 179.832 82.2452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00166"
+			(at 179.832 79.7052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1dbe535f-34b1-4e91-a1b0-0fed389e45ec")
+		)
+		(pin "2"
+			(uuid "d695339e-180f-4e55-960d-9f189cf199a5")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "C111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_0_CAP-POL_0")
+		(at 180.34 60.1472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5bbb1564-5707-44c2-8a27-a98174b76a45")
+		(property "Reference" "C110"
+			(at 181.61 56.8452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10uF"
+			(at 181.61 64.9732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "1206_Elec_Cap_N"
+			(at 180.34 60.1472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 60.1472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Electrolitic capacitor"
+			(at 180.34 60.1472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.204"
+			(at 179.832 56.8452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 233-3009"
+			(at 179.832 56.8452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00166"
+			(at 179.832 54.3052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "559688b1-b12e-4ac0-b5fe-d62e5c30cf92")
+		)
+		(pin "2"
+			(uuid "9f5f4913-e97b-4a39-85f0-97d226a45c25")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "C110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:VCC_5V_BAR")
+		(at 129.54 123.6472 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f1508e9-961d-40bd-96a7-3d12683a6f44")
+		(property "Reference" "#PWR?"
+			(at 129.54 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC_5V"
+			(at 129.54 119.8372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 129.54 123.6472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "1a56c501-08bf-41d5-9c8d-09b7e957828d")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_2_CAP")
+		(at 104.14 93.1672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6199a973-d064-4b22-ac21-8f59d3fdb435")
+		(property "Reference" "C108"
+			(at 101.6 88.0872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100pF"
+			(at 101.6 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 104.14 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 104.14 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.056"
+			(at 99.06 87.5792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 233-2692"
+			(at 99.06 87.5792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 99.06 85.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d83715e-e85c-4094-8268-06e65599deed")
+		)
+		(pin "2"
+			(uuid "e3f86b7a-e86b-468e-b33e-e4c186b5fec8")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "C108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_0_RES_0")
+		(at 127 44.9072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "767793ca-5bcc-4d3f-bea1-0eb8cb7f2b22")
+		(property "Reference" "R88"
+			(at 132.08 47.4472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10k"
+			(at 132.08 49.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 127 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 127 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 146-9856"
+			(at 121.92 51.0032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.021"
+			(at 121.92 51.0032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00349"
+			(at 123.952 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "61358185-f2f6-4b87-b446-bf9b91199f26")
+		)
+		(pin "1"
+			(uuid "8ed89408-b4cc-44ae-b75f-ec4f8f647e42")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "R88")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_1_RES_0")
+		(at 91.44 93.1672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "86d236ea-88cd-4f69-80ee-4f19ed9fcba6")
+		(property "Reference" "R87"
+			(at 94.996 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10k"
+			(at 94.996 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 91.44 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 91.44 93.1672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 146-9856"
+			(at 92.964 85.0392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.021"
+			(at 92.964 85.0392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00349"
+			(at 92.964 85.0392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "12c3f9bf-4c6d-42ec-8f3e-4d8788d906d2")
+		)
+		(pin "1"
+			(uuid "361f6406-0adb-432d-b0df-80906c2ba416")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "R87")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_2_CAP")
+		(at 104.14 49.9872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d549178-8d39-4270-b3b6-b5212acfd381")
+		(property "Reference" "C107"
+			(at 101.6 52.5272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100pF"
+			(at 101.6 55.0672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 104.14 49.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 49.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 104.14 49.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.056"
+			(at 99.06 44.3992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 233-2692"
+			(at 99.06 44.3992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 99.06 44.3992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfb17d68-0fa1-4542-b041-5e451e5d31e8")
+		)
+		(pin "2"
+			(uuid "e5b9ffbc-bde9-4c37-a128-9c4719c96647")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "C107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_2_CAP")
+		(at 83.82 166.8272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "90b5cc50-a6df-4072-8e49-35e63c5d88c9")
+		(property "Reference" "C126"
+			(at 83.82 164.2872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 83.82 166.8272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 83.82 166.8272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 166.8272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 83.82 166.8272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.068"
+			(at 78.74 172.4152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 252-2090"
+			(at 78.74 172.4152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00154"
+			(at 78.74 161.2392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c69832ee-1c44-4bd6-84f6-e4b71b16e2d8")
+		)
+		(pin "2"
+			(uuid "aca1cd76-8863-4ba1-a83e-685d27976efb")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "C126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_0_RES_0")
+		(at 157.48 57.6072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "952771fd-19aa-4d39-b4a4-a6bdaf623ed4")
+		(property "Reference" "R90"
+			(at 162.56 60.1472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10k"
+			(at 162.56 62.6872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 157.48 57.6072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 57.6072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 157.48 57.6072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 146-9856"
+			(at 152.4 63.7032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.021"
+			(at 152.4 63.7032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00349"
+			(at 154.432 57.6072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fed56b86-2f72-432b-981a-424db446408f")
+		)
+		(pin "1"
+			(uuid "a329005a-284c-4f29-90fc-dde96a64db96")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "R90")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_0_RES_0")
+		(at 157.48 77.9272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "957a4b94-c182-4c44-ab9d-554ec0a96d3c")
+		(property "Reference" "R91"
+			(at 162.56 80.4672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10k"
+			(at 162.56 83.0072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 157.48 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 157.48 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 146-9856"
+			(at 152.4 84.0232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.021"
+			(at 152.4 84.0232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00349"
+			(at 154.432 77.9272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7f2a9b2b-03bd-4cfa-a8ff-64f5ea5c04cd")
+		)
+		(pin "1"
+			(uuid "cd5b0d29-8cd3-4d07-85e4-9c93bd132c17")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "R91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_1_RES_0")
+		(at 127 151.5872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a70334ea-2902-4ac7-a787-c83600eb421e")
+		(property "Reference" "R100"
+			(at 130.556 149.0472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 130.556 151.5872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 127 151.5872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 151.5872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 127 151.5872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 188-7289"
+			(at 128.524 143.4592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.046"
+			(at 128.524 143.4592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00333"
+			(at 128.524 143.4592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "add35f48-34d1-4448-ae58-f88ba4250f0a")
+		)
+		(pin "1"
+			(uuid "6db141ea-4d59-4251-864a-5fae6649ea40")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "R100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 147.32 141.4272 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b46fb73e-f783-46d6-a410-f4e1ad7a5367")
+		(property "Reference" "#PWR?"
+			(at 147.32 141.4272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 153.67 141.4272 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 141.4272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 141.4272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 147.32 141.4272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "66866ca4-ff32-4bda-bb38-f88ed7813c1d")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_0_CAP-POL_0")
+		(at 180.34 98.2472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c1f832de-1fed-4193-b446-3970ebfdbcd3")
+		(property "Reference" "C112"
+			(at 181.61 94.9452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10uF"
+			(at 181.61 103.0732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "1206_Elec_Cap_N"
+			(at 180.34 98.2472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 98.2472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Electrolitic capacitor"
+			(at 180.34 98.2472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.204"
+			(at 179.832 94.9452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 233-3009"
+			(at 179.832 94.9452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00166"
+			(at 179.832 92.4052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ed057656-3499-4574-a488-8578a5634952")
+		)
+		(pin "1"
+			(uuid "7f912bdf-7779-4a7c-b323-df45552c2684")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "C112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_3_CAP")
+		(at 160.02 90.6272 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c45962d0-ffb3-4b97-a055-52971147063b")
+		(property "Reference" "C108a"
+			(at 157.226 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100pF"
+			(at 157.226 98.2472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 160.02 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 160.02 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.056"
+			(at 154.432 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 233-2692"
+			(at 154.432 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 154.432 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ff60dd6-ff17-4438-ab0f-897070fed718")
+		)
+		(pin "2"
+			(uuid "c6eaff0a-df27-4eff-8b6e-b427a7bed6f3")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "C108a")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:GND_POWER_GROUND")
+		(at 129.54 176.9872 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ccd7e290-7e4c-4dab-bd82-cc2da5f0aa31")
+		(property "Reference" "#PWR?"
+			(at 129.54 176.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.54 183.3372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 176.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 176.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 129.54 176.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "a3456da9-d9f6-4594-b7d9-a23427a4b845")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_3_CAP")
+		(at 160.02 44.9072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9d02181-35d6-4af8-8e85-f64481e4b29c")
+		(property "Reference" "C107a"
+			(at 157.226 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100pF"
+			(at 157.226 52.5272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 160.02 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 160.02 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.056"
+			(at 154.432 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 233-2692"
+			(at 154.432 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 154.432 44.9072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3012e091-4a46-47ee-864d-a3b0bdaf13a6")
+		)
+		(pin "2"
+			(uuid "297d3efe-9803-4b52-8b71-29c3bf436604")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "C107a")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_0_RES_0")
+		(at 83.82 57.6072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e82a6e4e-7a82-477a-a002-e901c417f027")
+		(property "Reference" "R84"
+			(at 78.74 60.1472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10k"
+			(at 78.74 62.6872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 83.82 57.6072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 57.6072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 83.82 57.6072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 146-9856"
+			(at 78.74 63.7032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.021"
+			(at 78.74 63.7032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00349"
+			(at 78.74 57.6072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9f3eec6b-a6b6-434a-aea7-62c3e2934de5")
+		)
+		(pin "1"
+			(uuid "caa7a413-4ddf-4dcd-bebe-81f9e0e0393d")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "R84")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_1_RES_0")
+		(at 127 169.3672 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f34bd1c1-4b4e-4db8-aafa-bec370be4484")
+		(property "Reference" "R101"
+			(at 130.556 166.8272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 130.556 169.3672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 127 169.3672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 169.3672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 127 169.3672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 188-7289"
+			(at 128.524 161.2392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.046"
+			(at 128.524 161.2392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCR-00333"
+			(at 128.524 161.2392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "33ead761-e6cb-471f-b55f-0fd455d868db")
+		)
+		(pin "1"
+			(uuid "9acf00a0-a332-483d-bc7d-1551fa471593")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "R101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_0_TLV2464CD")
+		(at 129.54 70.3072 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4d2b552-25b3-4956-ae65-1898b4572388")
+		(property "Reference" "U19"
+			(at 116.84 52.5272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "TLV2464CD"
+			(at 116.84 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "SO-14-Pro"
+			(at 129.54 70.3072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 70.3072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low Power, Rail-To-Rail OpAmp"
+			(at 129.54 70.3072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 845-5171"
+			(at 108.712 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "1.47"
+			(at 108.712 90.6272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" ""
+			(at 108.712 49.9872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "f61b9f4d-c6ee-4bd5-a62a-71cd158fb817")
+		)
+		(pin "5"
+			(uuid "5eb88913-8c25-4a1d-8865-6a45c9493d02")
+		)
+		(pin "1"
+			(uuid "a825dc94-27a6-4d6e-8075-22d5ab12e072")
+		)
+		(pin "2"
+			(uuid "232a6f97-fbea-4aef-b4d1-2263cb2e28b3")
+		)
+		(pin "3"
+			(uuid "93b67c3a-edd0-4158-a7a9-5999309f8169")
+		)
+		(pin "4"
+			(uuid "cd70738a-dc75-4518-872c-dd7490ae59dc")
+		)
+		(pin "8"
+			(uuid "9dec3e34-4597-4f2e-aa05-e3aea542f5c9")
+		)
+		(pin "7"
+			(uuid "28144b7a-2041-4b9d-ba12-745b1a07877c")
+		)
+		(pin "9"
+			(uuid "3ef5c699-188e-4558-8731-818e141117fd")
+		)
+		(pin "10"
+			(uuid "ee855845-8545-41ca-98fb-d7c13175b3ff")
+		)
+		(pin "11"
+			(uuid "80004d4f-b082-4753-87ac-fe4421fc2ee9")
+		)
+		(pin "12"
+			(uuid "23b8c967-605d-4852-91de-06e7deec27f1")
+		)
+		(pin "13"
+			(uuid "29828f19-5d34-4bb9-b577-dba3a4e5ff83")
+		)
+		(pin "14"
+			(uuid "58c60631-fcbd-42aa-9d60-53dc5ccd0096")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "U19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_3_CAP-POL_0")
+		(at 114.3 161.7472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f9005d89-8479-4c42-83a5-6f574d4cee7a")
+		(property "Reference" "C128"
+			(at 117.602 165.5572 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10uF"
+			(at 117.602 168.0972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "1206_Elec_Cap_N"
+			(at 114.3 161.7472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 161.7472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Electrolitic capacitor"
+			(at 114.3 161.7472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.204"
+			(at 112.014 161.2392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 233-3009"
+			(at 112.014 161.2392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "QT ORDER" "QCC-00166"
+			(at 112.014 161.2392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3c6b8d2-a417-450a-b153-80eab404bdee")
+		)
+		(pin "2"
+			(uuid "4209bca0-90dc-4b09-aff6-2a35d8d4d656")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "C128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rf_main-altium-import:TX Quad preamp_1_TDK-NLV25T")
+		(at 127 136.3472 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa9d5c66-11cb-4149-9121-d14abe3648ed")
+		(property "Reference" "RFC9"
+			(at 130.302 128.7272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47uH"
+			(at 130.302 131.2672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "0805-Pro"
+			(at 127 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "INDUCTOR, SIGNAL LINE, 4.7UH, 1005"
+			(at 127 136.3472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ORDER" "FN 166-9895"
+			(at 128.27 123.1392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "0.166"
+			(at 128.27 123.1392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c000707-e2aa-4969-9a2f-91baeebf7436")
+		)
+		(pin "2"
+			(uuid "8d0511a6-dbac-47e9-a514-78e832edbff3")
+		)
+		(instances
+			(project ""
+				(path "/a1b3f9f8-c0a4-4050-a382-e461f772d39c/516799e1-4431-41f0-8235-ccf4156b7843"
+					(reference "RFC9")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
